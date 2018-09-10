@@ -30,97 +30,131 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.pic_clock = new System.Windows.Forms.PictureBox();
+            this.pic_open = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_clock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_open)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(29, 44);
+            this.label1.Location = new System.Drawing.Point(196, 59);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 25);
+            this.label1.Size = new System.Drawing.Size(94, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Tên người dùng";
+            this.label1.Text = "TÀI KHOẢN";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(184, 41);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBox1.Location = new System.Drawing.Point(302, 46);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(342, 30);
+            this.textBox1.Size = new System.Drawing.Size(258, 33);
             this.textBox1.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnCancel);
-            this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(590, 253);
-            this.panel1.TabIndex = 2;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnCancel.Location = new System.Drawing.Point(279, 165);
+            this.btnCancel.Location = new System.Drawing.Point(425, 146);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(149, 48);
-            this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "Hủy";
+            this.btnCancel.Size = new System.Drawing.Size(135, 39);
+            this.btnCancel.TabIndex = 4;
+            this.btnCancel.Text = "HỦY";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnLogin.Location = new System.Drawing.Point(112, 165);
+            this.btnLogin.Location = new System.Drawing.Point(262, 146);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(134, 48);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Đăng nhập";
+            this.btnLogin.Size = new System.Drawing.Size(135, 39);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "ĐĂNG NHẬP";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox2.Location = new System.Drawing.Point(184, 85);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBox2.Location = new System.Drawing.Point(302, 91);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(342, 30);
-            this.textBox2.TabIndex = 1;
+            this.textBox2.PasswordChar = '*';
+            this.textBox2.Size = new System.Drawing.Size(258, 33);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(85, 88);
+            this.label2.Location = new System.Drawing.Point(199, 104);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 25);
+            this.label2.Size = new System.Drawing.Size(91, 20);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Mật khẩu";
+            this.label2.Text = "MẬT KHẨU";
+            // 
+            // pic_clock
+            // 
+            this.pic_clock.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.khoa11;
+            this.pic_clock.Location = new System.Drawing.Point(25, 30);
+            this.pic_clock.Name = "pic_clock";
+            this.pic_clock.Size = new System.Drawing.Size(150, 141);
+            this.pic_clock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_clock.TabIndex = 3;
+            this.pic_clock.TabStop = false;
+            // 
+            // pic_open
+            // 
+            this.pic_open.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.khoa2;
+            this.pic_open.Location = new System.Drawing.Point(25, 30);
+            this.pic_open.Name = "pic_open";
+            this.pic_open.Size = new System.Drawing.Size(150, 141);
+            this.pic_open.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_open.TabIndex = 4;
+            this.pic_open.TabStop = false;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(614, 277);
-            this.Controls.Add(this.panel1);
+            this.BackgroundImage = global::QL_ThucThiVBHanhChinh.Properties.Resources.Untitled_2;
+            this.ClientSize = new System.Drawing.Size(595, 246);
+            this.Controls.Add(this.pic_open);
+            this.Controls.Add(this.pic_clock);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Load += new System.EventHandler(this.frmLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pic_clock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_open)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -128,11 +162,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pic_clock;
+        private System.Windows.Forms.PictureBox pic_open;
     }
 }
 
