@@ -45,8 +45,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="xNet">
-      <HintPath>D:\Downloads\Compressed\xNet\xNet.dll</HintPath>
+    <Reference Include="xNet, Version=3.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\xNet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

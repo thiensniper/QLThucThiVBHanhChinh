@@ -41,7 +41,7 @@ namespace QL_ThucThiVBHanhChinh
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            User user = new User();
+            //User user = new User();
             MessageBox.Show(DataProvider.Instance.getObjects(loginURL).ToString(), "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
             if (textBox1.Text == "" && textBox2.Text == "")
             {
