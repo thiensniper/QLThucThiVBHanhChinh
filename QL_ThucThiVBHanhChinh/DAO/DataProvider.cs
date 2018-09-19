@@ -3,15 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using xNet;
 using Newtonsoft.Json;
 using QL_ThucThiVBHanhChinh.DTO;
+using FireSharp.Interfaces;
+using FireSharp.Config;
+using FireSharp.Response;
+using System.Windows.Forms;
 
 namespace QL_ThucThiVBHanhChinh.DAO
 {
     class DataProvider
     {
-        private HttpRequest httpClient;
+        private string url = @"https://qlvbhc-90731.firebaseio.com";
+        private string userURL;
+        private IFirebaseConfig config;
+        private IFirebaseClient client;
+
         private static DataProvider instance;
 
         public static DataProvider Instance
@@ -31,29 +38,25 @@ namespace QL_ThucThiVBHanhChinh.DAO
 
         private DataProvider()
         {
-            httpClient = new HttpRequest();
+            userURL = "/user";
+            config = new FirebaseConfig
+            {
+                BasePath = url
+            };
+
+            client = new FireSharp.FirebaseClient(config);
         }
 
-        public string getString(string url)
+        public async Task<FirebaseResponse> Get(string urlGet)
         {
             try
             {
-                return JsonConvert.ToString(httpClient.Get(url));
+                FirebaseResponse response = await client.GetAsync(urlGet);
+                return response;
             }
-            catch
+            catch(Exception message)
             {
-                return "Can't get data!";
-            }
-        }
-
-        public Object getObjects(string url)
-        {
-            try
-            {
-                return JsonConvert.SerializeObject(new object());
-            }
-            catch
-            {
+                MessageBox.Show("Cannot get data!\n" + message.ToString(), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
         }

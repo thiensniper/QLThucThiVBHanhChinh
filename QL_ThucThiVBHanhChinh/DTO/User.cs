@@ -13,12 +13,84 @@ namespace QL_ThucThiVBHanhChinh.DTO
         private string email;
         private string role;
         private string password;
+        private string status;
 
-        public string Username { get => username; set => username = value; }
-        public string Fullname { get => fullname; set => fullname = value; }
-        public string Email { get => email; set => email = value; }
-        public string Role { get => role; set => role = value; }
-        public string Password { get => password; set => password = value; }
+        public string Username
+        {
+            get
+            {
+                return username;
+            }
+
+            set
+            {
+                username = value;
+            }
+        }
+        public string Fullname
+        {
+            get
+            {
+                return fullname;
+            }
+
+            set
+            {
+                fullname = value;
+            }
+        }
+
+        public string Email
+        {
+            get
+            {
+                return email;
+            }
+
+            set
+            {
+                email = value;
+            }
+        }
+
+        public string Role
+        {
+            get
+            {
+                return role;
+            }
+
+            set
+            {
+                role = value;
+            }
+        }
+
+        public string Password
+        {
+            get
+            {
+                return password;
+            }
+
+            set
+            {
+                password = value;
+            }
+        }
+
+        public string Status
+        {
+            get
+            {
+                return status;
+            }
+            
+            set
+            {
+                status = value;
+            }
+        }
 
         public User(string username, string fullname, string email, string role, string password)
         {
@@ -27,11 +99,17 @@ namespace QL_ThucThiVBHanhChinh.DTO
             Email = email;
             Role = role;
             Password = password;
+            Status = "true";
         }
 
-        public User( obj)
+        public override string ToString()
         {
-            Username = obj.username;
+            return "username: " + this.username
+                + " fullname: " + this.fullname
+                + " email: " + this.email
+                + " role: " + this.role
+                + " password: " + this.password
+                + " status: " + this.status;
         }
     }
 }
