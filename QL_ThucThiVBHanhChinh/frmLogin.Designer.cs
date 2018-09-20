@@ -46,30 +46,32 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(261, 73);
+            this.label1.Location = new System.Drawing.Point(196, 58);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 25);
+            this.label1.Size = new System.Drawing.Size(94, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "TÀI KHOẢN";
             // 
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtUsername.Location = new System.Drawing.Point(403, 57);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUsername.Location = new System.Drawing.Point(302, 46);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(343, 40);
+            this.txtUsername.Size = new System.Drawing.Size(258, 33);
             this.txtUsername.TabIndex = 1;
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnCancel
             // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnCancel.Location = new System.Drawing.Point(567, 180);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancel.Location = new System.Drawing.Point(425, 146);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(180, 48);
+            this.btnCancel.Size = new System.Drawing.Size(135, 39);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "HỦY";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -78,10 +80,10 @@
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnLogin.Location = new System.Drawing.Point(349, 180);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogin.Location = new System.Drawing.Point(262, 146);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(180, 48);
+            this.btnLogin.Size = new System.Drawing.Size(135, 39);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "ĐĂNG NHẬP";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -90,12 +92,12 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtPassword.Location = new System.Drawing.Point(403, 112);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPassword.Location = new System.Drawing.Point(302, 91);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(343, 40);
+            this.txtPassword.Size = new System.Drawing.Size(258, 33);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -103,19 +105,19 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(265, 128);
+            this.label2.Location = new System.Drawing.Point(199, 103);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 25);
+            this.label2.Size = new System.Drawing.Size(91, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "MẬT KHẨU";
             // 
             // pic_clock
             // 
             this.pic_clock.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.khoa11;
-            this.pic_clock.Location = new System.Drawing.Point(33, 37);
-            this.pic_clock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pic_clock.Location = new System.Drawing.Point(52, 83);
             this.pic_clock.Name = "pic_clock";
-            this.pic_clock.Size = new System.Drawing.Size(200, 174);
+            this.pic_clock.Size = new System.Drawing.Size(93, 88);
             this.pic_clock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_clock.TabIndex = 3;
             this.pic_clock.TabStop = false;
@@ -123,13 +125,13 @@
             // pic_open
             // 
             this.pic_open.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.khoa2;
-            this.pic_open.Location = new System.Drawing.Point(33, 37);
-            this.pic_open.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pic_open.Location = new System.Drawing.Point(52, 83);
             this.pic_open.Name = "pic_open";
-            this.pic_open.Size = new System.Drawing.Size(200, 174);
+            this.pic_open.Size = new System.Drawing.Size(93, 88);
             this.pic_open.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_open.TabIndex = 4;
             this.pic_open.TabStop = false;
+            this.pic_open.Click += new System.EventHandler(this.pic_open_Click);
             // 
             // timerLogin
             // 
@@ -138,10 +140,12 @@
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AcceptButton = this.btnLogin;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::QL_ThucThiVBHanhChinh.Properties.Resources.Untitled_2;
-            this.ClientSize = new System.Drawing.Size(793, 303);
+            this.BackgroundImage = global::QL_ThucThiVBHanhChinh.Properties.Resources.Untitled_22;
+            this.CancelButton = this.btnCancel;
+            this.ClientSize = new System.Drawing.Size(595, 246);
             this.Controls.Add(this.pic_open);
             this.Controls.Add(this.pic_clock);
             this.Controls.Add(this.btnCancel);
@@ -151,7 +155,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
