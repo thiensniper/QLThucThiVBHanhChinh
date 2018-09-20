@@ -66,6 +66,7 @@ namespace QL_ThucThiVBHanhChinh
                 //this.Close();
                 timerLogin.Enabled = true;
             }
+            this.Hide();
         }
 
         #endregion
@@ -77,6 +78,11 @@ namespace QL_ThucThiVBHanhChinh
             this.Hide();
             main.ShowDialog();
             this.Show();
+        }
+
+        private void pic_open_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

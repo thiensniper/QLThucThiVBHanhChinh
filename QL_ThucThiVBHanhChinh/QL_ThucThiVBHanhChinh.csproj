@@ -90,6 +90,18 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonal.Designer.cs">
+      <DependentUpon>frmPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogin.resx">
@@ -97,6 +109,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonal.resx">
+      <DependentUpon>frmPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -160,6 +178,30 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BUL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fix22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fix222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhansu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vbhc21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fix221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhansu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fix223.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
