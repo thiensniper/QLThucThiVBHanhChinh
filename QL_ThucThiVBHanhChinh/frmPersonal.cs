@@ -16,5 +16,11 @@ namespace QL_ThucThiVBHanhChinh
         {
             InitializeComponent();
         }
+
+        private void frmPersonal_Load(object sender, EventArgs e)
+        {
+            btnSave.Hide();
+            btnCancel.Hide();
+        }
     }
 }

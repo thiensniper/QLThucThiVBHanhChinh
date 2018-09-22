@@ -21,5 +21,27 @@ namespace QL_ThucThiVBHanhChinh
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            frmSetting setting = new frmSetting();
+            this.Hide();
+            setting.ShowDialog();
+        }
     }
 }

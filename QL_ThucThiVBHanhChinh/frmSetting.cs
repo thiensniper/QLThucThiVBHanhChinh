@@ -21,5 +21,12 @@ namespace QL_ThucThiVBHanhChinh
         {
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            frmMain main = new frmMain();
+            this.Hide();
+            main.ShowDialog();
+        }
     }
 }
