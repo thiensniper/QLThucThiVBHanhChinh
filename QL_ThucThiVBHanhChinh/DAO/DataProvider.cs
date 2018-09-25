@@ -14,7 +14,7 @@ namespace QL_ThucThiVBHanhChinh.DAO
 {
     class DataProvider
     {
-        private string url = @"https://qlvbhc-90731.firebaseio.com";
+        private string url = @"https://qlvbhc-90731.firebaseio.com"; // Firebase URL
         private IFirebaseConfig config;
         private IFirebaseClient client;
 
