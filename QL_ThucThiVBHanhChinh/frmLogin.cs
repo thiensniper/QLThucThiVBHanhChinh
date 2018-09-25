@@ -48,11 +48,15 @@ namespace QL_ThucThiVBHanhChinh
                 foreach(User data in listUser)
                 {
                     Console.WriteLine(data.ToString());
-                    if(txtUsername.Text == data.Username && txtPassword.Text == data.Password)
+                    if(txtUsername.Text == data.Username && txtPassword.Text == data.Password && data.Status == "true")
                     {
                         logOn = true;
                         user = data;
                         break;
+                    }
+                    else
+                    {
+
                     }
                 }
             }
