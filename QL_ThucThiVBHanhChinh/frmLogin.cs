@@ -26,7 +26,7 @@ namespace QL_ThucThiVBHanhChinh
             InitializeComponent();
             
         }
-
+        int dem = 0;
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -58,13 +58,19 @@ namespace QL_ThucThiVBHanhChinh
             }
 
 
-            
+
             if (logOn == true && user.Status == "true")
             {
                 pic_open.Show();
                 pic_clock.Hide();
                 //this.Close();
                 timerLogin.Enabled = true;
+            }
+            else
+            {
+                dem=dem+1;
+                if (dem == 4) { MessageBox.Show("Bạn đã nhập sai quá nhiều lần, vui lòng đăng nhập lại sau", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning); Application.Exit(); }
+                MessageBox.Show("Tài khoản hoặc mật khẩu bạn vừa nhập không đúng, vui lòng kiểm tra và thử lại !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             //this.Hide();
         }
@@ -85,19 +91,33 @@ namespace QL_ThucThiVBHanhChinh
 
         }
 
-        private void pic_oneye_Click(object sender, EventArgs e)
+       
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
         {
-            
-            pic_oneye.Hide();
-            pic_offeye.Show();
-          
+
         }
 
-        private void pic_offeye_Click(object sender, EventArgs e)
+        private void txtPassword_TextChanged(object sender, EventArgs e)
         {
-            pic_oneye.Show();
-    
-            pic_offeye.Hide
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void link_LostPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmLostPassword LostPass = new frmLostPassword();
+            this.Hide();
+            LostPass.ShowDialog();
         }
     }
 }

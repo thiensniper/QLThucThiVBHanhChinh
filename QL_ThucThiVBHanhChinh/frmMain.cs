@@ -24,7 +24,9 @@ namespace QL_ThucThiVBHanhChinh
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            frmPersonal Personal = new frmPersonal();
+            this.Hide();
+            Personal.ShowDialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -42,6 +44,13 @@ namespace QL_ThucThiVBHanhChinh
             frmSetting setting = new frmSetting();
             this.Hide();
             setting.ShowDialog();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            frmPersonal Personal = new frmPersonal();
+            this.Hide();
+            Personal.ShowDialog();
         }
     }
 }

@@ -22,5 +22,13 @@ namespace QL_ThucThiVBHanhChinh
             btnSave.Hide();
             btnCancel.Hide();
         }
+
+        private void picBack_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Bạn có chắc chắn muốn thoát khỏi phần hồ sơ cá nhân hay không? ", "THÔNG BÁO", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            frmMain main = new frmMain();
+            this.Close();
+            main.ShowDialog();
+        }
     }
 }
