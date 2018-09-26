@@ -71,7 +71,8 @@ namespace QL_ThucThiVBHanhChinh
         {
             frmDocumentary Document = new frmDocumentary();
             this.Hide();
-            Document.Show();
+            Document.ShowDialog();
+            this.Show();
         }
     }
 }

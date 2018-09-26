@@ -41,6 +41,7 @@
             this.Infor = new System.Windows.Forms.ToolTip(this.components);
             this.picPersonal = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,18 +49,17 @@
             this.pic_Unit = new System.Windows.Forms.PictureBox();
             this.pic_Document = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonal)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Statistical)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Unit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Document)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -69,8 +69,8 @@
             this.hệThốngToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1183, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(887, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -81,25 +81,25 @@
             this.cáNhânToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
             this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
-            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.hệThốngToolStripMenuItem.Text = "Hệ thống";
             // 
             // càiĐặtToolStripMenuItem
             // 
             this.càiĐặtToolStripMenuItem.Name = "càiĐặtToolStripMenuItem";
-            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.càiĐặtToolStripMenuItem.Text = "Cài Đặt";
             // 
             // cáNhânToolStripMenuItem
             // 
             this.cáNhânToolStripMenuItem.Name = "cáNhânToolStripMenuItem";
-            this.cáNhânToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.cáNhânToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.cáNhânToolStripMenuItem.Text = "Cá Nhân";
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
             // 
             // Setting
@@ -109,10 +109,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_settings_1000;
-            this.pictureBox2.Location = new System.Drawing.Point(1073, 7);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(805, 6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -127,10 +126,9 @@
             // pic_Exit
             // 
             this.pic_Exit.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_multiply_1000;
-            this.pic_Exit.Location = new System.Drawing.Point(1128, 7);
-            this.pic_Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_Exit.Location = new System.Drawing.Point(846, 6);
             this.pic_Exit.Name = "pic_Exit";
-            this.pic_Exit.Size = new System.Drawing.Size(47, 43);
+            this.pic_Exit.Size = new System.Drawing.Size(35, 35);
             this.pic_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Exit.TabIndex = 0;
             this.pic_Exit.TabStop = false;
@@ -146,10 +144,9 @@
             // picPersonal
             // 
             this.picPersonal.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_customer_1000;
-            this.picPersonal.Location = new System.Drawing.Point(1019, 7);
-            this.picPersonal.Margin = new System.Windows.Forms.Padding(4);
+            this.picPersonal.Location = new System.Drawing.Point(764, 6);
             this.picPersonal.Name = "picPersonal";
-            this.picPersonal.Size = new System.Drawing.Size(47, 43);
+            this.picPersonal.Size = new System.Drawing.Size(35, 35);
             this.picPersonal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPersonal.TabIndex = 0;
             this.picPersonal.TabStop = false;
@@ -167,20 +164,33 @@
             this.panel2.Controls.Add(this.pic_Statistical);
             this.panel2.Controls.Add(this.pic_Unit);
             this.panel2.Controls.Add(this.pic_Document);
-            this.panel2.Location = new System.Drawing.Point(0, 71);
+            this.panel2.Location = new System.Drawing.Point(0, 70);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1183, 578);
+            this.panel2.Size = new System.Drawing.Size(887, 458);
             this.panel2.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_statistics_240;
+            this.pictureBox1.Location = new System.Drawing.Point(400, 320);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(929, 315);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(700, 256);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 25);
+            this.label4.Size = new System.Drawing.Size(91, 20);
             this.label4.TabIndex = 1;
             this.label4.Text = "THỐNG KÊ";
             // 
@@ -189,10 +199,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(501, 315);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(383, 256);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 25);
+            this.label3.Size = new System.Drawing.Size(138, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "QUẢN LÝ ĐƠN VỊ";
             // 
@@ -201,10 +210,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 315);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(12, 256);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(320, 25);
+            this.label2.Size = new System.Drawing.Size(258, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "QUẢN LÝ VĂN BẢN HÀNH CHÍNH";
             // 
@@ -212,9 +220,10 @@
             // 
             this.pic_Statistical.BackColor = System.Drawing.Color.Transparent;
             this.pic_Statistical.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_statistics_240;
-            this.pic_Statistical.Location = new System.Drawing.Point(650, 21);
+            this.pic_Statistical.Location = new System.Drawing.Point(647, 17);
+            this.pic_Statistical.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pic_Statistical.Name = "pic_Statistical";
-            this.pic_Statistical.Size = new System.Drawing.Size(190, 199);
+            this.pic_Statistical.Size = new System.Drawing.Size(200, 200);
             this.pic_Statistical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Statistical.TabIndex = 0;
             this.pic_Statistical.TabStop = false;
@@ -223,9 +232,10 @@
             // 
             this.pic_Unit.BackColor = System.Drawing.Color.Transparent;
             this.pic_Unit.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_user_groups_240;
-            this.pic_Unit.Location = new System.Drawing.Point(354, 21);
+            this.pic_Unit.Location = new System.Drawing.Point(356, 17);
+            this.pic_Unit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pic_Unit.Name = "pic_Unit";
-            this.pic_Unit.Size = new System.Drawing.Size(190, 199);
+            this.pic_Unit.Size = new System.Drawing.Size(200, 200);
             this.pic_Unit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Unit.TabIndex = 0;
             this.pic_Unit.TabStop = false;
@@ -234,9 +244,10 @@
             // 
             this.pic_Document.BackColor = System.Drawing.Color.Transparent;
             this.pic_Document.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_file_480;
-            this.pic_Document.Location = new System.Drawing.Point(45, 21);
+            this.pic_Document.Location = new System.Drawing.Point(34, 17);
+            this.pic_Document.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pic_Document.Name = "pic_Document";
-            this.pic_Document.Size = new System.Drawing.Size(190, 199);
+            this.pic_Document.Size = new System.Drawing.Size(200, 200);
             this.pic_Document.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Document.TabIndex = 0;
             this.pic_Document.TabStop = false;
@@ -250,10 +261,9 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pic_Exit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 28);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1183, 57);
+            this.panel1.Size = new System.Drawing.Size(887, 46);
             this.panel1.TabIndex = 3;
             // 
             // lblWelcome
@@ -261,38 +271,25 @@
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(16, 16);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblWelcome.Location = new System.Drawing.Point(12, 13);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(130, 25);
+            this.lblWelcome.Size = new System.Drawing.Size(98, 20);
             this.lblWelcome.TabIndex = 1;
             this.lblWelcome.Text = "Xin Chào ....";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_statistics_240;
-            this.pictureBox1.Location = new System.Drawing.Point(557, 288);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(84, 94);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
-            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1183, 702);
+            this.ClientSize = new System.Drawing.Size(887, 570);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -305,12 +302,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.picPersonal)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Statistical)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Unit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Document)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

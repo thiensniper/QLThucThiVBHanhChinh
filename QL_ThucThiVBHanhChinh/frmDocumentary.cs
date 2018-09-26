@@ -26,5 +26,10 @@ namespace QL_ThucThiVBHanhChinh
         {
 
         }
+
+        private void picBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

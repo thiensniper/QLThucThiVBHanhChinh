@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -58,6 +59,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.toolTip_Email = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -113,6 +115,8 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(280, 32);
             this.textBox4.TabIndex = 1;
+            this.toolTip_Email.SetToolTip(this.textBox4, "Email cá nhân của bạn, vui lòng nhập chính xác email của bạn để lấy lại mật khẩu " +
+        "khi cần");
             // 
             // label2
             // 
@@ -191,6 +195,7 @@
             this.button4.TabIndex = 11;
             this.button4.Text = "ĐỔI THÔNG TIN";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button1
             // 
@@ -205,6 +210,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "ĐỔI MẬT KHẨU";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnLogin
             // 
@@ -408,6 +414,11 @@
             this.btnCancel.Text = "HỦY";
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
+            // toolTip_Email
+            // 
+            this.toolTip_Email.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip_Email.ToolTipTitle = "Email Cá Nhân";
+            // 
             // frmPersonal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,5 +483,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.ToolTip toolTip_Email;
     }
 }
