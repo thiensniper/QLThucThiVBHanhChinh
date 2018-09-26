@@ -37,7 +37,7 @@
             this.Setting = new System.Windows.Forms.ToolTip(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Close = new System.Windows.Forms.ToolTip(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic_Exit = new System.Windows.Forms.PictureBox();
             this.Infor = new System.Windows.Forms.ToolTip(this.components);
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -51,7 +51,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -121,17 +121,17 @@
             this.Close.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Error;
             this.Close.ToolTipTitle = "Close";
             // 
-            // pictureBox1
+            // pic_Exit
             // 
-            this.pictureBox1.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_multiply_1000;
-            this.pictureBox1.Location = new System.Drawing.Point(846, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.Close.SetToolTip(this.pictureBox1, "Thoát Chương Trình");
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pic_Exit.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_multiply_1000;
+            this.pic_Exit.Location = new System.Drawing.Point(846, 6);
+            this.pic_Exit.Name = "pic_Exit";
+            this.pic_Exit.Size = new System.Drawing.Size(35, 35);
+            this.pic_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Exit.TabIndex = 0;
+            this.pic_Exit.TabStop = false;
+            this.Close.SetToolTip(this.pic_Exit, "Thoát Chương Trình");
+            this.pic_Exit.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Infor
             // 
@@ -238,7 +238,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.pic_Exit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
@@ -277,7 +277,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -300,7 +300,7 @@
         private System.Windows.Forms.ToolStripMenuItem cáNhânToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pic_Exit;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
