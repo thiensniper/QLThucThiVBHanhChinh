@@ -83,11 +83,10 @@ namespace QL_ThucThiVBHanhChinh
 
         private void timerLogin_Tick(object sender, EventArgs e)
         {
-            timerLogin.Enabled = !timerLogin.Enabled;
-            frmMain main = new frmMain();
+            timerLogin.Enabled = false;
+            frmMain main = new frmMain(user);
             this.Hide();
-            main.ShowDialog();
-           // this.Show();
+            main.Show();
         }
 
         private void pic_open_Click(object sender, EventArgs e)
