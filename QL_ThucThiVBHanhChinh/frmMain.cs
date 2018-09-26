@@ -74,5 +74,18 @@ namespace QL_ThucThiVBHanhChinh
             Document.ShowDialog();
             this.Show();
         }
+
+        private void pic_Unit_Click(object sender, EventArgs e)
+        {
+            frmUnit Unit = new frmUnit();
+            this.Hide();
+            Unit.ShowDialog();
+            this.Show();
+        }
+
+        private void pic_Statistical_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

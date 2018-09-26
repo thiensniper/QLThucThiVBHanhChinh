@@ -35,11 +35,8 @@
             this.cáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Setting = new System.Windows.Forms.ToolTip(this.components);
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Close = new System.Windows.Forms.ToolTip(this.components);
-            this.pic_Exit = new System.Windows.Forms.PictureBox();
             this.Infor = new System.Windows.Forms.ToolTip(this.components);
-            this.picPersonal = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,16 +47,19 @@
             this.pic_Document = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblWelcome = new System.Windows.Forms.Label();
+            this.picPersonal = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pic_Exit = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPersonal)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Statistical)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Unit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Document)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPersonal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Exit)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -106,55 +106,16 @@
             // 
             this.Setting.ToolTipTitle = "Cài Đặt";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_settings_1000;
-            this.pictureBox2.Location = new System.Drawing.Point(805, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.Setting.SetToolTip(this.pictureBox2, "Cài đặt hệ thống");
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // Close
             // 
             this.Close.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Error;
             this.Close.ToolTipTitle = "Close";
-            // 
-            // pic_Exit
-            // 
-            this.pic_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pic_Exit.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_multiply_1000;
-            this.pic_Exit.Location = new System.Drawing.Point(846, 6);
-            this.pic_Exit.Name = "pic_Exit";
-            this.pic_Exit.Size = new System.Drawing.Size(35, 35);
-            this.pic_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Exit.TabIndex = 0;
-            this.pic_Exit.TabStop = false;
-            this.Close.SetToolTip(this.pic_Exit, "Thoát Chương Trình");
-            this.pic_Exit.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Infor
             // 
             this.Infor.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.Infor.ToolTipTitle = "Hồ Sơ";
             this.Infor.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
-            // 
-            // picPersonal
-            // 
-            this.picPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPersonal.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_customer_1000;
-            this.picPersonal.Location = new System.Drawing.Point(764, 6);
-            this.picPersonal.Name = "picPersonal";
-            this.picPersonal.Size = new System.Drawing.Size(35, 35);
-            this.picPersonal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPersonal.TabIndex = 0;
-            this.picPersonal.TabStop = false;
-            this.Infor.SetToolTip(this.picPersonal, "Thông tin cá nhân của bạn");
-            this.picPersonal.Click += new System.EventHandler(this.picPersonal_Click);
             // 
             // panel2
             // 
@@ -168,7 +129,7 @@
             this.panel2.Controls.Add(this.pic_Unit);
             this.panel2.Controls.Add(this.pic_Document);
             this.panel2.Location = new System.Drawing.Point(0, 70);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(887, 458);
             this.panel2.TabIndex = 4;
@@ -178,7 +139,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_statistics_240;
             this.pictureBox1.Location = new System.Drawing.Point(400, 320);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(63, 76);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -225,12 +186,13 @@
             this.pic_Statistical.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_Statistical.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_statistics_240;
             this.pic_Statistical.Location = new System.Drawing.Point(647, 17);
-            this.pic_Statistical.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_Statistical.Margin = new System.Windows.Forms.Padding(2);
             this.pic_Statistical.Name = "pic_Statistical";
             this.pic_Statistical.Size = new System.Drawing.Size(200, 200);
             this.pic_Statistical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Statistical.TabIndex = 0;
             this.pic_Statistical.TabStop = false;
+            this.pic_Statistical.Click += new System.EventHandler(this.pic_Statistical_Click);
             // 
             // pic_Unit
             // 
@@ -238,12 +200,13 @@
             this.pic_Unit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_Unit.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_user_groups_240;
             this.pic_Unit.Location = new System.Drawing.Point(356, 17);
-            this.pic_Unit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_Unit.Margin = new System.Windows.Forms.Padding(2);
             this.pic_Unit.Name = "pic_Unit";
             this.pic_Unit.Size = new System.Drawing.Size(200, 200);
             this.pic_Unit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Unit.TabIndex = 0;
             this.pic_Unit.TabStop = false;
+            this.pic_Unit.Click += new System.EventHandler(this.pic_Unit_Click);
             // 
             // pic_Document
             // 
@@ -251,7 +214,7 @@
             this.pic_Document.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_Document.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_file_480;
             this.pic_Document.Location = new System.Drawing.Point(34, 17);
-            this.pic_Document.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_Document.Margin = new System.Windows.Forms.Padding(2);
             this.pic_Document.Name = "pic_Document";
             this.pic_Document.Size = new System.Drawing.Size(200, 200);
             this.pic_Document.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -283,6 +246,45 @@
             this.lblWelcome.TabIndex = 1;
             this.lblWelcome.Text = "Xin Chào ....";
             // 
+            // picPersonal
+            // 
+            this.picPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPersonal.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_customer_1000;
+            this.picPersonal.Location = new System.Drawing.Point(764, 6);
+            this.picPersonal.Name = "picPersonal";
+            this.picPersonal.Size = new System.Drawing.Size(35, 35);
+            this.picPersonal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPersonal.TabIndex = 0;
+            this.picPersonal.TabStop = false;
+            this.Infor.SetToolTip(this.picPersonal, "Thông tin cá nhân của bạn");
+            this.picPersonal.Click += new System.EventHandler(this.picPersonal_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_settings_1000;
+            this.pictureBox2.Location = new System.Drawing.Point(805, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.Setting.SetToolTip(this.pictureBox2, "Cài đặt hệ thống");
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pic_Exit
+            // 
+            this.pic_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_Exit.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_multiply_1000;
+            this.pic_Exit.Location = new System.Drawing.Point(846, 6);
+            this.pic_Exit.Name = "pic_Exit";
+            this.pic_Exit.Size = new System.Drawing.Size(35, 35);
+            this.pic_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Exit.TabIndex = 0;
+            this.pic_Exit.TabStop = false;
+            this.Close.SetToolTip(this.pic_Exit, "Thoát Chương Trình");
+            this.pic_Exit.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,9 +305,6 @@
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPersonal)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -314,6 +313,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_Document)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPersonal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Exit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
