@@ -25,9 +25,7 @@ namespace QL_ThucThiVBHanhChinh
         private void pictureBox4_Click(object sender, EventArgs e)
         {
            // MessageBox.Show("Bạn có chắc chắn muốn thoát khỏi phần cài đặt chương trình hay không? ", "THÔNG BÁO", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-            frmMain main = new frmMain();
             this.Close();
-            main.ShowDialog();
         }
     }
 }

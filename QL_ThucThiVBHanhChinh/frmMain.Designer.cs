@@ -39,7 +39,7 @@
             this.Close = new System.Windows.Forms.ToolTip(this.components);
             this.pic_Exit = new System.Windows.Forms.PictureBox();
             this.Infor = new System.Windows.Forms.ToolTip(this.components);
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.picPersonal = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,11 +48,11 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblWelcome = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPersonal)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -67,8 +67,8 @@
             this.hệThốngToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(887, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1183, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -79,25 +79,25 @@
             this.cáNhânToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
             this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
-            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.hệThốngToolStripMenuItem.Text = "Hệ thống";
             // 
             // càiĐặtToolStripMenuItem
             // 
             this.càiĐặtToolStripMenuItem.Name = "càiĐặtToolStripMenuItem";
-            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.càiĐặtToolStripMenuItem.Text = "Cài Đặt";
             // 
             // cáNhânToolStripMenuItem
             // 
             this.cáNhânToolStripMenuItem.Name = "cáNhânToolStripMenuItem";
-            this.cáNhânToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.cáNhânToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.cáNhânToolStripMenuItem.Text = "Cá Nhân";
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
             // 
             // Setting
@@ -107,9 +107,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_settings_1000;
-            this.pictureBox2.Location = new System.Drawing.Point(805, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(1073, 7);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox2.Size = new System.Drawing.Size(47, 43);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -124,9 +125,10 @@
             // pic_Exit
             // 
             this.pic_Exit.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_multiply_1000;
-            this.pic_Exit.Location = new System.Drawing.Point(846, 6);
+            this.pic_Exit.Location = new System.Drawing.Point(1128, 7);
+            this.pic_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.pic_Exit.Name = "pic_Exit";
-            this.pic_Exit.Size = new System.Drawing.Size(35, 35);
+            this.pic_Exit.Size = new System.Drawing.Size(47, 43);
             this.pic_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Exit.TabIndex = 0;
             this.pic_Exit.TabStop = false;
@@ -139,17 +141,18 @@
             this.Infor.ToolTipTitle = "Hồ Sơ";
             this.Infor.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
-            // pictureBox3
+            // picPersonal
             // 
-            this.pictureBox3.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_customer_1000;
-            this.pictureBox3.Location = new System.Drawing.Point(764, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            this.Infor.SetToolTip(this.pictureBox3, "Thông tin cá nhân của bạn");
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.picPersonal.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_customer_1000;
+            this.picPersonal.Location = new System.Drawing.Point(1019, 7);
+            this.picPersonal.Margin = new System.Windows.Forms.Padding(4);
+            this.picPersonal.Name = "picPersonal";
+            this.picPersonal.Size = new System.Drawing.Size(47, 43);
+            this.picPersonal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPersonal.TabIndex = 0;
+            this.picPersonal.TabStop = false;
+            this.Infor.SetToolTip(this.picPersonal, "Thông tin cá nhân của bạn");
+            this.picPersonal.Click += new System.EventHandler(this.picPersonal_Click);
             // 
             // panel2
             // 
@@ -161,9 +164,10 @@
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Location = new System.Drawing.Point(0, 71);
+            this.panel2.Location = new System.Drawing.Point(0, 87);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(887, 470);
+            this.panel2.Size = new System.Drawing.Size(1183, 578);
             this.panel2.TabIndex = 4;
             // 
             // label4
@@ -171,9 +175,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(697, 256);
+            this.label4.Location = new System.Drawing.Point(929, 315);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 20);
+            this.label4.Size = new System.Drawing.Size(116, 25);
             this.label4.TabIndex = 1;
             this.label4.Text = "THỐNG KÊ";
             // 
@@ -182,9 +187,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(376, 256);
+            this.label3.Location = new System.Drawing.Point(501, 315);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 20);
+            this.label3.Size = new System.Drawing.Size(172, 25);
             this.label3.TabIndex = 1;
             this.label3.Text = "QUẢN LÝ ĐƠN VỊ";
             // 
@@ -193,9 +199,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 256);
+            this.label2.Location = new System.Drawing.Point(16, 315);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(258, 20);
+            this.label2.Size = new System.Drawing.Size(320, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "QUẢN LÝ VĂN BẢN HÀNH CHÍNH";
             // 
@@ -203,9 +210,10 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_statistics_240;
-            this.pictureBox6.Location = new System.Drawing.Point(650, 21);
+            this.pictureBox6.Location = new System.Drawing.Point(867, 26);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(190, 199);
+            this.pictureBox6.Size = new System.Drawing.Size(253, 245);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
@@ -214,9 +222,10 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_user_groups_240;
-            this.pictureBox5.Location = new System.Drawing.Point(354, 21);
+            this.pictureBox5.Location = new System.Drawing.Point(472, 26);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(190, 199);
+            this.pictureBox5.Size = new System.Drawing.Size(253, 245);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
@@ -225,9 +234,10 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_file_480;
-            this.pictureBox4.Location = new System.Drawing.Point(45, 21);
+            this.pictureBox4.Location = new System.Drawing.Point(60, 26);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(190, 199);
+            this.pictureBox4.Size = new System.Drawing.Size(253, 245);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
@@ -235,40 +245,42 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::QL_ThucThiVBHanhChinh.Properties.Resources.trang1;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.lblWelcome);
+            this.panel1.Controls.Add(this.picPersonal);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pic_Exit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(887, 46);
+            this.panel1.Size = new System.Drawing.Size(1183, 57);
             this.panel1.TabIndex = 3;
             // 
-            // label1
+            // lblWelcome
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(660, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Xin Chào ....";
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
+            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.Location = new System.Drawing.Point(16, 16);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(130, 25);
+            this.lblWelcome.TabIndex = 1;
+            this.lblWelcome.Text = "Xin Chào ....";
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(887, 570);
+            this.ClientSize = new System.Drawing.Size(1183, 702);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -278,7 +290,7 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPersonal)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -301,9 +313,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pic_Exit;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox picPersonal;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.ToolTip Setting;
         private System.Windows.Forms.ToolTip Close;
         private System.Windows.Forms.ToolTip Infor;

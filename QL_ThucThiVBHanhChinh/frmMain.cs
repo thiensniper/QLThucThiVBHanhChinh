@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QL_ThucThiVBHanhChinh.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,21 +13,28 @@ namespace QL_ThucThiVBHanhChinh
 {
     public partial class frmMain : Form
     {
+        private User user;
         public frmMain()
         {
             InitializeComponent();
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
+        public frmMain(User user): this()
         {
-
+            this.user = user;
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            lblWelcome.Text = "Xin chào " + user.Fullname + "!";
+        }
+
+        private void picPersonal_Click(object sender, EventArgs e)
         {
             frmPersonal Personal = new frmPersonal();
             this.Hide();
             Personal.ShowDialog();
+            this.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -44,6 +52,7 @@ namespace QL_ThucThiVBHanhChinh
             frmSetting setting = new frmSetting();
             this.Hide();
             setting.ShowDialog();
+            this.Show();
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
