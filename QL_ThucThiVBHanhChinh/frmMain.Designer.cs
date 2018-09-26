@@ -108,6 +108,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_settings_1000;
             this.pictureBox2.Location = new System.Drawing.Point(805, 6);
             this.pictureBox2.Name = "pictureBox2";
@@ -125,6 +126,7 @@
             // 
             // pic_Exit
             // 
+            this.pic_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_Exit.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_multiply_1000;
             this.pic_Exit.Location = new System.Drawing.Point(846, 6);
             this.pic_Exit.Name = "pic_Exit";
@@ -143,6 +145,7 @@
             // 
             // picPersonal
             // 
+            this.picPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPersonal.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_customer_1000;
             this.picPersonal.Location = new System.Drawing.Point(764, 6);
             this.picPersonal.Name = "picPersonal";
@@ -219,6 +222,7 @@
             // pic_Statistical
             // 
             this.pic_Statistical.BackColor = System.Drawing.Color.Transparent;
+            this.pic_Statistical.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_Statistical.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_statistics_240;
             this.pic_Statistical.Location = new System.Drawing.Point(647, 17);
             this.pic_Statistical.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -231,6 +235,7 @@
             // pic_Unit
             // 
             this.pic_Unit.BackColor = System.Drawing.Color.Transparent;
+            this.pic_Unit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_Unit.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_user_groups_240;
             this.pic_Unit.Location = new System.Drawing.Point(356, 17);
             this.pic_Unit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -243,6 +248,7 @@
             // pic_Document
             // 
             this.pic_Document.BackColor = System.Drawing.Color.Transparent;
+            this.pic_Document.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_Document.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_file_480;
             this.pic_Document.Location = new System.Drawing.Point(34, 17);
             this.pic_Document.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
