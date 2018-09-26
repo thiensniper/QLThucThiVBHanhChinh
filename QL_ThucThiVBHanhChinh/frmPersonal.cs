@@ -30,5 +30,16 @@ namespace QL_ThucThiVBHanhChinh
             this.Close();
             main.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            btnSave.Show();
+            btnCancel.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

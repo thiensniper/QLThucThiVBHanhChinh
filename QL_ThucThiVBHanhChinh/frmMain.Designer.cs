@@ -44,20 +44,22 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pic_Statistical = new System.Windows.Forms.PictureBox();
+            this.pic_Unit = new System.Windows.Forms.PictureBox();
+            this.pic_Document = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Statistical)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Unit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Document)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -155,12 +157,13 @@
             // 
             this.panel2.BackgroundImage = global::QL_ThucThiVBHanhChinh.Properties.Resources.fix224;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.pic_Statistical);
+            this.panel2.Controls.Add(this.pic_Unit);
+            this.panel2.Controls.Add(this.pic_Document);
             this.panel2.Location = new System.Drawing.Point(0, 71);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(887, 470);
@@ -199,38 +202,39 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "QUẢN LÝ VĂN BẢN HÀNH CHÍNH";
             // 
-            // pictureBox6
+            // pic_Statistical
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_statistics_240;
-            this.pictureBox6.Location = new System.Drawing.Point(650, 21);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(190, 199);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
+            this.pic_Statistical.BackColor = System.Drawing.Color.Transparent;
+            this.pic_Statistical.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_statistics_240;
+            this.pic_Statistical.Location = new System.Drawing.Point(650, 21);
+            this.pic_Statistical.Name = "pic_Statistical";
+            this.pic_Statistical.Size = new System.Drawing.Size(190, 199);
+            this.pic_Statistical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Statistical.TabIndex = 0;
+            this.pic_Statistical.TabStop = false;
             // 
-            // pictureBox5
+            // pic_Unit
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_user_groups_240;
-            this.pictureBox5.Location = new System.Drawing.Point(354, 21);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(190, 199);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.pic_Unit.BackColor = System.Drawing.Color.Transparent;
+            this.pic_Unit.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_user_groups_240;
+            this.pic_Unit.Location = new System.Drawing.Point(354, 21);
+            this.pic_Unit.Name = "pic_Unit";
+            this.pic_Unit.Size = new System.Drawing.Size(190, 199);
+            this.pic_Unit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Unit.TabIndex = 0;
+            this.pic_Unit.TabStop = false;
             // 
-            // pictureBox4
+            // pic_Document
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_file_480;
-            this.pictureBox4.Location = new System.Drawing.Point(45, 21);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(190, 199);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.pic_Document.BackColor = System.Drawing.Color.Transparent;
+            this.pic_Document.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_file_480;
+            this.pic_Document.Location = new System.Drawing.Point(45, 21);
+            this.pic_Document.Name = "pic_Document";
+            this.pic_Document.Size = new System.Drawing.Size(190, 199);
+            this.pic_Document.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Document.TabIndex = 0;
+            this.pic_Document.TabStop = false;
+            this.pic_Document.Click += new System.EventHandler(this.pic_Document_Click);
             // 
             // panel1
             // 
@@ -255,6 +259,18 @@
             this.label1.Size = new System.Drawing.Size(98, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Xin Chào ....";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_statistics_240;
+            this.pictureBox1.Location = new System.Drawing.Point(557, 288);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(84, 94);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // frmMain
             // 
@@ -281,11 +297,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Statistical)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Unit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Document)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,11 +324,12 @@
         private System.Windows.Forms.ToolTip Setting;
         private System.Windows.Forms.ToolTip Close;
         private System.Windows.Forms.ToolTip Infor;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pic_Document;
+        private System.Windows.Forms.PictureBox pic_Unit;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pic_Statistical;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

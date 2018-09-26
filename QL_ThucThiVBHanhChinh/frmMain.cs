@@ -52,5 +52,17 @@ namespace QL_ThucThiVBHanhChinh
             this.Hide();
             Personal.ShowDialog();
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pic_Document_Click(object sender, EventArgs e)
+        {
+            frmDocumentary Document = new frmDocumentary();
+            this.Hide();
+            Document.Show();
+        }
     }
 }
