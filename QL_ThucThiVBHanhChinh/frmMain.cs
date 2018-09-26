@@ -14,19 +14,24 @@ namespace QL_ThucThiVBHanhChinh
     public partial class frmMain : Form
     {
         private User user;
+        private bool logedOn;
         public frmMain()
         {
             InitializeComponent();
         }
 
-        public frmMain(User user): this()
+        public frmMain(User user, bool logedOn): this()
         {
             this.user = user;
+            this.logedOn = logedOn;
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            lblWelcome.Text = "Xin chào " + user.Fullname + "!";
+            if (user != null && logedOn)
+                lblWelcome.Text = "Xin chào " + user.Fullname + "!";
+            else
+                Application.Exit();
         }
 
         private void picPersonal_Click(object sender, EventArgs e)

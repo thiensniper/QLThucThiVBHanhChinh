@@ -16,7 +16,7 @@ namespace QL_ThucThiVBHanhChinh
     public partial class frmLogin : Form
     {
         #region Properties
-        private bool logOn;
+        private bool logedOn;
         private User user;
         #endregion
 
@@ -34,13 +34,14 @@ namespace QL_ThucThiVBHanhChinh
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            logOn = false;
+            logedOn = false;
             pic_open.Hide();
             timerLogin.Enabled = false;
         }
 
         private async void btnLogin_Click(object sender, EventArgs e)
         {
+            btnLogin.Enabled = false;
             List<User> listUser;
             listUser = await UserDAO.Instance.getUsers();
             if(listUser != null)
@@ -50,33 +51,31 @@ namespace QL_ThucThiVBHanhChinh
                     Console.WriteLine(data.ToString());
                     if(txtUsername.Text == data.Username && txtPassword.Text == data.Password && data.Status == "true")
                     {
-                        logOn = true;
+                        logedOn = true;
                         user = data;
                         break;
-                    }
-                    else
-                    {
-
                     }
                 }
             }
 
 
-
-            if (logOn == true && user.Status == "true")
+            // Xử lý đăng nhập thành công hay không thành công
+            if (logedOn == true && user.Status == "true") // Thành công
             {
+                // Làm màu :))
                 pic_open.Show();
                 pic_clock.Hide();
-                //this.Close();
+
+                // Xử lý đăng nhập
                 timerLogin.Enabled = true;
             }
-            else
+            else // Không thành công
             {
+                btnLogin.Enabled = true;
                 dem=dem+1;
                 if (dem == 4) { MessageBox.Show("Bạn đã nhập sai quá nhiều lần, vui lòng đăng nhập lại sau", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning); Application.Exit(); }
                 MessageBox.Show("Tài khoản hoặc mật khẩu bạn vừa nhập không đúng, vui lòng kiểm tra và thử lại !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            //this.Hide();
         }
 
         #endregion
@@ -84,7 +83,7 @@ namespace QL_ThucThiVBHanhChinh
         private void timerLogin_Tick(object sender, EventArgs e)
         {
             timerLogin.Enabled = false;
-            frmMain main = new frmMain(user);
+            frmMain main = new frmMain(user, logedOn);
             this.Hide();
             main.Show();
         }

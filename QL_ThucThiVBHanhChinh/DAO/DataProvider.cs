@@ -54,7 +54,8 @@ namespace QL_ThucThiVBHanhChinh.DAO
             }
             catch(Exception message)
             {
-                MessageBox.Show("Cannot get data!\n" + message.ToString(), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Console.WriteLine(message.ToString());
+                MessageBox.Show("Cannot get data!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
         }
