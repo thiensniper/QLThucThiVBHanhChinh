@@ -8,12 +8,28 @@ namespace QL_ThucThiVBHanhChinh.DTO
 {
     public class User
     {
+        private string id;
         private string username;
         private string fullname;
         private string email;
+        private string phone;
+        private string position;
         private string role;
         private string password;
         private string status;
+
+        public string Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
+        }
 
         public string Username
         {
@@ -27,6 +43,7 @@ namespace QL_ThucThiVBHanhChinh.DTO
                 username = value;
             }
         }
+
         public string Fullname
         {
             get
@@ -50,6 +67,32 @@ namespace QL_ThucThiVBHanhChinh.DTO
             set
             {
                 email = value;
+            }
+        }
+
+        public string Phone
+        {
+            get
+            {
+                return phone;
+            }
+
+            set
+            {
+                phone = value;
+            }
+        }
+
+        public string Position
+        {
+            get
+            {
+                return position;
+            }
+
+            set
+            {
+                position = value;
             }
         }
 

@@ -36,7 +36,7 @@ namespace QL_ThucThiVBHanhChinh
 
         private void picPersonal_Click(object sender, EventArgs e)
         {
-            frmPersonal Personal = new frmPersonal();
+            frmPersonal Personal = new frmPersonal(user);
             this.Hide();
             Personal.ShowDialog();
             this.Show();
