@@ -59,5 +59,20 @@ namespace QL_ThucThiVBHanhChinh.DAO
                 return null;
             }
         }
+
+        public async Task<SetResponse> Set<T>(string urlSet, T obj)
+        {
+            try
+            {
+                SetResponse response = await client.SetAsync(urlSet, obj);
+                return response;
+            }
+            catch(Exception message)
+            {
+                Console.WriteLine(message.ToString());
+                MessageBox.Show("Cannot connect to server!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
     }
 }
