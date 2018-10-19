@@ -134,7 +134,7 @@ namespace QL_ThucThiVBHanhChinh
 
         private async void btnSave_Click(object sender, EventArgs e)
         {
-            User updateUser = user;
+            User updateUser = new User(user);
             if (enableUserInfo == true)
             {
                 // Xử lý tác vụ cập nhật thông tin user
@@ -160,19 +160,21 @@ namespace QL_ThucThiVBHanhChinh
 
             }
             // Xử lý cập nhật dữ liệu
-            updateUser = await UserDAO.Instance.setUser(updateUser);
-            if (updateUser == user)
+            User tempUser = new User();
+            tempUser = await UserDAO.Instance.updateUser(updateUser);
+            if (tempUser == null || tempUser.Equals(user))// Có j đó hơi sai sai
             {
                 MessageBox.Show("Không cập nhật được thông tin người dùng", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                setTextBoxInfoUser(user);
             }
             else
             {
                 MessageBox.Show("Đã cập nhật thông tin thành công", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                user = updateUser;
+                setTextBoxInfoUser(tempUser);
             }
 
             // Xử lý giao diện
-            setTextBoxInfoUser(user);
+            //setTextBoxInfoUser(user);
             enableUserInfo = false;
             enableChangePassword = false;
             visibleButtonSave_Cancel = false;
