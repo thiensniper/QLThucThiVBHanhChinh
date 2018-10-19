@@ -150,6 +150,7 @@
     <Compile Include="frmDocumentary.Designer.cs">
       <DependentUpon>frmDocumentary.cs</DependentUpon>
     </Compile>
+    <Compile Include="SessionInfo.cs" />
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>

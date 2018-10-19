@@ -15,11 +15,6 @@ namespace QL_ThucThiVBHanhChinh
 {
     public partial class frmLogin : Form
     {
-        #region Properties
-        private bool logedOn;
-        private User user;
-        #endregion
-
         #region Methods
         public frmLogin()
         {
@@ -34,7 +29,7 @@ namespace QL_ThucThiVBHanhChinh
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            logedOn = false;
+            SessionInfo.logedOn = false;
             pic_open.Hide();
             timerLogin.Enabled = false;
         }
@@ -51,8 +46,8 @@ namespace QL_ThucThiVBHanhChinh
                     Console.WriteLine(data.ToString());
                     if(txtUsername.Text == data.Username && txtPassword.Text == data.Password && data.Status == "true")
                     {
-                        logedOn = true;
-                        user = data;
+                        SessionInfo.logedOn = true;
+                        SessionInfo.user = data;
                         break;
                     }
                 }
@@ -60,7 +55,7 @@ namespace QL_ThucThiVBHanhChinh
 
 
             // Xử lý đăng nhập thành công hay không thành công
-            if (logedOn == true && user.Status == "true") // Thành công
+            if (SessionInfo.logedOn == true && SessionInfo.user.Status == "true") // Thành công
             {
                 // Làm màu :))
                 pic_open.Show();
@@ -83,7 +78,7 @@ namespace QL_ThucThiVBHanhChinh
         private void timerLogin_Tick(object sender, EventArgs e)
         {
             timerLogin.Enabled = false;
-            frmMain main = new frmMain(user, logedOn);
+            frmMain main = new frmMain();
             this.Hide();
             main.Show();
         }

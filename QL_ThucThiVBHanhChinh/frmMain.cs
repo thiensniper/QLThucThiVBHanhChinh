@@ -13,30 +13,23 @@ namespace QL_ThucThiVBHanhChinh
 {
     public partial class frmMain : Form
     {
-        private User user;
         //public static bool logedOn;
         public frmMain()
         {
             InitializeComponent();
         }
 
-        public frmMain(User user, bool logOn): this()
-        {
-            this.user = user;
-            Program.logedOn = logOn;
-        }
-
         private void frmMain_Load(object sender, EventArgs e)
         {
-            if (user != null && Program.logedOn)
-                lblWelcome.Text = "Xin chào " + user.Fullname + "!";
+            if (SessionInfo.user != null && SessionInfo.logedOn)
+                lblWelcome.Text = "Xin chào " + SessionInfo.user.Fullname + "!";
             else
                 Application.Exit();
         }
 
         private void picPersonal_Click(object sender, EventArgs e)
         {
-            frmPersonal Personal = new frmPersonal(ref user);
+            frmPersonal Personal = new frmPersonal();
             this.Hide();
             Personal.ShowDialog();
             this.Show();

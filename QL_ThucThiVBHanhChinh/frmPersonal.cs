@@ -14,8 +14,6 @@ namespace QL_ThucThiVBHanhChinh
 {
     public partial class frmPersonal : Form
     {
-        private User user;
-
         #region Interface
         private bool visibleButtonSave_Cancel
         {
@@ -79,14 +77,9 @@ namespace QL_ThucThiVBHanhChinh
             InitializeComponent();
         }
 
-        public frmPersonal(ref User user): this()
-        {
-            this.user = user;
-        }
-
         private void frmPersonal_Load(object sender, EventArgs e)
         {
-            if (user == null) // Kiểm tra xem có user truyền vào không
+            if (SessionInfo.user == null) // Kiểm tra xem có user truyền vào không
                 Application.Exit();
 
             // Xử lý giao diện
@@ -95,7 +88,7 @@ namespace QL_ThucThiVBHanhChinh
             enableChangePassword = false;
 
             // Truyền data
-            setTextBoxInfoUser(user);
+            setTextBoxInfoUser(SessionInfo.user);
         }
 
         private void picBack_Click(object sender, EventArgs e)
@@ -129,12 +122,12 @@ namespace QL_ThucThiVBHanhChinh
             enableUserInfo = false;
 
             // Hủy việc sửa đổi thông tin user
-            setTextBoxInfoUser(user);
+            setTextBoxInfoUser(SessionInfo.user);
         }
 
         private async void btnSave_Click(object sender, EventArgs e)
         {
-            User updateUser = new User(user);
+            User updateUser = new User(SessionInfo.user);
             if (enableUserInfo == true)
             {
                 // Xử lý tác vụ cập nhật thông tin user
@@ -145,7 +138,7 @@ namespace QL_ThucThiVBHanhChinh
             if (enableChangePassword == true)
             {
                 // Xử lý tác vụ cập nhật password
-                if (txtOldPassword.Text == user.Password)
+                if (txtOldPassword.Text == SessionInfo.user.Password)
                 {
                     if (txtNewPassword.Text == txtConfirmPassword.Text)
                     {
@@ -165,20 +158,20 @@ namespace QL_ThucThiVBHanhChinh
             }
             // Xử lý cập nhật dữ liệu
             bool updated = false;
-            if (!updateUser.equal(user)) // Kiểm tra thông tin mới có giống thông tin cũ hay ko
+            if (!updateUser.equal(SessionInfo.user)) // Kiểm tra thông tin mới có giống thông tin cũ hay ko
             {
                 updated = await UserDAO.Instance.updateUser(updateUser);
             }
             if (updated == true)
             {
                 MessageBox.Show("Đã cập nhật thông tin thành công", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                user = updateUser;
-                setTextBoxInfoUser(user);
+                SessionInfo.user = updateUser;
+                setTextBoxInfoUser(SessionInfo.user);
             }
             else
             {
                 MessageBox.Show("Không cập nhật được thông tin người dùng", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                setTextBoxInfoUser(user);
+                setTextBoxInfoUser(SessionInfo.user);
             }
 
             // Xử lý giao diện
