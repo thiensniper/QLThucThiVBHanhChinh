@@ -8,6 +8,7 @@ namespace QL_ThucThiVBHanhChinh
 {
     static class Program
     {
+        public static bool logedOn; // Lưu trạng thái đăng nhập của người dùng
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

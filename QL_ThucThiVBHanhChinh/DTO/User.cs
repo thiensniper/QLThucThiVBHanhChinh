@@ -171,6 +171,14 @@ namespace QL_ThucThiVBHanhChinh.DTO
             this.password = user.password;
             this.status = user.status;
         }
+        
+        public bool equal(User user)
+        {
+            return (this.id == user.id && this.username == user.username && this.fullname == user.fullname &&
+                this.email == user.email && this.phone == user.phone && this.position == user.position &&
+                this.idFaculty == user.idFaculty && this.role == user.role && this.password == user.password &&
+                this.status == user.status);
+        }
 
         public override string ToString()
         {

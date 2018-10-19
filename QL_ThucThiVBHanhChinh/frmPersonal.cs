@@ -47,7 +47,7 @@ namespace QL_ThucThiVBHanhChinh
         {
             get
             {
-                return groupBoxPassword.Visible;
+                return txtOldPassword.Enabled;
             }
             set
             {
@@ -79,7 +79,7 @@ namespace QL_ThucThiVBHanhChinh
             InitializeComponent();
         }
 
-        public frmPersonal(User user): this()
+        public frmPersonal(ref User user): this()
         {
             this.user = user;
         }
@@ -157,20 +157,28 @@ namespace QL_ThucThiVBHanhChinh
                         return;
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Mật khẩu cũ không đúng!", "Thông báo!");
+                }
 
             }
             // Xử lý cập nhật dữ liệu
-            User tempUser = new User();
-            tempUser = await UserDAO.Instance.updateUser(updateUser);
-            if (tempUser == null || tempUser.Equals(user))// Có j đó hơi sai sai
+            bool updated = false;
+            if (!updateUser.equal(user)) // Kiểm tra thông tin mới có giống thông tin cũ hay ko
             {
-                MessageBox.Show("Không cập nhật được thông tin người dùng", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                updated = await UserDAO.Instance.updateUser(updateUser);
+            }
+            if (updated == true)
+            {
+                MessageBox.Show("Đã cập nhật thông tin thành công", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                user = updateUser;
                 setTextBoxInfoUser(user);
             }
             else
             {
-                MessageBox.Show("Đã cập nhật thông tin thành công", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                setTextBoxInfoUser(tempUser);
+                MessageBox.Show("Không cập nhật được thông tin người dùng", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                setTextBoxInfoUser(user);
             }
 
             // Xử lý giao diện
@@ -178,6 +186,11 @@ namespace QL_ThucThiVBHanhChinh
             enableUserInfo = false;
             enableChangePassword = false;
             visibleButtonSave_Cancel = false;
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
