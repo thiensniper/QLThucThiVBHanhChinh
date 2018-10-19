@@ -136,6 +136,9 @@
   <data name="icons8-user-groups-240" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-user-groups-240.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fix22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fix22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="khoa12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\khoa12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,20 +154,26 @@
   <data name="trang1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trang1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="c260a4eb41465ab6022687561cbbf61f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c260a4eb41465ab6022687561cbbf61f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1-X09_RkDbOIhwQHQd4it-Ew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1-X09_RkDbOIhwQHQd4it-Ew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-home-page-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-home-page-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="khoa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\khoa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logomoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logomoi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="nhansu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nhansu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled-231" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-231.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-file-480" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-file-480.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-hide-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-hide-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fix222" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fix222.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,9 +205,6 @@
   <data name="Untitled-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nhansu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nhansu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-new-window-1000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-new-window-1000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,11 +214,8 @@
   <data name="Security-Denied-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Security-Denied-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="khoa11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\khoa11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nhansu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nhansu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logomoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logomoi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fix2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fix2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,14 +226,17 @@
   <data name="Graphicloads-Polygon-Lock-unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Graphicloads-Polygon-Lock-unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled-22(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled-22(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-hide-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-hide-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="world-map-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\world-map-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="c260a4eb41465ab6022687561cbbf61f" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\c260a4eb41465ab6022687561cbbf61f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="khoa11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\khoa11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled-22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fix223" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fix223.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,11 +250,14 @@
   <data name="icons8-multiply-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-multiply-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Untitled-22(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-22(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-go-back-240" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-go-back-240.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-minimize-window-1000" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-minimize-window-1000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trang2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trang2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fix" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,25 +265,19 @@
   <data name="Untitled-23" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled-23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled-22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled-22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-multiply-1000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-multiply-1000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fix221" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fix221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1-X09_RkDbOIhwQHQd4it-Ew" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1-X09_RkDbOIhwQHQd4it-Ew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-minimize-window-1000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-minimize-window-1000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fix22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fix22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="nhansu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nhansu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trang2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trang2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Untitled-231" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled-231.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

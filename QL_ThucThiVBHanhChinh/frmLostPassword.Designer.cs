@@ -28,12 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.pic_open = new System.Windows.Forms.PictureBox();
+            this.Id_tool = new System.Windows.Forms.ToolTip(this.components);
+            this.Email_tool = new System.Windows.Forms.ToolTip(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pic_open)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsername
@@ -48,6 +53,7 @@
             this.txtUsername.Size = new System.Drawing.Size(252, 37);
             this.txtUsername.TabIndex = 5;
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Id_tool.SetToolTip(this.txtUsername, "Vui lòng nhập vào tài khoản của bạn đã đăng kí trên hệ thống dữ liệu");
             // 
             // txtPassword
             // 
@@ -61,6 +67,8 @@
             this.txtPassword.Size = new System.Drawing.Size(252, 37);
             this.txtPassword.TabIndex = 6;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Email_tool.SetToolTip(this.txtPassword, "Vui lòng nhập vào Email của bạn đã đăng kí trên hệ thống dữ liệu để nhận một mật " +
+        "khẩu mới");
             // 
             // label1
             // 
@@ -118,12 +126,33 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // pic_open
+            // 
+            this.pic_open.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.khoa12;
+            this.pic_open.Location = new System.Drawing.Point(37, 97);
+            this.pic_open.Name = "pic_open";
+            this.pic_open.Size = new System.Drawing.Size(93, 88);
+            this.pic_open.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_open.TabIndex = 9;
+            this.pic_open.TabStop = false;
+            // 
+            // Id_tool
+            // 
+            this.Id_tool.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.Id_tool.ToolTipTitle = "Tài Khoản";
+            // 
+            // Email_tool
+            // 
+            this.Email_tool.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
+            this.Email_tool.ToolTipTitle = "Email";
+            // 
             // frmLostPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QL_ThucThiVBHanhChinh.Properties.Resources.Untitled_231;
             this.ClientSize = new System.Drawing.Size(595, 246);
+            this.Controls.Add(this.pic_open);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtUsername);
@@ -134,6 +163,7 @@
             this.Name = "frmLostPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLostPassword";
+            ((System.ComponentModel.ISupportInitialize)(this.pic_open)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,5 +177,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.PictureBox pic_open;
+        private System.Windows.Forms.ToolTip Id_tool;
+        private System.Windows.Forms.ToolTip Email_tool;
     }
 }

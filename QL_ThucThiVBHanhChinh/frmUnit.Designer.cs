@@ -29,15 +29,19 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pn2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.picBack = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnQLVB = new System.Windows.Forms.Button();
+            this.btnThongBao = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuiVB = new System.Windows.Forms.Button();
+            this.pn1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.pn2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBack)).BeginInit();
             this.panel2.SuspendLayout();
@@ -46,14 +50,45 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::QL_ThucThiVBHanhChinh.Properties.Resources.trang;
+            this.panel1.Controls.Add(this.pn2);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.picBack);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(750, 57);
             this.panel1.TabIndex = 3;
+            // 
+            // pn2
+            // 
+            this.pn2.Controls.Add(this.label2);
+            this.pn2.Location = new System.Drawing.Point(159, 57);
+            this.pn2.Name = "pn2";
+            this.pn2.Size = new System.Drawing.Size(545, 281);
+            this.pn2.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(22, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 31);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "panel 2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(203, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(446, 31);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "THÔNG TIN ĐƠN VỊ HÀNH CHÍNH";
             // 
             // pictureBox1
             // 
@@ -65,17 +100,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(180, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(446, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "THÔNG TIN ĐƠN VỊ HÀNH CHÍNH";
             // 
             // picBack
             // 
@@ -92,15 +116,50 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.panel2.Controls.Add(this.btnQLVB);
+            this.panel2.Controls.Add(this.btnThongBao);
             this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnGuiVB);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 57);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(159, 403);
             this.panel2.TabIndex = 4;
+            // 
+            // btnQLVB
+            // 
+            this.btnQLVB.BackColor = System.Drawing.Color.White;
+            this.btnQLVB.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnQLVB.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnQLVB.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnQLVB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnQLVB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQLVB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLVB.ForeColor = System.Drawing.Color.Black;
+            this.btnQLVB.Location = new System.Drawing.Point(-2, 101);
+            this.btnQLVB.Name = "btnQLVB";
+            this.btnQLVB.Size = new System.Drawing.Size(160, 50);
+            this.btnQLVB.TabIndex = 0;
+            this.btnQLVB.Text = "Quản Lý Văn Bản";
+            this.btnQLVB.UseVisualStyleBackColor = false;
+            // 
+            // btnThongBao
+            // 
+            this.btnThongBao.BackColor = System.Drawing.Color.White;
+            this.btnThongBao.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnThongBao.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnThongBao.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnThongBao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnThongBao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongBao.ForeColor = System.Drawing.Color.Black;
+            this.btnThongBao.Location = new System.Drawing.Point(-2, 1);
+            this.btnThongBao.Name = "btnThongBao";
+            this.btnThongBao.Size = new System.Drawing.Size(160, 50);
+            this.btnThongBao.TabIndex = 0;
+            this.btnThongBao.Text = "Thông Báo";
+            this.btnThongBao.UseVisualStyleBackColor = false;
+            this.btnThongBao.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -119,70 +178,48 @@
             this.button4.Text = "button1";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnGuiVB
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(-2, 51);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 50);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Gửi Văn Bản";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnGuiVB.BackColor = System.Drawing.Color.White;
+            this.btnGuiVB.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnGuiVB.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnGuiVB.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnGuiVB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnGuiVB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuiVB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuiVB.ForeColor = System.Drawing.Color.Black;
+            this.btnGuiVB.Location = new System.Drawing.Point(-2, 51);
+            this.btnGuiVB.Name = "btnGuiVB";
+            this.btnGuiVB.Size = new System.Drawing.Size(160, 50);
+            this.btnGuiVB.TabIndex = 0;
+            this.btnGuiVB.Text = "Gửi Văn Bản";
+            this.btnGuiVB.UseVisualStyleBackColor = false;
+            this.btnGuiVB.Click += new System.EventHandler(this.btnGuiVB_Click);
             // 
-            // button3
+            // pn1
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(-2, 101);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 50);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Quản Lý Văn Bản";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(-2, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Thông Báo";
-            this.button1.UseVisualStyleBackColor = false;
+            this.pn1.Location = new System.Drawing.Point(278, 108);
+            this.pn1.Name = "pn1";
+            this.pn1.Size = new System.Drawing.Size(385, 230);
+            this.pn1.TabIndex = 5;
             // 
             // frmUnit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 460);
+            this.Controls.Add(this.pn1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmUnit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUnit";
+            this.Load += new System.EventHandler(this.frmUnit_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.pn2.ResumeLayout(false);
+            this.pn2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBack)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -194,12 +231,15 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox picBack;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGuiVB;
+        private System.Windows.Forms.Button btnQLVB;
+        private System.Windows.Forms.Button btnThongBao;
+        private System.Windows.Forms.Panel pn2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel pn1;
     }
 }
