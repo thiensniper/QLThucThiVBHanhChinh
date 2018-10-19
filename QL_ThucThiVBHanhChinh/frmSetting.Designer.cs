@@ -31,11 +31,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_UploadEmail = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.picBack = new System.Windows.Forms.PictureBox();
-            this.btn_UploadEmail = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -48,14 +48,14 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 25);
+            this.label2.Size = new System.Drawing.Size(269, 25);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Thiết Đặt Email Gửi";
+            this.label2.Text = "Thiết Đặt Email Chương Trình";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(251, 19);
+            this.textBox1.Location = new System.Drawing.Point(276, 17);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(264, 32);
@@ -72,6 +72,20 @@
             this.groupBox1.Size = new System.Drawing.Size(762, 357);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
+            // 
+            // btn_UploadEmail
+            // 
+            this.btn_UploadEmail.BackColor = System.Drawing.Color.White;
+            this.btn_UploadEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UploadEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_UploadEmail.ForeColor = System.Drawing.Color.Black;
+            this.btn_UploadEmail.Location = new System.Drawing.Point(567, 16);
+            this.btn_UploadEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_UploadEmail.Name = "btn_UploadEmail";
+            this.btn_UploadEmail.Size = new System.Drawing.Size(164, 35);
+            this.btn_UploadEmail.TabIndex = 13;
+            this.btn_UploadEmail.Text = "Cập Nhật Email";
+            this.btn_UploadEmail.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -101,7 +115,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(304, 14);
+            this.label3.Location = new System.Drawing.Point(360, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 31);
             this.label3.TabIndex = 0;
@@ -118,20 +132,6 @@
             this.picBack.TabIndex = 1;
             this.picBack.TabStop = false;
             this.picBack.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // btn_UploadEmail
-            // 
-            this.btn_UploadEmail.BackColor = System.Drawing.Color.White;
-            this.btn_UploadEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_UploadEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_UploadEmail.ForeColor = System.Drawing.Color.Black;
-            this.btn_UploadEmail.Location = new System.Drawing.Point(567, 16);
-            this.btn_UploadEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_UploadEmail.Name = "btn_UploadEmail";
-            this.btn_UploadEmail.Size = new System.Drawing.Size(164, 35);
-            this.btn_UploadEmail.TabIndex = 13;
-            this.btn_UploadEmail.Text = "Cập Nhật Email";
-            this.btn_UploadEmail.UseVisualStyleBackColor = false;
             // 
             // frmSetting
             // 

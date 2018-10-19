@@ -92,5 +92,23 @@ namespace QL_ThucThiVBHanhChinh
         {
 
         }
+
+        private void frm1_Click(object sender, EventArgs e)
+        {
+            frmDocumentary frmTest = new frmDocumentary();
+            this.Hide();
+            frmTest.ShowDialog();
+            this.Show();
+        }
+
+        private void frm2_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void lblWelcome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

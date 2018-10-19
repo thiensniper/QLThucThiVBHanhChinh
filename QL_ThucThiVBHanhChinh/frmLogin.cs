@@ -121,5 +121,12 @@ namespace QL_ThucThiVBHanhChinh
             this.Hide();
             LostPass.ShowDialog();
         }
+
+        private void link_Register_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmRegister Register = new frmRegister();
+            this.Hide();
+            Register.ShowDialog();
+        }
     }
 }

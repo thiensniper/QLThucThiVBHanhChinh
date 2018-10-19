@@ -39,6 +39,7 @@
             this.timerLogin = new System.Windows.Forms.Timer(this.components);
             this.btnLogin = new System.Windows.Forms.Button();
             this.link_LostPass = new System.Windows.Forms.LinkLabel();
+            this.link_Register = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pic_clock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_open)).BeginInit();
             this.SuspendLayout();
@@ -144,6 +145,9 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
@@ -169,6 +173,19 @@
             this.link_LostPass.Text = "Quên mật khẩu !";
             this.link_LostPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_LostPass_LinkClicked);
             // 
+            // link_Register
+            // 
+            this.link_Register.AutoSize = true;
+            this.link_Register.BackColor = System.Drawing.Color.Transparent;
+            this.link_Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.link_Register.Location = new System.Drawing.Point(286, 176);
+            this.link_Register.Name = "link_Register";
+            this.link_Register.Size = new System.Drawing.Size(67, 20);
+            this.link_Register.TabIndex = 7;
+            this.link_Register.TabStop = true;
+            this.link_Register.Text = "Đăng ký";
+            this.link_Register.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_Register_LinkClicked);
+            // 
             // frmLogin
             // 
             this.AcceptButton = this.btnLogin;
@@ -177,6 +194,7 @@
             this.BackgroundImage = global::QL_ThucThiVBHanhChinh.Properties.Resources.Untitled_23;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(595, 246);
+            this.Controls.Add(this.link_Register);
             this.Controls.Add(this.link_LostPass);
             this.Controls.Add(this.pic_open);
             this.Controls.Add(this.pic_clock);
@@ -213,6 +231,7 @@
         private System.Windows.Forms.Timer timerLogin;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.LinkLabel link_LostPass;
+        private System.Windows.Forms.LinkLabel link_Register;
     }
 }
 
