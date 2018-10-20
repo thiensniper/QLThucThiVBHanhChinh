@@ -200,13 +200,8 @@
             this.btnChangeInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChangeInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnChangeInfo.ForeColor = System.Drawing.Color.Black;
-<<<<<<< HEAD
-            this.btnChangeInfo.Location = new System.Drawing.Point(11, 346);
-            this.btnChangeInfo.Margin = new System.Windows.Forms.Padding(2);
-=======
             this.btnChangeInfo.Location = new System.Drawing.Point(15, 426);
             this.btnChangeInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> ec985d166dd0d6c0ffc79d638cc0fd72e9d7e403
             this.btnChangeInfo.Name = "btnChangeInfo";
             this.btnChangeInfo.Size = new System.Drawing.Size(276, 48);
             this.btnChangeInfo.TabIndex = 11;
@@ -220,13 +215,8 @@
             this.btnChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChangePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnChangePassword.ForeColor = System.Drawing.Color.Black;
-<<<<<<< HEAD
-            this.btnChangePassword.Location = new System.Drawing.Point(11, 389);
-            this.btnChangePassword.Margin = new System.Windows.Forms.Padding(2);
-=======
             this.btnChangePassword.Location = new System.Drawing.Point(15, 479);
             this.btnChangePassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> ec985d166dd0d6c0ffc79d638cc0fd72e9d7e403
             this.btnChangePassword.Name = "btnChangePassword";
             this.btnChangePassword.Size = new System.Drawing.Size(276, 48);
             this.btnChangePassword.TabIndex = 10;
@@ -234,21 +224,6 @@
             this.btnChangePassword.UseVisualStyleBackColor = false;
             this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
-<<<<<<< HEAD
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.White;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnLogin.ForeColor = System.Drawing.Color.Black;
-            this.btnLogin.Location = new System.Drawing.Point(11, 432);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(207, 39);
-            this.btnLogin.TabIndex = 9;
-            this.btnLogin.Text = "ĐĂNG XUẤT";
-            this.btnLogin.UseVisualStyleBackColor = false;
-=======
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.White;
@@ -263,7 +238,6 @@
             this.btnLogout.Text = "ĐĂNG XUẤT";
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
->>>>>>> ec985d166dd0d6c0ffc79d638cc0fd72e9d7e403
             // 
             // lblUsername
             // 
@@ -314,12 +288,7 @@
             this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtConfirmPassword.Multiline = true;
             this.txtConfirmPassword.Name = "txtConfirmPassword";
-<<<<<<< HEAD
-            this.txtConfirmPassword.PasswordChar = '*';
-            this.txtConfirmPassword.Size = new System.Drawing.Size(280, 32);
-=======
             this.txtConfirmPassword.Size = new System.Drawing.Size(372, 38);
->>>>>>> ec985d166dd0d6c0ffc79d638cc0fd72e9d7e403
             this.txtConfirmPassword.TabIndex = 6;
             this.txtConfirmPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -341,12 +310,7 @@
             this.txtNewPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNewPassword.Multiline = true;
             this.txtNewPassword.Name = "txtNewPassword";
-<<<<<<< HEAD
-            this.txtNewPassword.PasswordChar = '*';
-            this.txtNewPassword.Size = new System.Drawing.Size(280, 32);
-=======
             this.txtNewPassword.Size = new System.Drawing.Size(372, 38);
->>>>>>> ec985d166dd0d6c0ffc79d638cc0fd72e9d7e403
             this.txtNewPassword.TabIndex = 4;
             this.txtNewPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -368,12 +332,7 @@
             this.txtOldPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtOldPassword.Multiline = true;
             this.txtOldPassword.Name = "txtOldPassword";
-<<<<<<< HEAD
-            this.txtOldPassword.PasswordChar = '*';
-            this.txtOldPassword.Size = new System.Drawing.Size(280, 32);
-=======
             this.txtOldPassword.Size = new System.Drawing.Size(372, 38);
->>>>>>> ec985d166dd0d6c0ffc79d638cc0fd72e9d7e403
             this.txtOldPassword.TabIndex = 1;
             this.txtOldPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -466,13 +425,8 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-<<<<<<< HEAD
-            this.btnSave.Location = new System.Drawing.Point(439, 432);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
-=======
             this.btnSave.Location = new System.Drawing.Point(585, 532);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> ec985d166dd0d6c0ffc79d638cc0fd72e9d7e403
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(219, 48);
             this.btnSave.TabIndex = 12;
@@ -486,13 +440,8 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-<<<<<<< HEAD
-            this.btnCancel.Location = new System.Drawing.Point(606, 432);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
-=======
             this.btnCancel.Location = new System.Drawing.Point(808, 532);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> ec985d166dd0d6c0ffc79d638cc0fd72e9d7e403
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(219, 48);
             this.btnCancel.TabIndex = 13;

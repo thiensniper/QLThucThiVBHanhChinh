@@ -145,16 +145,13 @@
     <Compile Include="frmDocumentary.Designer.cs">
       <DependentUpon>frmDocumentary.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="frmUnit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmUnit.Designer.cs">
       <DependentUpon>frmUnit.cs</DependentUpon>
     </Compile>
-=======
     <Compile Include="SessionInfo.cs" />
->>>>>>> ec985d166dd0d6c0ffc79d638cc0fd72e9d7e403
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
