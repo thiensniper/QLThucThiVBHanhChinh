@@ -13,33 +13,28 @@ namespace QL_ThucThiVBHanhChinh
 {
     public partial class frmMain : Form
     {
-        private User user;
-        private bool logedOn;
+        //public static bool logedOn;
         public frmMain()
         {
             InitializeComponent();
         }
 
-        public frmMain(User user, bool logedOn): this()
-        {
-            this.user = user;
-            this.logedOn = logedOn;
-        }
-
         private void frmMain_Load(object sender, EventArgs e)
         {
-            if (user != null && logedOn)
-                lblWelcome.Text = "Xin chào " + user.Fullname + "!";
+            if (SessionInfo.user != null && SessionInfo.logedOn)
+                lblWelcome.Text = "Xin chào " + SessionInfo.user.Fullname + "!";
             else
-                Application.Exit();
+                this.Close();
         }
+
 
         private void picPersonal_Click(object sender, EventArgs e)
         {
-            frmPersonal Personal = new frmPersonal(user);
+            frmPersonal Personal = new frmPersonal();
             this.Hide();
             Personal.ShowDialog();
             this.Show();
+            frmMain_Load(sender, e);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -60,17 +55,17 @@ namespace QL_ThucThiVBHanhChinh
             this.Show();
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            frmPersonal Personal = new frmPersonal();
-            this.Hide();
-            Personal.ShowDialog();
-        }
+        //private void pictureBox7_Click(object sender, EventArgs e)
+        //{
+        //    frmPersonal Personal = new frmPersonal();
+        //    this.Hide();
+        //    Personal.ShowDialog();
+        //}
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
+        //private void pictureBox1_Click_1(object sender, EventArgs e)
+        //{
             
-        }
+        //}
 
         private void pic_Document_Click(object sender, EventArgs e)
         {

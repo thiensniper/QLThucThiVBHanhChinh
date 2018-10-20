@@ -14,6 +14,7 @@ namespace QL_ThucThiVBHanhChinh.DTO
         private string email;
         private string phone;
         private string position;
+        private string idFaculty;
         private string role;
         private string password;
         private string status;
@@ -135,14 +136,48 @@ namespace QL_ThucThiVBHanhChinh.DTO
             }
         }
 
-        public User(string username, string fullname, string email, string role, string password)
+        public string IdFaculty
         {
-            Username = username;
-            Fullname = fullname;
-            Email = email;
-            Role = role;
-            Password = password;
-            Status = "true";
+            get { return idFaculty; }
+            set { idFaculty = value; }
+        }
+
+        public User(string id, string username, string fullname, string email, string phone, string position, string idFaculty, string role, string password, string status)
+        {
+            this.id = id;
+            this.username = username;
+            this.fullname = fullname;
+            this.email = email;
+            this.phone = phone;
+            this.position = position;
+            this.idFaculty = idFaculty;
+            this.role = role;
+            this.password = password;
+            this.status = status;
+        }
+
+        public User() { }
+
+        public User(User user)
+        {
+            this.id = user.id;
+            this.username = user.username;
+            this.fullname = user.fullname;
+            this.email = user.email;
+            this.phone = user.phone;
+            this.position = user.position;
+            this.idFaculty = user.idFaculty;
+            this.role = user.role;
+            this.password = user.password;
+            this.status = user.status;
+        }
+        
+        public bool equal(User user)
+        {
+            return (this.id == user.id && this.username == user.username && this.fullname == user.fullname &&
+                this.email == user.email && this.phone == user.phone && this.position == user.position &&
+                this.idFaculty == user.idFaculty && this.role == user.role && this.password == user.password &&
+                this.status == user.status);
         }
 
         public override string ToString()

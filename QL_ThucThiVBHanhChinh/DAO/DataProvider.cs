@@ -54,13 +54,13 @@ namespace QL_ThucThiVBHanhChinh.DAO
             }
             catch(Exception message)
             {
-                Console.WriteLine(message.ToString());
+                Console.WriteLine("\t ====Get() error:\n" + message.ToString());
                 MessageBox.Show("Cannot get data!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
         }
 
-        public async Task<SetResponse> Set<T>(string urlSet, T obj)
+        public async Task<SetResponse> SetObject<T>(string urlSet, T obj)
         {
             try
             {
@@ -69,7 +69,22 @@ namespace QL_ThucThiVBHanhChinh.DAO
             }
             catch(Exception message)
             {
-                Console.WriteLine(message.ToString());
+                Console.WriteLine("\t ====SetString() error:\n" + message.ToString());
+                MessageBox.Show("Cannot connect to server!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
+        public async Task<SetResponse> SetString(string urlSet, string str)
+        {
+            try
+            {
+                SetResponse response = await client.SetAsync(urlSet, str);
+                return response;
+            }
+            catch(Exception message)
+            {
+                Console.WriteLine("\t ====SetString() error:\n" + message.ToString());
                 MessageBox.Show("Cannot connect to server!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }

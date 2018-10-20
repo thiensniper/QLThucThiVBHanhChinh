@@ -43,11 +43,17 @@ namespace QL_ThucThiVBHanhChinh.DAO
             return list;
         }
 
-        public async Task<User> setUser(User user)
+        public async Task<bool> updateUser(User user)
         {
-            SetResponse response = await DataProvider.Instance.Set<User>(urlUser + "/" + user.Username, user);
-            if (response == null) return user;
-            return response.ResultAs<User>();
+            SetResponse response = await DataProvider.Instance.SetObject<User>(urlUser + "/" + user.Username, user);
+            //await setUsername(user, user.Fullname);
+            if (response == null) return false;
+            else return true;
+        }
+
+        public async Task setUsername(User user, string username) // Dùng để test role Firebase
+        {
+            SetResponse response = await DataProvider.Instance.SetString(urlUser + "/" + user.Username + "/Username", username);
         }
     }
 }
