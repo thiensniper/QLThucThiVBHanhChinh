@@ -47,14 +47,7 @@
             this.employeesLabelControl = new DevExpress.XtraEditors.LabelControl();
             this.customersNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.grbTaoThucThi = new System.Windows.Forms.GroupBox();
-            this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.skinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
-            this.barSubItemNavigation = new DevExpress.XtraBars.BarSubItem();
-            this.employeesBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
-            this.customersBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
-            this.btnQuayVe = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroupNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -66,8 +59,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.customersLabelControl = new DevExpress.XtraEditors.LabelControl();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.skinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.barSubItemNavigation = new DevExpress.XtraBars.BarSubItem();
+            this.employeesBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.customersBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.btnQuayVe = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroupNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
@@ -76,8 +77,8 @@
             this.grbTimKiem.SuspendLayout();
             this.customersNavigationPage.SuspendLayout();
             this.grbTaoThucThi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             this.SuspendLayout();
             // 
             // tabbedView
@@ -266,78 +267,13 @@
             this.grbTaoThucThi.TabStop = false;
             this.grbTaoThucThi.Text = "Tạo Thực Thi";
             // 
-            // ribbonControl
+            // dataGridView1
             // 
-            this.ribbonControl.ExpandCollapseItem.Id = 0;
-            this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl.ExpandCollapseItem,
-            this.skinRibbonGalleryBarItem,
-            this.barSubItemNavigation,
-            this.employeesBarButtonItem,
-            this.customersBarButtonItem,
-            this.btnQuayVe});
-            this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 1;
-            this.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
-            this.ribbonControl.Name = "ribbonControl";
-            this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage});
-            this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.OfficeUniversal;
-            this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl.Size = new System.Drawing.Size(790, 52);
-            this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
-            // 
-            // skinRibbonGalleryBarItem
-            // 
-            this.skinRibbonGalleryBarItem.Id = 14;
-            this.skinRibbonGalleryBarItem.Name = "skinRibbonGalleryBarItem";
-            // 
-            // barSubItemNavigation
-            // 
-            this.barSubItemNavigation.Caption = "Navigation";
-            this.barSubItemNavigation.Id = 15;
-            this.barSubItemNavigation.ImageOptions.ImageUri.Uri = "NavigationBar";
-            this.barSubItemNavigation.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.employeesBarButtonItem),
-            new DevExpress.XtraBars.LinkPersistInfo(this.customersBarButtonItem)});
-            this.barSubItemNavigation.Name = "barSubItemNavigation";
-            // 
-            // employeesBarButtonItem
-            // 
-            this.employeesBarButtonItem.Caption = "Employees";
-            this.employeesBarButtonItem.Id = 44;
-            this.employeesBarButtonItem.Name = "employeesBarButtonItem";
-            this.employeesBarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonNavigation_ItemClick);
-            // 
-            // customersBarButtonItem
-            // 
-            this.customersBarButtonItem.Caption = "Customers";
-            this.customersBarButtonItem.Id = 45;
-            this.customersBarButtonItem.Name = "customersBarButtonItem";
-            this.customersBarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonNavigation_ItemClick);
-            // 
-            // btnQuayVe
-            // 
-            this.btnQuayVe.Caption = "Quay Về";
-            this.btnQuayVe.Id = 46;
-            this.btnQuayVe.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuayVe.ImageOptions.Image")));
-            this.btnQuayVe.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnQuayVe.ImageOptions.LargeImage")));
-            this.btnQuayVe.Name = "btnQuayVe";
-            this.btnQuayVe.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuayVe_Click);
-            // 
-            // ribbonPage
-            // 
-            this.ribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroupNavigation});
-            this.ribbonPage.Name = "ribbonPage";
-            this.ribbonPage.Text = "Điều Hướng";
-            // 
-            // ribbonPageGroupNavigation
-            // 
-            this.ribbonPageGroupNavigation.ItemLinks.Add(this.skinRibbonGalleryBarItem);
-            this.ribbonPageGroupNavigation.ItemLinks.Add(this.btnQuayVe);
-            this.ribbonPageGroupNavigation.Name = "ribbonPageGroupNavigation";
-            this.ribbonPageGroupNavigation.Text = "Module";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(19, 242);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(582, 283);
+            this.dataGridView1.TabIndex = 7;
             // 
             // comboBox1
             // 
@@ -448,6 +384,79 @@
             this.navigationPage1.Name = "navigationPage1";
             this.navigationPage1.Size = new System.Drawing.Size(625, 543);
             // 
+            // ribbonControl
+            // 
+            this.ribbonControl.ExpandCollapseItem.Id = 0;
+            this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl.ExpandCollapseItem,
+            this.skinRibbonGalleryBarItem,
+            this.barSubItemNavigation,
+            this.employeesBarButtonItem,
+            this.customersBarButtonItem,
+            this.btnQuayVe});
+            this.ribbonControl.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl.MaxItemId = 1;
+            this.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
+            this.ribbonControl.Name = "ribbonControl";
+            this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage});
+            this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.OfficeUniversal;
+            this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl.Size = new System.Drawing.Size(790, 52);
+            this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            // 
+            // skinRibbonGalleryBarItem
+            // 
+            this.skinRibbonGalleryBarItem.Id = 14;
+            this.skinRibbonGalleryBarItem.Name = "skinRibbonGalleryBarItem";
+            // 
+            // barSubItemNavigation
+            // 
+            this.barSubItemNavigation.Caption = "Navigation";
+            this.barSubItemNavigation.Id = 15;
+            this.barSubItemNavigation.ImageOptions.ImageUri.Uri = "NavigationBar";
+            this.barSubItemNavigation.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.employeesBarButtonItem),
+            new DevExpress.XtraBars.LinkPersistInfo(this.customersBarButtonItem)});
+            this.barSubItemNavigation.Name = "barSubItemNavigation";
+            // 
+            // employeesBarButtonItem
+            // 
+            this.employeesBarButtonItem.Caption = "Employees";
+            this.employeesBarButtonItem.Id = 44;
+            this.employeesBarButtonItem.Name = "employeesBarButtonItem";
+            this.employeesBarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonNavigation_ItemClick);
+            // 
+            // customersBarButtonItem
+            // 
+            this.customersBarButtonItem.Caption = "Customers";
+            this.customersBarButtonItem.Id = 45;
+            this.customersBarButtonItem.Name = "customersBarButtonItem";
+            this.customersBarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonNavigation_ItemClick);
+            // 
+            // btnQuayVe
+            // 
+            this.btnQuayVe.Caption = "Quay Về";
+            this.btnQuayVe.Id = 46;
+            this.btnQuayVe.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuayVe.ImageOptions.Image")));
+            this.btnQuayVe.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnQuayVe.ImageOptions.LargeImage")));
+            this.btnQuayVe.Name = "btnQuayVe";
+            this.btnQuayVe.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuayVe_Click);
+            // 
+            // ribbonPage
+            // 
+            this.ribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroupNavigation});
+            this.ribbonPage.Name = "ribbonPage";
+            this.ribbonPage.Text = "Tác Vụ";
+            // 
+            // ribbonPageGroupNavigation
+            // 
+            this.ribbonPageGroupNavigation.ItemLinks.Add(this.skinRibbonGalleryBarItem);
+            this.ribbonPageGroupNavigation.ItemLinks.Add(this.btnQuayVe);
+            this.ribbonPageGroupNavigation.Name = "ribbonPageGroupNavigation";
+            this.ribbonPageGroupNavigation.Text = "Module";
+            // 
             // ribbonPageGroup
             // 
             this.ribbonPageGroup.AllowTextClipping = false;
@@ -455,15 +464,7 @@
             this.ribbonPageGroup.ShowCaptionButton = false;
             this.ribbonPageGroup.Text = "Appearance";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 242);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(582, 283);
-            this.dataGridView1.TabIndex = 7;
-            // 
-            // frmTest
+            // frmDocumentary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -477,7 +478,7 @@
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.LookAndFeel.UseWindowsXPTheme = true;
             this.MaximizeBox = false;
-            this.Name = "frmTest";
+            this.Name = "frmDocumentary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VĂN BẢN HÀNH CHÍNH";
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
@@ -491,8 +492,8 @@
             this.customersNavigationPage.PerformLayout();
             this.grbTaoThucThi.ResumeLayout(false);
             this.grbTaoThucThi.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -537,5 +538,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
     }
 }

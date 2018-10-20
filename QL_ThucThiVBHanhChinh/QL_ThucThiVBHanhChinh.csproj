@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Images.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -130,12 +131,6 @@
     <Compile Include="frmSetting.Designer.cs">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUnit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUnit.Designer.cs">
-      <DependentUpon>frmUnit.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmTestMain.cs">
@@ -150,6 +145,12 @@
     <Compile Include="frmDocumentary.Designer.cs">
       <DependentUpon>frmDocumentary.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnit.Designer.cs">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTestMain.resx">
       <DependentUpon>frmTestMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnit.resx">
+      <DependentUpon>frmUnit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="frmLogin.resx">
@@ -174,9 +178,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUnit.resx">
-      <DependentUpon>frmUnit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

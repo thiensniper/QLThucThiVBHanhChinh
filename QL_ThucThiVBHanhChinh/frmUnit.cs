@@ -3,52 +3,34 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace QL_ThucThiVBHanhChinh
 {
-    public partial class frmUnit : Form
+    public partial class frmUnit : DevExpress.XtraEditors.XtraForm
     {
         public frmUnit()
         {
             InitializeComponent();
         }
+        void navBarControl_ActiveGroupChanged(object sender, DevExpress.XtraNavBar.NavBarGroupEventArgs e)
+        {
+            navigationFrame.SelectedPageIndex = navBarControl.Groups.IndexOf(e.Group);
+        }
+        void barButtonNavigation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            int barItemIndex = barSubItemNavigation.ItemLinks.IndexOf(e.Link);
+            navBarControl.ActiveGroup = navBarControl.Groups[barItemIndex];
+        }
 
-        private void picBack_Click(object sender, EventArgs e)
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Close();
-        }
-
-        private void frmUnit_Load(object sender, EventArgs e)
-        {
-            
-            pn2.Show();
-        }
-
-        private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
-        {
-           
-        }
-
-        private void tabControl1_MouseDown(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-            pn2.Hide();
-
-        }
-
-        private void btnGuiVB_Click(object sender, EventArgs e)
-        {
-          
-            pn2.Show();
         }
     }
 }

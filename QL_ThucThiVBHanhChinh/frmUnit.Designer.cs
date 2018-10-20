@@ -28,218 +28,274 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pn2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picBack = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnQLVB = new System.Windows.Forms.Button();
-            this.btnThongBao = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnGuiVB = new System.Windows.Forms.Button();
-            this.pn1 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.pn2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBack)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUnit));
+            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
+            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.officeNavigationBar = new DevExpress.XtraBars.Navigation.OfficeNavigationBar();
+            this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
+            this.employeesNavBarGroup = new DevExpress.XtraNavBar.NavBarGroup();
+            this.customersNavBarGroup = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
+            this.employeesNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.employeesLabelControl = new DevExpress.XtraEditors.LabelControl();
+            this.customersNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.customersLabelControl = new DevExpress.XtraEditors.LabelControl();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.ribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroupNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barSubItemNavigation = new DevExpress.XtraBars.BarSubItem();
+            this.employeesBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.customersBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.btnQuayVe = new DevExpress.XtraBars.BarButtonItem();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
+            this.navigationFrame.SuspendLayout();
+            this.employeesNavigationPage.SuspendLayout();
+            this.customersNavigationPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // tabbedView
             // 
-            this.panel1.BackgroundImage = global::QL_ThucThiVBHanhChinh.Properties.Resources.trang;
-            this.panel1.Controls.Add(this.pn2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.picBack);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(750, 57);
-            this.panel1.TabIndex = 3;
+            this.tabbedView.RootContainer.Element = null;
             // 
-            // pn2
+            // ribbonStatusBar
             // 
-            this.pn2.Controls.Add(this.label2);
-            this.pn2.Location = new System.Drawing.Point(159, 57);
-            this.pn2.Name = "pn2";
-            this.pn2.Size = new System.Drawing.Size(545, 281);
-            this.pn2.TabIndex = 6;
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 568);
+            this.ribbonStatusBar.Name = "ribbonStatusBar";
+            this.ribbonStatusBar.Ribbon = this.ribbonControl;
+            this.ribbonStatusBar.Size = new System.Drawing.Size(790, 27);
             // 
-            // label2
+            // officeNavigationBar
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 31);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "panel 2";
+            this.officeNavigationBar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.officeNavigationBar.Location = new System.Drawing.Point(0, 523);
+            this.officeNavigationBar.Name = "officeNavigationBar";
+            this.officeNavigationBar.NavigationClient = this.navBarControl;
+            this.officeNavigationBar.Size = new System.Drawing.Size(790, 45);
+            this.officeNavigationBar.TabIndex = 1;
+            this.officeNavigationBar.Text = "officeNavigationBar";
             // 
-            // label3
+            // navBarControl
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(203, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(446, 31);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "THÔNG TIN ĐƠN VỊ HÀNH CHÍNH";
+            this.navBarControl.ActiveGroup = this.employeesNavBarGroup;
+            this.navBarControl.Dock = System.Windows.Forms.DockStyle.Left;
+            this.navBarControl.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
+            this.employeesNavBarGroup,
+            this.customersNavBarGroup});
+            this.navBarControl.Location = new System.Drawing.Point(0, 52);
+            this.navBarControl.Name = "navBarControl";
+            this.navBarControl.OptionsNavPane.ExpandedWidth = 165;
+            this.navBarControl.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
+            this.navBarControl.Size = new System.Drawing.Size(165, 471);
+            this.navBarControl.TabIndex = 0;
+            this.navBarControl.Text = "navBarControl";
+            this.navBarControl.View = new DevExpress.XtraNavBar.ViewInfo.SkinNavigationPaneViewInfoRegistrator();
+            this.navBarControl.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl_ActiveGroupChanged);
             // 
-            // pictureBox1
+            // employeesNavBarGroup
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.logomoi;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.employeesNavBarGroup.Caption = "Employees";
+            this.employeesNavBarGroup.Expanded = true;
+            this.employeesNavBarGroup.Name = "employeesNavBarGroup";
             // 
-            // picBack
+            // customersNavBarGroup
             // 
-            this.picBack.BackColor = System.Drawing.Color.Transparent;
-            this.picBack.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_go_back_240;
-            this.picBack.Location = new System.Drawing.Point(703, 12);
-            this.picBack.Name = "picBack";
-            this.picBack.Size = new System.Drawing.Size(35, 35);
-            this.picBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBack.TabIndex = 1;
-            this.picBack.TabStop = false;
-            this.picBack.Click += new System.EventHandler(this.picBack_Click);
+            this.customersNavBarGroup.Caption = "Customers";
+            this.customersNavBarGroup.Name = "customersNavBarGroup";
             // 
-            // panel2
+            // navigationFrame
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.panel2.Controls.Add(this.btnQLVB);
-            this.panel2.Controls.Add(this.btnThongBao);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.btnGuiVB);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 57);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(159, 403);
-            this.panel2.TabIndex = 4;
+            this.navigationFrame.Appearance.BackColor = System.Drawing.Color.White;
+            this.navigationFrame.Appearance.Options.UseBackColor = true;
+            this.navigationFrame.Controls.Add(this.employeesNavigationPage);
+            this.navigationFrame.Controls.Add(this.customersNavigationPage);
+            this.navigationFrame.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.navigationFrame.Location = new System.Drawing.Point(165, 52);
+            this.navigationFrame.Name = "navigationFrame";
+            this.navigationFrame.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
+            this.employeesNavigationPage,
+            this.customersNavigationPage});
+            this.navigationFrame.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always;
+            this.navigationFrame.SelectedPage = this.employeesNavigationPage;
+            this.navigationFrame.Size = new System.Drawing.Size(625, 471);
+            this.navigationFrame.TabIndex = 0;
+            this.navigationFrame.Text = "navigationFrame";
             // 
-            // btnQLVB
+            // employeesNavigationPage
             // 
-            this.btnQLVB.BackColor = System.Drawing.Color.White;
-            this.btnQLVB.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnQLVB.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnQLVB.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnQLVB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnQLVB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLVB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQLVB.ForeColor = System.Drawing.Color.Black;
-            this.btnQLVB.Location = new System.Drawing.Point(-2, 101);
-            this.btnQLVB.Name = "btnQLVB";
-            this.btnQLVB.Size = new System.Drawing.Size(160, 50);
-            this.btnQLVB.TabIndex = 0;
-            this.btnQLVB.Text = "Quản Lý Văn Bản";
-            this.btnQLVB.UseVisualStyleBackColor = false;
+            this.employeesNavigationPage.Controls.Add(this.employeesLabelControl);
+            this.employeesNavigationPage.Name = "employeesNavigationPage";
+            this.employeesNavigationPage.Size = new System.Drawing.Size(625, 471);
             // 
-            // btnThongBao
+            // employeesLabelControl
             // 
-            this.btnThongBao.BackColor = System.Drawing.Color.White;
-            this.btnThongBao.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnThongBao.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnThongBao.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnThongBao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnThongBao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongBao.ForeColor = System.Drawing.Color.Black;
-            this.btnThongBao.Location = new System.Drawing.Point(-2, 1);
-            this.btnThongBao.Name = "btnThongBao";
-            this.btnThongBao.Size = new System.Drawing.Size(160, 50);
-            this.btnThongBao.TabIndex = 0;
-            this.btnThongBao.Text = "Thông Báo";
-            this.btnThongBao.UseVisualStyleBackColor = false;
-            this.btnThongBao.Click += new System.EventHandler(this.button1_Click);
+            this.employeesLabelControl.Appearance.Font = new System.Drawing.Font("Tahoma", 25.25F);
+            this.employeesLabelControl.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.employeesLabelControl.Appearance.Options.UseFont = true;
+            this.employeesLabelControl.Appearance.Options.UseForeColor = true;
+            this.employeesLabelControl.Appearance.Options.UseTextOptions = true;
+            this.employeesLabelControl.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.employeesLabelControl.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.employeesLabelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.employeesLabelControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeesLabelControl.Location = new System.Drawing.Point(0, 0);
+            this.employeesLabelControl.Name = "employeesLabelControl";
+            this.employeesLabelControl.Size = new System.Drawing.Size(625, 471);
+            this.employeesLabelControl.TabIndex = 0;
+            this.employeesLabelControl.Text = "Employees";
             // 
-            // button4
+            // customersNavigationPage
             // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(-2, 151);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(160, 50);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "button1";
-            this.button4.UseVisualStyleBackColor = false;
+            this.customersNavigationPage.Controls.Add(this.customersLabelControl);
+            this.customersNavigationPage.Name = "customersNavigationPage";
+            this.customersNavigationPage.Size = new System.Drawing.Size(625, 471);
             // 
-            // btnGuiVB
+            // customersLabelControl
             // 
-            this.btnGuiVB.BackColor = System.Drawing.Color.White;
-            this.btnGuiVB.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnGuiVB.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnGuiVB.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnGuiVB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnGuiVB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuiVB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuiVB.ForeColor = System.Drawing.Color.Black;
-            this.btnGuiVB.Location = new System.Drawing.Point(-2, 51);
-            this.btnGuiVB.Name = "btnGuiVB";
-            this.btnGuiVB.Size = new System.Drawing.Size(160, 50);
-            this.btnGuiVB.TabIndex = 0;
-            this.btnGuiVB.Text = "Gửi Văn Bản";
-            this.btnGuiVB.UseVisualStyleBackColor = false;
-            this.btnGuiVB.Click += new System.EventHandler(this.btnGuiVB_Click);
+            this.customersLabelControl.Appearance.Font = new System.Drawing.Font("Tahoma", 25.25F);
+            this.customersLabelControl.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.customersLabelControl.Appearance.Options.UseFont = true;
+            this.customersLabelControl.Appearance.Options.UseForeColor = true;
+            this.customersLabelControl.Appearance.Options.UseTextOptions = true;
+            this.customersLabelControl.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.customersLabelControl.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.customersLabelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.customersLabelControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customersLabelControl.Location = new System.Drawing.Point(0, 0);
+            this.customersLabelControl.Name = "customersLabelControl";
+            this.customersLabelControl.Size = new System.Drawing.Size(625, 471);
+            this.customersLabelControl.TabIndex = 1;
+            this.customersLabelControl.Text = "Customers";
             // 
-            // pn1
+            // ribbonPage
             // 
-            this.pn1.Location = new System.Drawing.Point(278, 108);
-            this.pn1.Name = "pn1";
-            this.pn1.Size = new System.Drawing.Size(385, 230);
-            this.pn1.TabIndex = 5;
+            this.ribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroupNavigation,
+            this.ribbonPageGroup1});
+            this.ribbonPage.Name = "ribbonPage";
+            this.ribbonPage.Text = "Tác Vụ";
+            // 
+            // ribbonPageGroupNavigation
+            // 
+            this.ribbonPageGroupNavigation.ItemLinks.Add(this.barSubItemNavigation);
+            this.ribbonPageGroupNavigation.Name = "ribbonPageGroupNavigation";
+            this.ribbonPageGroupNavigation.Text = "Module";
+            // 
+            // barSubItemNavigation
+            // 
+            this.barSubItemNavigation.Caption = "Navigation";
+            this.barSubItemNavigation.Id = 15;
+            this.barSubItemNavigation.ImageOptions.ImageUri.Uri = "NavigationBar";
+            this.barSubItemNavigation.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.employeesBarButtonItem),
+            new DevExpress.XtraBars.LinkPersistInfo(this.customersBarButtonItem)});
+            this.barSubItemNavigation.Name = "barSubItemNavigation";
+            // 
+            // employeesBarButtonItem
+            // 
+            this.employeesBarButtonItem.Caption = "Employees";
+            this.employeesBarButtonItem.Id = 44;
+            this.employeesBarButtonItem.Name = "employeesBarButtonItem";
+            this.employeesBarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonNavigation_ItemClick);
+            // 
+            // customersBarButtonItem
+            // 
+            this.customersBarButtonItem.Caption = "Customers";
+            this.customersBarButtonItem.Id = 45;
+            this.customersBarButtonItem.Name = "customersBarButtonItem";
+            this.customersBarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonNavigation_ItemClick);
+            // 
+            // ribbonControl
+            // 
+            this.ribbonControl.ExpandCollapseItem.Id = 0;
+            this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl.ExpandCollapseItem,
+            this.barSubItemNavigation,
+            this.employeesBarButtonItem,
+            this.customersBarButtonItem,
+            this.btnQuayVe});
+            this.ribbonControl.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl.MaxItemId = 47;
+            this.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
+            this.ribbonControl.Name = "ribbonControl";
+            this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage});
+            this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.OfficeUniversal;
+            this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl.Size = new System.Drawing.Size(790, 52);
+            this.ribbonControl.StatusBar = this.ribbonStatusBar;
+            this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnQuayVe);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            // 
+            // btnQuayVe
+            // 
+            this.btnQuayVe.Caption = "Trở Về";
+            this.btnQuayVe.Id = 46;
+            this.btnQuayVe.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.btnQuayVe.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.btnQuayVe.Name = "btnQuayVe";
+            this.btnQuayVe.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // frmUnit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 460);
-            this.Controls.Add(this.pn1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ClientSize = new System.Drawing.Size(790, 595);
+            this.Controls.Add(this.navigationFrame);
+            this.Controls.Add(this.navBarControl);
+            this.Controls.Add(this.officeNavigationBar);
+            this.Controls.Add(this.ribbonStatusBar);
+            this.Controls.Add(this.ribbonControl);
+            this.LookAndFeel.SkinName = "Office 2016 Colorful";
+            this.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+            this.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.LookAndFeel.UseWindowsXPTheme = true;
             this.Name = "frmUnit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmUnit";
-            this.Load += new System.EventHandler(this.frmUnit_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.pn2.ResumeLayout(false);
-            this.pn2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBack)).EndInit();
-            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).EndInit();
+            this.navigationFrame.ResumeLayout(false);
+            this.employeesNavigationPage.ResumeLayout(false);
+            this.customersNavigationPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox picBack;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnGuiVB;
-        private System.Windows.Forms.Button btnQLVB;
-        private System.Windows.Forms.Button btnThongBao;
-        private System.Windows.Forms.Panel pn2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel pn1;
+        private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView;
+        private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
+        private DevExpress.XtraBars.Navigation.OfficeNavigationBar officeNavigationBar;
+        private DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame;
+        private DevExpress.XtraNavBar.NavBarControl navBarControl;
+        private DevExpress.XtraNavBar.NavBarGroup employeesNavBarGroup;
+        private DevExpress.XtraNavBar.NavBarGroup customersNavBarGroup;
+        private DevExpress.XtraBars.Navigation.NavigationPage employeesNavigationPage;
+        private DevExpress.XtraEditors.LabelControl employeesLabelControl;
+        private DevExpress.XtraBars.Navigation.NavigationPage customersNavigationPage;
+        private DevExpress.XtraEditors.LabelControl customersLabelControl;
+        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
+        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
+        private DevExpress.XtraBars.BarSubItem barSubItemNavigation;
+        private DevExpress.XtraBars.BarButtonItem employeesBarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem customersBarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem btnQuayVe;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupNavigation;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
     }
 }
