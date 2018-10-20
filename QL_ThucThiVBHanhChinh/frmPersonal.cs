@@ -183,7 +183,11 @@ namespace QL_ThucThiVBHanhChinh
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            
+            SessionInfo.logedOn = false;
+            SessionInfo.user = null;
+            frmLogin login = new frmLogin();
+            login.Show();
+            this.Close();
         }
     }
 }

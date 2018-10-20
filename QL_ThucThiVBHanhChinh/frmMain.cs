@@ -24,8 +24,9 @@ namespace QL_ThucThiVBHanhChinh
             if (SessionInfo.user != null && SessionInfo.logedOn)
                 lblWelcome.Text = "Xin chào " + SessionInfo.user.Fullname + "!";
             else
-                Application.Exit();
+                this.Close();
         }
+
 
         private void picPersonal_Click(object sender, EventArgs e)
         {
@@ -33,6 +34,7 @@ namespace QL_ThucThiVBHanhChinh
             this.Hide();
             Personal.ShowDialog();
             this.Show();
+            frmMain_Load(sender, e);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
