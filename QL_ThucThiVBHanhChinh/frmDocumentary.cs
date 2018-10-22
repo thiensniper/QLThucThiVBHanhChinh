@@ -23,44 +23,31 @@ namespace QL_ThucThiVBHanhChinh
         }
         void barButtonNavigation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //int barItemIndex = barSubItemNavigation.ItemLinks.IndexOf(e.Link);
-            //navBarControl.ActiveGroup = navBarControl.Groups[barItemIndex];
+            int barItemIndex = barSubItemNavigation.ItemLinks.IndexOf(e.Link);
+            navBarControl.ActiveGroup = navBarControl.Groups[barItemIndex];
         }
 
-      
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Close();
+        }
 
         private void navBarItem_TimVanBan_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-           
-        }
-
-        private void navBarItem_GuiVanBan_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            
-        }
-
-        private void navBarItem_GuiVanBan_LinkPressed(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-         
-            grbTimKiem.Hide();
-            grbHienThi.Hide();
-        }
-
-        private void navBarItem_TimVanBan_LinkPressed(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
             grbTimKiem.Show();
             grbHienThi.Show();
             tbTimKiem.Focus();
         }
 
-        private void btnQuayVe_Click(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void navBarItem_GuiVanBan_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
-            this.Close();
+            grbTimKiem.Hide();
+            grbHienThi.Hide();
         }
 
-        private void navBarItem_TaoThucThi_LinkPressed(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            barButtonNavigation_ItemClick(sender,e);
         }
     }
 }
