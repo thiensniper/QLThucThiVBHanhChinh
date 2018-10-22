@@ -155,6 +155,7 @@
       <DependentUpon>frmDocumentary.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUser.cs">
+    <Compile Include="frmUnit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmUser.Designer.cs">
@@ -172,6 +173,7 @@
     <Compile Include="frmUser2.Designer.cs">
       <DependentUpon>frmUser2.cs</DependentUpon>
     </Compile>
+    <Compile Include="SessionInfo.cs" />
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
