@@ -32,5 +32,10 @@ namespace QL_ThucThiVBHanhChinh
         {
             this.Close();
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

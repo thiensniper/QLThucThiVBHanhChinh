@@ -73,6 +73,46 @@ namespace QL_ThucThiVBHanhChinh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add {
+            get {
+                object obj = ResourceManager.GetObject("add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add1 {
+            get {
+                object obj = ResourceManager.GetObject("add1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap admin {
+            get {
+                object obj = ResourceManager.GetObject("admin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap admin1 {
+            get {
+                object obj = ResourceManager.GetObject("admin1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap avast_free_antivirus_2016_beta_main {
             get {
                 object obj = ResourceManager.GetObject("avast-free-antivirus-2016-beta-main", resourceCulture);
@@ -106,6 +146,46 @@ namespace QL_ThucThiVBHanhChinh.Properties {
         internal static System.Drawing.Bitmap c260a4eb41465ab6022687561cbbf61f {
             get {
                 object obj = ResourceManager.GetObject("c260a4eb41465ab6022687561cbbf61f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete {
+            get {
+                object obj = ResourceManager.GetObject("delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_sign {
+            get {
+                object obj = ResourceManager.GetObject("delete-sign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit {
+            get {
+                object obj = ResourceManager.GetObject("edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit1 {
+            get {
+                object obj = ResourceManager.GetObject("edit1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,6 +293,16 @@ namespace QL_ThucThiVBHanhChinh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_checkmark_512 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-checkmark-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_customer_1000 {
             get {
                 object obj = ResourceManager.GetObject("icons8-customer-1000", resourceCulture);
@@ -306,6 +396,16 @@ namespace QL_ThucThiVBHanhChinh.Properties {
         internal static System.Drawing.Bitmap icons8_new_window_1000 {
             get {
                 object obj = ResourceManager.GetObject("icons8-new-window-1000", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_no_512 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-no-512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -466,6 +566,16 @@ namespace QL_ThucThiVBHanhChinh.Properties {
         internal static System.Drawing.Bitmap pexels_photo_590796 {
             get {
                 object obj = ResourceManager.GetObject("pexels-photo-590796", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save {
+            get {
+                object obj = ResourceManager.GetObject("save", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

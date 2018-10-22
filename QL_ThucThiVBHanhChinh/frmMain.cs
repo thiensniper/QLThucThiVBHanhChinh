@@ -85,7 +85,10 @@ namespace QL_ThucThiVBHanhChinh
 
         private void pic_Statistical_Click(object sender, EventArgs e)
         {
-
+            frmUser frmUser = new frmUser();
+            this.Hide();
+            frmUser.ShowDialog();
+            this.Show();
         }
 
         private void frm1_Click(object sender, EventArgs e)
@@ -104,6 +107,22 @@ namespace QL_ThucThiVBHanhChinh
         private void lblWelcome_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pic_demo1_Click(object sender, EventArgs e)
+        {
+            frmUser1 frmUser1 = new frmUser1();
+            this.Hide();
+            frmUser1.ShowDialog();
+            this.Show();
+        }
+
+        private void pic_demo2_Click(object sender, EventArgs e)
+        {
+            frmUser2 frmUser2 = new frmUser2();
+            this.Hide();
+            frmUser2.ShowDialog();
+            this.Show();
         }
     }
 }
