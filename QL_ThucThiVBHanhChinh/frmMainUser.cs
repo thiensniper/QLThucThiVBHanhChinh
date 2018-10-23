@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace QL_ThucThiVBHanhChinh
 {
-    public partial class frmTestMain : DevExpress.XtraEditors.XtraForm
+    public partial class frmMainUser : DevExpress.XtraEditors.XtraForm
     {
-        public frmTestMain()
+        public frmMainUser()
         {
             InitializeComponent();
         }
@@ -25,6 +25,12 @@ namespace QL_ThucThiVBHanhChinh
         private void frmTestMain_Load(object sender, EventArgs e)
         {
     
+        }
+
+        
+        private void pic_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

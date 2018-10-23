@@ -73,7 +73,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 62);
+            this.label3.Location = new System.Drawing.Point(6, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 25);
             this.label3.TabIndex = 0;
@@ -83,7 +83,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 176);
+            this.label5.Location = new System.Drawing.Point(7, 179);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 25);
             this.label5.TabIndex = 0;
@@ -93,7 +93,7 @@
             // 
             this.txtPosition.Enabled = false;
             this.txtPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPosition.Location = new System.Drawing.Point(231, 169);
+            this.txtPosition.Location = new System.Drawing.Point(231, 172);
             this.txtPosition.Multiline = true;
             this.txtPosition.Name = "txtPosition";
             this.txtPosition.Size = new System.Drawing.Size(295, 32);
@@ -102,7 +102,7 @@
             // txtPhone
             // 
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(231, 131);
+            this.txtPhone.Location = new System.Drawing.Point(231, 134);
             this.txtPhone.Multiline = true;
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(295, 32);
@@ -111,7 +111,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(231, 93);
+            this.txtEmail.Location = new System.Drawing.Point(231, 96);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(295, 32);
@@ -123,7 +123,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 100);
+            this.label2.Location = new System.Drawing.Point(7, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 25);
             this.label2.TabIndex = 0;
@@ -133,7 +133,7 @@
             // 
             this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(231, 17);
+            this.txtId.Location = new System.Drawing.Point(231, 20);
             this.txtId.Multiline = true;
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(295, 32);
@@ -144,7 +144,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 24);
+            this.label1.Location = new System.Drawing.Point(7, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 25);
             this.label1.TabIndex = 0;
@@ -153,7 +153,7 @@
             // txtFullname
             // 
             this.txtFullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFullname.Location = new System.Drawing.Point(231, 55);
+            this.txtFullname.Location = new System.Drawing.Point(231, 58);
             this.txtFullname.Multiline = true;
             this.txtFullname.Name = "txtFullname";
             this.txtFullname.Size = new System.Drawing.Size(295, 32);
@@ -163,7 +163,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 138);
+            this.label4.Location = new System.Drawing.Point(6, 141);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 25);
             this.label4.TabIndex = 0;
@@ -180,7 +180,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 486);
+            this.panel1.Size = new System.Drawing.Size(230, 509);
             this.panel1.TabIndex = 7;
             // 
             // btnChangeInfo
@@ -190,7 +190,7 @@
             this.btnChangeInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChangeInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnChangeInfo.ForeColor = System.Drawing.Color.Black;
-            this.btnChangeInfo.Location = new System.Drawing.Point(15, 426);
+            this.btnChangeInfo.Location = new System.Drawing.Point(12, 372);
             this.btnChangeInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChangeInfo.Name = "btnChangeInfo";
             this.btnChangeInfo.Size = new System.Drawing.Size(207, 39);
@@ -206,7 +206,7 @@
             this.btnChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChangePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnChangePassword.ForeColor = System.Drawing.Color.Black;
-            this.btnChangePassword.Location = new System.Drawing.Point(15, 479);
+            this.btnChangePassword.Location = new System.Drawing.Point(12, 415);
             this.btnChangePassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChangePassword.Name = "btnChangePassword";
             this.btnChangePassword.Size = new System.Drawing.Size(207, 39);
@@ -222,7 +222,7 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLogout.ForeColor = System.Drawing.Color.Black;
-            this.btnLogout.Location = new System.Drawing.Point(11, 432);
+            this.btnLogout.Location = new System.Drawing.Point(12, 458);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(207, 39);
@@ -262,9 +262,9 @@
             this.groupBoxPassword.Controls.Add(this.txtOldPassword);
             this.groupBoxPassword.Controls.Add(this.label8);
             this.groupBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxPassword.Location = new System.Drawing.Point(236, 286);
+            this.groupBoxPassword.Location = new System.Drawing.Point(236, 303);
             this.groupBoxPassword.Name = "groupBoxPassword";
-            this.groupBoxPassword.Size = new System.Drawing.Size(533, 131);
+            this.groupBoxPassword.Size = new System.Drawing.Size(533, 143);
             this.groupBoxPassword.TabIndex = 4;
             this.groupBoxPassword.TabStop = false;
             this.groupBoxPassword.Text = "Mật Khẩu";
@@ -272,7 +272,7 @@
             // txtConfirmPassword
             // 
             this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPassword.Location = new System.Drawing.Point(231, 91);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(231, 96);
             this.txtConfirmPassword.Multiline = true;
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '*';
@@ -284,7 +284,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(10, 98);
+            this.label10.Location = new System.Drawing.Point(10, 103);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(221, 25);
             this.label10.TabIndex = 5;
@@ -293,7 +293,7 @@
             // txtNewPassword
             // 
             this.txtNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPassword.Location = new System.Drawing.Point(231, 53);
+            this.txtNewPassword.Location = new System.Drawing.Point(231, 58);
             this.txtNewPassword.Multiline = true;
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.PasswordChar = '*';
@@ -305,7 +305,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(9, 60);
+            this.label9.Location = new System.Drawing.Point(9, 65);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(134, 25);
             this.label9.TabIndex = 3;
@@ -314,7 +314,7 @@
             // txtOldPassword
             // 
             this.txtOldPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOldPassword.Location = new System.Drawing.Point(231, 15);
+            this.txtOldPassword.Location = new System.Drawing.Point(231, 20);
             this.txtOldPassword.Multiline = true;
             this.txtOldPassword.Name = "txtOldPassword";
             this.txtOldPassword.PasswordChar = '*';
@@ -326,7 +326,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(10, 22);
+            this.label8.Location = new System.Drawing.Point(10, 27);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(128, 25);
             this.label8.TabIndex = 0;
@@ -345,7 +345,7 @@
             this.groupBoxInformation.Controls.Add(this.label5);
             this.groupBoxInformation.Controls.Add(this.label4);
             this.groupBoxInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxInformation.Location = new System.Drawing.Point(236, 63);
+            this.groupBoxInformation.Location = new System.Drawing.Point(236, 72);
             this.groupBoxInformation.Name = "groupBoxInformation";
             this.groupBoxInformation.Size = new System.Drawing.Size(533, 216);
             this.groupBoxInformation.TabIndex = 9;
@@ -359,7 +359,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(585, 532);
+            this.btnSave.Location = new System.Drawing.Point(435, 451);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 39);
@@ -375,7 +375,7 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(808, 532);
+            this.btnCancel.Location = new System.Drawing.Point(605, 451);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(164, 39);
@@ -440,7 +440,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 486);
+            this.ClientSize = new System.Drawing.Size(781, 509);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBoxInformation);
