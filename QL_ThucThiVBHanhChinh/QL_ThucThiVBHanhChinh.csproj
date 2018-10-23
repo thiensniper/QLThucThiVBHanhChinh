@@ -95,7 +95,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\SettingDAO.cs" />
     <Compile Include="DAO\UserDAO.cs" />
+    <Compile Include="DTO\Setting.cs" />
     <Compile Include="DTO\User.cs" />
     <Compile Include="frmRegister.cs">
       <SubType>Form</SubType>
