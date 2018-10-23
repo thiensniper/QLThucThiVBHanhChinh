@@ -70,5 +70,10 @@ namespace QL_ThucThiVBHanhChinh
         {
 
         }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            barButtonNavigation_ItemClick(sender,e);
+        }
     }
 }

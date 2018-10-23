@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDocumentary));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barSubItemNavigation = new DevExpress.XtraBars.BarSubItem();
@@ -44,13 +45,13 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
             this.employeesNavBarGroup = new DevExpress.XtraNavBar.NavBarGroup();
-            this.navBarItem_TimVanBan = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarItem_GuiVanBan = new DevExpress.XtraNavBar.NavBarItem();
             this.customersNavBarGroup = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.employeesNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.grbHienThi = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.grbTimKiem = new System.Windows.Forms.GroupBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.tbTimKiem = new System.Windows.Forms.TextBox();
@@ -58,12 +59,15 @@
             this.customersNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.customersLabelControl = new DevExpress.XtraEditors.LabelControl();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
             this.employeesNavigationPage.SuspendLayout();
+            this.grbHienThi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.grbTimKiem.SuspendLayout();
             this.customersNavigationPage.SuspendLayout();
             this.SuspendLayout();
@@ -107,7 +111,7 @@
             // 
             // employeesBarButtonItem
             // 
-            this.employeesBarButtonItem.Caption = "Quản Lý Văn Bản";
+            this.employeesBarButtonItem.Caption = "Tìm Kiếm Văn Bản";
             this.employeesBarButtonItem.Id = 44;
             this.employeesBarButtonItem.Name = "employeesBarButtonItem";
             this.employeesBarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonNavigation_ItemClick);
@@ -177,10 +181,8 @@
             this.navBarControl.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.employeesNavBarGroup,
             this.customersNavBarGroup,
-            this.navBarGroup1});
-            this.navBarControl.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
-            this.navBarItem_TimVanBan,
-            this.navBarItem_GuiVanBan});
+            this.navBarGroup1,
+            this.navBarGroup2});
             this.navBarControl.Location = new System.Drawing.Point(0, 52);
             this.navBarControl.Name = "navBarControl";
             this.navBarControl.OptionsNavPane.ExpandedWidth = 165;
@@ -193,24 +195,9 @@
             // 
             // employeesNavBarGroup
             // 
-            this.employeesNavBarGroup.Caption = "Quản Lý Văn Bản";
+            this.employeesNavBarGroup.Caption = "Tìm Kiếm Văn Bản";
             this.employeesNavBarGroup.Expanded = true;
-            this.employeesNavBarGroup.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem_TimVanBan),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem_GuiVanBan)});
             this.employeesNavBarGroup.Name = "employeesNavBarGroup";
-            // 
-            // navBarItem_TimVanBan
-            // 
-            this.navBarItem_TimVanBan.Caption = "Tìm Kiếm Văn Bản";
-            this.navBarItem_TimVanBan.Name = "navBarItem_TimVanBan";
-            this.navBarItem_TimVanBan.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem_TimVanBan_LinkClicked);
-            // 
-            // navBarItem_GuiVanBan
-            // 
-            this.navBarItem_GuiVanBan.Caption = "Gửi Văn Bản";
-            this.navBarItem_GuiVanBan.Name = "navBarItem_GuiVanBan";
-            this.navBarItem_GuiVanBan.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem_GuiVanBan_LinkClicked);
             // 
             // customersNavBarGroup
             // 
@@ -219,8 +206,13 @@
             // 
             // navBarGroup1
             // 
-            this.navBarGroup1.Caption = "Thống Kê";
+            this.navBarGroup1.Caption = "Nhắc Nhở Thực Thi";
             this.navBarGroup1.Name = "navBarGroup1";
+            // 
+            // navBarGroup2
+            // 
+            this.navBarGroup2.Caption = "navBarGroup2";
+            this.navBarGroup2.Name = "navBarGroup2";
             // 
             // navigationFrame
             // 
@@ -252,12 +244,29 @@
             // 
             // grbHienThi
             // 
+            this.grbHienThi.Controls.Add(this.dataGridView1);
             this.grbHienThi.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.grbHienThi.Location = new System.Drawing.Point(4, 81);
+            this.grbHienThi.Location = new System.Drawing.Point(4, 68);
             this.grbHienThi.Name = "grbHienThi";
-            this.grbHienThi.Size = new System.Drawing.Size(616, 428);
+            this.grbHienThi.Size = new System.Drawing.Size(616, 475);
             this.grbHienThi.TabIndex = 3;
             this.grbHienThi.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 10F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.Location = new System.Drawing.Point(8, 13);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(601, 450);
+            this.dataGridView1.TabIndex = 0;
             // 
             // grbTimKiem
             // 
@@ -283,7 +292,7 @@
             this.btnTimKiem.Location = new System.Drawing.Point(505, 24);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(109, 36);
+            this.btnTimKiem.Size = new System.Drawing.Size(104, 36);
             this.btnTimKiem.TabIndex = 4;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
@@ -294,7 +303,7 @@
             this.tbTimKiem.Location = new System.Drawing.Point(8, 24);
             this.tbTimKiem.Multiline = true;
             this.tbTimKiem.Name = "tbTimKiem";
-            this.tbTimKiem.Size = new System.Drawing.Size(493, 36);
+            this.tbTimKiem.Size = new System.Drawing.Size(492, 36);
             this.tbTimKiem.TabIndex = 1;
             this.tbTimKiem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -342,6 +351,10 @@
             this.navigationPage1.Name = "navigationPage1";
             this.navigationPage1.Size = new System.Drawing.Size(625, 543);
             // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013";
+            // 
             // frmDocumentary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,6 +377,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).EndInit();
             this.navigationFrame.ResumeLayout(false);
             this.employeesNavigationPage.ResumeLayout(false);
+            this.grbHienThi.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.grbTimKiem.ResumeLayout(false);
             this.grbTimKiem.PerformLayout();
             this.customersNavigationPage.ResumeLayout(false);
@@ -398,8 +413,9 @@
         private System.Windows.Forms.TextBox tbTimKiem;
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup1;
-        private DevExpress.XtraNavBar.NavBarItem navBarItem_TimVanBan;
-        private DevExpress.XtraNavBar.NavBarItem navBarItem_GuiVanBan;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup2;
     }
 }

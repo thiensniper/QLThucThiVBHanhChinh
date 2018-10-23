@@ -39,7 +39,12 @@ namespace QL_ThucThiVBHanhChinh
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
+            DialogResult ExitCT = new DialogResult();
+            ExitCT = MessageBox.Show("Bạn có chắc muốn đăng xuất và thoát khỏi chương trình hay không", "Thông Báo!", MessageBoxButtons.OKCancel, MessageBoxIcon.Stop);
+            if (ExitCT == DialogResult.OK) { Application.Exit(); }
+            if (ExitCT == DialogResult.Cancel) { }
+
         }
 
         private void toolTip1_Popup(object sender, PopupEventArgs e)
@@ -122,6 +127,14 @@ namespace QL_ThucThiVBHanhChinh
             frmUser2 frmUser2 = new frmUser2();
             this.Hide();
             frmUser2.ShowDialog();
+            this.Show();
+        }
+
+        private void pic_demo3_Click(object sender, EventArgs e)
+        {
+            frmMainUser frmMainUser = new frmMainUser();
+            this.Hide();
+            frmMainUser.ShowDialog();
             this.Show();
         }
     }
