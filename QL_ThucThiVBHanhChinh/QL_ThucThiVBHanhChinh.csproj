@@ -95,8 +95,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\FacultyDAO.cs" />
     <Compile Include="DAO\SettingDAO.cs" />
     <Compile Include="DAO\UserDAO.cs" />
+    <Compile Include="DTO\Faculty.cs" />
     <Compile Include="DTO\Setting.cs" />
     <Compile Include="DTO\User.cs" />
     <Compile Include="frmRegister.cs">
@@ -271,9 +273,7 @@
   <ItemGroup>
     <None Include="Resources\Untitled-2.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BUL\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\Untitled-22.png" />
   </ItemGroup>

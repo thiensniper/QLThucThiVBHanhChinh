@@ -84,6 +84,12 @@ namespace QL_ThucThiVBHanhChinh.DTO
             }
         }
 
+        public string IdFaculty
+        {
+            get { return idFaculty; }
+            set { idFaculty = value; }
+        }
+
         public string Position
         {
             get
@@ -134,12 +140,6 @@ namespace QL_ThucThiVBHanhChinh.DTO
             {
                 status = value;
             }
-        }
-
-        public string IdFaculty
-        {
-            get { return idFaculty; }
-            set { idFaculty = value; }
         }
 
         public User(string id, string username, string fullname, string email, string phone, string position, string idFaculty, string role, string password, string status)

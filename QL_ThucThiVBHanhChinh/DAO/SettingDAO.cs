@@ -21,7 +21,7 @@ namespace QL_ThucThiVBHanhChinh.DAO
                     instance = new SettingDAO();
                 return instance;
             }
-            set => instance = value;
+            private set => instance = value;
         }
 
         private SettingDAO() { }

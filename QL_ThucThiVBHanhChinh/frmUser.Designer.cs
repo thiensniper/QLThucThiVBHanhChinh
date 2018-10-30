@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUser));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.skinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
@@ -52,22 +52,22 @@
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.employeesNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbbFaculty = new System.Windows.Forms.ComboBox();
+            this.cbbRole = new System.Windows.Forms.ComboBox();
+            this.cbbStatus = new System.Windows.Forms.ComboBox();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.tbMatKhau = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dgvUser = new System.Windows.Forms.DataGridView();
+            this.txtPosition = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtFullname = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -102,7 +102,7 @@
             this.navigationFrame.SuspendLayout();
             this.employeesNavigationPage.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.customersNavigationPage.SuspendLayout();
             this.navigationPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -126,6 +126,7 @@
             this.skinRibbonGalleryBarItem1,
             this.barButtonItem1});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl.MaxItemId = 49;
             this.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.ribbonControl.Name = "ribbonControl";
@@ -133,7 +134,7 @@
             this.ribbonPage});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.OfficeUniversal;
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl.Size = new System.Drawing.Size(790, 52);
+            this.ribbonControl.Size = new System.Drawing.Size(922, 67);
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // skinRibbonGalleryBarItem
@@ -224,11 +225,12 @@
             this.employeesNavBarGroup,
             this.customersNavBarGroup,
             this.navBarGroup1});
-            this.navBarControl.Location = new System.Drawing.Point(0, 52);
+            this.navBarControl.Location = new System.Drawing.Point(0, 67);
+            this.navBarControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.navBarControl.Name = "navBarControl";
-            this.navBarControl.OptionsNavPane.ExpandedWidth = 165;
+            this.navBarControl.OptionsNavPane.ExpandedWidth = 192;
             this.navBarControl.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
-            this.navBarControl.Size = new System.Drawing.Size(165, 543);
+            this.navBarControl.Size = new System.Drawing.Size(192, 665);
             this.navBarControl.TabIndex = 0;
             this.navBarControl.Text = "navBarControl";
             this.navBarControl.View = new DevExpress.XtraNavBar.ViewInfo.SkinNavigationPaneViewInfoRegistrator();
@@ -259,7 +261,8 @@
             this.navigationFrame.Controls.Add(this.customersNavigationPage);
             this.navigationFrame.Controls.Add(this.navigationPage1);
             this.navigationFrame.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.navigationFrame.Location = new System.Drawing.Point(165, 52);
+            this.navigationFrame.Location = new System.Drawing.Point(192, 67);
+            this.navigationFrame.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.navigationFrame.Name = "navigationFrame";
             this.navigationFrame.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.employeesNavigationPage,
@@ -267,7 +270,7 @@
             this.navigationPage1});
             this.navigationFrame.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always;
             this.navigationFrame.SelectedPage = this.employeesNavigationPage;
-            this.navigationFrame.Size = new System.Drawing.Size(625, 543);
+            this.navigationFrame.Size = new System.Drawing.Size(730, 665);
             this.navigationFrame.TabIndex = 0;
             this.navigationFrame.Text = "navigationFrame";
             // 
@@ -275,27 +278,28 @@
             // 
             this.employeesNavigationPage.Controls.Add(this.groupBox1);
             this.employeesNavigationPage.Controls.Add(this.employeesLabelControl);
+            this.employeesNavigationPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.employeesNavigationPage.Name = "employeesNavigationPage";
-            this.employeesNavigationPage.Size = new System.Drawing.Size(625, 543);
+            this.employeesNavigationPage.Size = new System.Drawing.Size(730, 665);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cbbFaculty);
+            this.groupBox1.Controls.Add(this.cbbRole);
+            this.groupBox1.Controls.Add(this.cbbStatus);
             this.groupBox1.Controls.Add(this.btnCancel);
             this.groupBox1.Controls.Add(this.btnSave);
             this.groupBox1.Controls.Add(this.btnEdit);
             this.groupBox1.Controls.Add(this.btnDelete);
             this.groupBox1.Controls.Add(this.btnAdd);
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.tbMatKhau);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.dgvUser);
+            this.groupBox1.Controls.Add(this.txtPosition);
+            this.groupBox1.Controls.Add(this.txtPhone);
+            this.groupBox1.Controls.Add(this.txtPassword);
+            this.groupBox1.Controls.Add(this.txtId);
+            this.groupBox1.Controls.Add(this.txtFullname);
+            this.groupBox1.Controls.Add(this.txtUsername);
+            this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label9);
@@ -307,66 +311,92 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.groupBox1.Location = new System.Drawing.Point(6, 6);
+            this.groupBox1.Location = new System.Drawing.Point(7, 7);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(616, 534);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(719, 657);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
-            // comboBox1
+            // cbbFaculty
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "True",
-            "False"});
-            this.comboBox1.Location = new System.Drawing.Point(445, 85);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(161, 27);
-            this.comboBox1.TabIndex = 11;
-            this.comboBox1.Text = "True/False";
+            this.cbbFaculty.FormattingEnabled = true;
+            this.cbbFaculty.Location = new System.Drawing.Point(112, 188);
+            this.cbbFaculty.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbbFaculty.Name = "cbbFaculty";
+            this.cbbFaculty.Size = new System.Drawing.Size(187, 32);
+            this.cbbFaculty.TabIndex = 11;
+            // 
+            // cbbRole
+            // 
+            this.cbbRole.FormattingEnabled = true;
+            this.cbbRole.Items.AddRange(new object[] {
+            "sysadmin",
+            "user"});
+            this.cbbRole.Location = new System.Drawing.Point(519, 66);
+            this.cbbRole.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbbRole.Name = "cbbRole";
+            this.cbbRole.Size = new System.Drawing.Size(187, 32);
+            this.cbbRole.TabIndex = 11;
+            // 
+            // cbbStatus
+            // 
+            this.cbbStatus.FormattingEnabled = true;
+            this.cbbStatus.Items.AddRange(new object[] {
+            "true",
+            "false"});
+            this.cbbStatus.Location = new System.Drawing.Point(519, 105);
+            this.cbbStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbbStatus.Name = "cbbStatus";
+            this.cbbStatus.Size = new System.Drawing.Size(187, 32);
+            this.cbbStatus.TabIndex = 11;
+            this.cbbStatus.Text = "True/False";
             // 
             // btnCancel
             // 
             this.btnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageOptions.Image")));
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnCancel.Location = new System.Drawing.Point(556, 151);
+            this.btnCancel.Location = new System.Drawing.Point(649, 186);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(51, 57);
+            this.btnCancel.Size = new System.Drawing.Size(59, 70);
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Hủy";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
             this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
             this.btnSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnSave.Location = new System.Drawing.Point(499, 151);
+            this.btnSave.Location = new System.Drawing.Point(582, 186);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(51, 57);
+            this.btnSave.Size = new System.Drawing.Size(59, 70);
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Lưu";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnEdit
             // 
             this.btnEdit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImageOptions.Image")));
             this.btnEdit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnEdit.Location = new System.Drawing.Point(443, 151);
+            this.btnEdit.Location = new System.Drawing.Point(517, 186);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(51, 57);
+            this.btnEdit.Size = new System.Drawing.Size(59, 70);
             this.btnEdit.TabIndex = 10;
             this.btnEdit.Text = "Sửa";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
             this.btnDelete.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnDelete.Location = new System.Drawing.Point(386, 151);
+            this.btnDelete.Location = new System.Drawing.Point(450, 186);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(51, 57);
+            this.btnDelete.Size = new System.Drawing.Size(59, 70);
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Xóa";
             // 
@@ -374,127 +404,120 @@
             // 
             this.btnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageOptions.Image")));
             this.btnAdd.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnAdd.Location = new System.Drawing.Point(329, 151);
+            this.btnAdd.Location = new System.Drawing.Point(384, 186);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(51, 57);
+            this.btnAdd.Size = new System.Drawing.Size(59, 70);
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "Thêm";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // dataGridView1
+            // dgvUser
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 217);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(601, 311);
-            this.dataGridView1.TabIndex = 9;
+            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUser.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvUser.Location = new System.Drawing.Point(7, 267);
+            this.dgvUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvUser.MultiSelect = false;
+            this.dgvUser.Name = "dgvUser";
+            this.dgvUser.ReadOnly = true;
+            this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvUser.Size = new System.Drawing.Size(701, 383);
+            this.dgvUser.TabIndex = 9;
+            this.dgvUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellClick);
             // 
-            // textBox7
+            // txtPosition
             // 
-            this.textBox7.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox7.Location = new System.Drawing.Point(96, 151);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(162, 27);
-            this.textBox7.TabIndex = 5;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPosition.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtPosition.Location = new System.Drawing.Point(519, 23);
+            this.txtPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPosition.Multiline = true;
+            this.txtPosition.Name = "txtPosition";
+            this.txtPosition.Size = new System.Drawing.Size(188, 32);
+            this.txtPosition.TabIndex = 5;
+            this.txtPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // txtPhone
             // 
-            this.textBox6.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox6.Location = new System.Drawing.Point(445, 52);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(162, 27);
-            this.textBox6.TabIndex = 5;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPhone.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtPhone.Location = new System.Drawing.Point(519, 145);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPhone.Multiline = true;
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(188, 32);
+            this.txtPhone.TabIndex = 5;
+            this.txtPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox5
+            // txtPassword
             // 
-            this.textBox5.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox5.Location = new System.Drawing.Point(445, 19);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(162, 27);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPassword.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtPassword.Location = new System.Drawing.Point(112, 226);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(188, 32);
+            this.txtPassword.TabIndex = 5;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox9
+            // txtId
             // 
-            this.textBox9.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox9.Location = new System.Drawing.Point(445, 118);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(162, 27);
-            this.textBox9.TabIndex = 5;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtId.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtId.Location = new System.Drawing.Point(112, 146);
+            this.txtId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtId.Multiline = true;
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(188, 32);
+            this.txtId.TabIndex = 5;
+            this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tbMatKhau
+            // txtFullname
             // 
-            this.tbMatKhau.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.tbMatKhau.Location = new System.Drawing.Point(96, 184);
-            this.tbMatKhau.Multiline = true;
-            this.tbMatKhau.Name = "tbMatKhau";
-            this.tbMatKhau.PasswordChar = '*';
-            this.tbMatKhau.Size = new System.Drawing.Size(162, 27);
-            this.tbMatKhau.TabIndex = 5;
-            this.tbMatKhau.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFullname.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtFullname.Location = new System.Drawing.Point(112, 105);
+            this.txtFullname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFullname.Multiline = true;
+            this.txtFullname.Name = "txtFullname";
+            this.txtFullname.Size = new System.Drawing.Size(188, 32);
+            this.txtFullname.TabIndex = 5;
+            this.txtFullname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // txtUsername
             // 
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox3.Location = new System.Drawing.Point(96, 119);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 27);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUsername.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtUsername.Location = new System.Drawing.Point(112, 23);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtUsername.Multiline = true;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.ReadOnly = true;
+            this.txtUsername.Size = new System.Drawing.Size(188, 32);
+            this.txtUsername.TabIndex = 5;
+            this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // txtEmail
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox2.Location = new System.Drawing.Point(96, 85);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 27);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox4.Location = new System.Drawing.Point(96, 19);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(162, 27);
-            this.textBox4.TabIndex = 5;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox1.Location = new System.Drawing.Point(96, 52);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 27);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmail.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtEmail.Location = new System.Drawing.Point(112, 64);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(188, 32);
+            this.txtEmail.TabIndex = 5;
+            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label10.Location = new System.Drawing.Point(9, 27);
+            this.label10.Location = new System.Drawing.Point(10, 33);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 19);
+            this.label10.Size = new System.Drawing.Size(100, 24);
             this.label10.TabIndex = 4;
             this.label10.Text = "Tài Khoản";
             // 
@@ -502,9 +525,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label1.Location = new System.Drawing.Point(9, 60);
+            this.label1.Location = new System.Drawing.Point(10, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 19);
+            this.label1.Size = new System.Drawing.Size(59, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "Email";
             // 
@@ -512,20 +535,19 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label9.Location = new System.Drawing.Point(9, 159);
+            this.label9.Location = new System.Drawing.Point(10, 196);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 19);
+            this.label9.Size = new System.Drawing.Size(69, 24);
             this.label9.TabIndex = 4;
             this.label9.Text = "Đơn Vị";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label2.Location = new System.Drawing.Point(9, 93);
+            this.label2.Location = new System.Drawing.Point(10, 114);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 19);
+            this.label2.Size = new System.Drawing.Size(75, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "Họ Tên";
             // 
@@ -533,9 +555,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label8.Location = new System.Drawing.Point(269, 92);
+            this.label8.Location = new System.Drawing.Point(314, 113);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(159, 19);
+            this.label8.Size = new System.Drawing.Size(199, 24);
             this.label8.TabIndex = 4;
             this.label8.Text = "Trạng Thái Kích Hoạt";
             // 
@@ -543,9 +565,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label3.Location = new System.Drawing.Point(9, 126);
+            this.label3.Location = new System.Drawing.Point(10, 155);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 19);
+            this.label3.Size = new System.Drawing.Size(60, 24);
             this.label3.TabIndex = 4;
             this.label3.Text = "Mã Id";
             // 
@@ -553,9 +575,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label7.Location = new System.Drawing.Point(331, 60);
+            this.label7.Location = new System.Drawing.Point(386, 74);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 19);
+            this.label7.Size = new System.Drawing.Size(67, 24);
             this.label7.TabIndex = 4;
             this.label7.Text = "Quyền";
             // 
@@ -563,9 +585,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label4.Location = new System.Drawing.Point(9, 193);
+            this.label4.Location = new System.Drawing.Point(10, 238);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 19);
+            this.label4.Size = new System.Drawing.Size(94, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "Mật Khẩu";
             // 
@@ -573,9 +595,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label6.Location = new System.Drawing.Point(331, 27);
+            this.label6.Location = new System.Drawing.Point(386, 33);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 19);
+            this.label6.Size = new System.Drawing.Size(83, 24);
             this.label6.TabIndex = 4;
             this.label6.Text = "Chức Vụ";
             // 
@@ -583,9 +605,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label5.Location = new System.Drawing.Point(324, 121);
+            this.label5.Location = new System.Drawing.Point(378, 149);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 19);
+            this.label5.Size = new System.Drawing.Size(135, 24);
             this.label5.TabIndex = 4;
             this.label5.Text = "Số Điện Thoại";
             // 
@@ -601,16 +623,18 @@
             this.employeesLabelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.employeesLabelControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.employeesLabelControl.Location = new System.Drawing.Point(0, 0);
+            this.employeesLabelControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.employeesLabelControl.Name = "employeesLabelControl";
-            this.employeesLabelControl.Size = new System.Drawing.Size(625, 543);
+            this.employeesLabelControl.Size = new System.Drawing.Size(730, 665);
             this.employeesLabelControl.TabIndex = 0;
             this.employeesLabelControl.Click += new System.EventHandler(this.employeesLabelControl_Click);
             // 
             // customersNavigationPage
             // 
             this.customersNavigationPage.Controls.Add(this.customersLabelControl);
+            this.customersNavigationPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.customersNavigationPage.Name = "customersNavigationPage";
-            this.customersNavigationPage.Size = new System.Drawing.Size(625, 543);
+            this.customersNavigationPage.Size = new System.Drawing.Size(730, 665);
             // 
             // customersLabelControl
             // 
@@ -624,15 +648,17 @@
             this.customersLabelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.customersLabelControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customersLabelControl.Location = new System.Drawing.Point(0, 0);
+            this.customersLabelControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.customersLabelControl.Name = "customersLabelControl";
-            this.customersLabelControl.Size = new System.Drawing.Size(625, 543);
+            this.customersLabelControl.Size = new System.Drawing.Size(730, 665);
             this.customersLabelControl.TabIndex = 1;
             // 
             // navigationPage1
             // 
             this.navigationPage1.Controls.Add(this.groupBox2);
+            this.navigationPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(625, 543);
+            this.navigationPage1.Size = new System.Drawing.Size(730, 665);
             // 
             // groupBox2
             // 
@@ -648,9 +674,11 @@
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.groupBox2.Location = new System.Drawing.Point(6, 40);
+            this.groupBox2.Location = new System.Drawing.Point(7, 49);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(616, 452);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(719, 556);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             // 
@@ -658,10 +686,10 @@
             // 
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(559, 354);
+            this.simpleButton1.Location = new System.Drawing.Point(652, 436);
             this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(51, 57);
+            this.simpleButton1.Size = new System.Drawing.Size(59, 70);
             this.simpleButton1.TabIndex = 10;
             this.simpleButton1.Text = "Hủy";
             // 
@@ -669,9 +697,9 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.label11.Location = new System.Drawing.Point(170, 17);
+            this.label11.Location = new System.Drawing.Point(198, 21);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(309, 29);
+            this.label11.Size = new System.Drawing.Size(382, 36);
             this.label11.TabIndex = 0;
             this.label11.Text = "QUẢN LÝ EMAIL HỆ THỐNG";
             // 
@@ -679,10 +707,10 @@
             // 
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(502, 354);
+            this.simpleButton2.Location = new System.Drawing.Point(586, 436);
             this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(51, 57);
+            this.simpleButton2.Size = new System.Drawing.Size(59, 70);
             this.simpleButton2.TabIndex = 10;
             this.simpleButton2.Text = "Lưu";
             // 
@@ -690,10 +718,10 @@
             // 
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
             this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton3.Location = new System.Drawing.Point(446, 354);
+            this.simpleButton3.Location = new System.Drawing.Point(520, 436);
             this.simpleButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(51, 57);
+            this.simpleButton3.Size = new System.Drawing.Size(59, 70);
             this.simpleButton3.TabIndex = 10;
             this.simpleButton3.Text = "Sửa";
             // 
@@ -701,10 +729,10 @@
             // 
             this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
             this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton4.Location = new System.Drawing.Point(389, 354);
+            this.simpleButton4.Location = new System.Drawing.Point(454, 436);
             this.simpleButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(51, 57);
+            this.simpleButton4.Size = new System.Drawing.Size(59, 70);
             this.simpleButton4.TabIndex = 10;
             this.simpleButton4.Text = "Xóa";
             // 
@@ -712,46 +740,49 @@
             // 
             this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.simpleButton5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton5.Location = new System.Drawing.Point(332, 354);
+            this.simpleButton5.Location = new System.Drawing.Point(387, 436);
             this.simpleButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(51, 57);
+            this.simpleButton5.Size = new System.Drawing.Size(59, 70);
             this.simpleButton5.TabIndex = 10;
             this.simpleButton5.Text = "Thêm";
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 12F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView2.Location = new System.Drawing.Point(9, 98);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView2.Location = new System.Drawing.Point(10, 121);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(601, 232);
+            this.dataGridView2.Size = new System.Drawing.Size(701, 286);
             this.dataGridView2.TabIndex = 9;
             // 
             // textBox16
             // 
             this.textBox16.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox16.Location = new System.Drawing.Point(98, 58);
+            this.textBox16.Location = new System.Drawing.Point(114, 71);
+            this.textBox16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox16.Multiline = true;
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(162, 27);
+            this.textBox16.Size = new System.Drawing.Size(188, 32);
             this.textBox16.TabIndex = 5;
             this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox17
             // 
             this.textBox17.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox17.Location = new System.Drawing.Point(448, 58);
+            this.textBox17.Location = new System.Drawing.Point(523, 71);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(162, 27);
+            this.textBox17.Size = new System.Drawing.Size(188, 32);
             this.textBox17.TabIndex = 5;
             this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -759,9 +790,9 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label12.Location = new System.Drawing.Point(11, 66);
+            this.label12.Location = new System.Drawing.Point(13, 81);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(73, 19);
+            this.label12.Size = new System.Drawing.Size(91, 24);
             this.label12.TabIndex = 4;
             this.label12.Text = "Mã Email";
             // 
@@ -769,9 +800,9 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label13.Location = new System.Drawing.Point(361, 66);
+            this.label13.Location = new System.Drawing.Point(421, 81);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(48, 19);
+            this.label13.Size = new System.Drawing.Size(59, 24);
             this.label13.TabIndex = 4;
             this.label13.Text = "Email";
             // 
@@ -781,9 +812,9 @@
             // 
             // frmUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 595);
+            this.ClientSize = new System.Drawing.Size(922, 732);
             this.Controls.Add(this.navigationFrame);
             this.Controls.Add(this.navBarControl);
             this.Controls.Add(this.ribbonControl);
@@ -792,6 +823,7 @@
             this.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.LookAndFeel.UseWindowsXPTheme = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "frmUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -805,7 +837,7 @@
             this.employeesNavigationPage.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.customersNavigationPage.ResumeLayout(false);
             this.navigationPage1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -847,24 +879,22 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox tbMatKhau;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPosition;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtFullname;
+        private System.Windows.Forms.DataGridView dgvUser;
         private DevExpress.XtraEditors.SimpleButton btnAdd;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private DevExpress.XtraEditors.SimpleButton btnDelete;
         private DevExpress.XtraEditors.SimpleButton btnCancel;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.SimpleButton btnEdit;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbStatus;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup1;
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
@@ -880,5 +910,7 @@
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox cbbFaculty;
+        private System.Windows.Forms.ComboBox cbbRole;
     }
 }
