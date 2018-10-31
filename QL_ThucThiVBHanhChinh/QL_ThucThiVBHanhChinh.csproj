@@ -94,7 +94,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\FirebaseConnection.cs" />
     <Compile Include="DAO\FacultyDAO.cs" />
     <Compile Include="DAO\SettingDAO.cs" />
     <Compile Include="DAO\UserDAO.cs" />

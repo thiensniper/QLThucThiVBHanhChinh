@@ -31,10 +31,10 @@ namespace QL_ThucThiVBHanhChinh.DAO
 
         private UserDAO() { }
 
-        public async Task<List<User>> getUsers()
+        public async Task<List<User>> GetAllUsers()
         {
             List<User> list = new List<User>();
-            FirebaseResponse response = await DataProvider.Instance.Get(urlUser);
+            FirebaseResponse response = await FirebaseConnection.Instance.Get(urlUser);
             dynamic obj = response.ResultAs<Dictionary<string, User>>();
             foreach(User data in obj.Values)
             {
@@ -43,17 +43,30 @@ namespace QL_ThucThiVBHanhChinh.DAO
             return list;
         }
 
-        public async Task<bool> updateUser(User user)
+        public async Task<User> GetUserByUsername(string username)
         {
-            SetResponse response = await DataProvider.Instance.SetObject<User>(urlUser + "/" + user.Username, user);
-            //await setUsername(user, user.Fullname);
+            FirebaseResponse response = await FirebaseConnection.Instance.Get(urlUser + "/" + username);
+            return response.ResultAs<User>();
+        }
+
+        public async Task<bool> UpdateUser(User user)
+        {
+            SetResponse response = await FirebaseConnection.Instance.SetObject<User>(urlUser + "/" + user.Username, user);
+            //await SetUsername(user, user.Fullname);
             if (response == null) return false;
             else return true;
         }
 
-        public async Task setUsername(User user, string username) // Dùng để test role Firebase
+        public async Task<bool> DeleteUserByUsername(string username)
         {
-            SetResponse response = await DataProvider.Instance.SetString(urlUser + "/" + user.Username + "/Username", username);
+            FirebaseResponse response = await FirebaseConnection.Instance.DeleteObject(urlUser + "/" + username);
+            if (response == null) return false;
+            else return true;
+        }
+
+        public async Task SetUsername(User user, string username) // Dùng để test role Firebase
+        {
+            SetResponse response = await FirebaseConnection.Instance.SetString(urlUser + "/" + user.Username + "/Username", username);
         }
     }
 }

@@ -32,7 +32,7 @@ namespace QL_ThucThiVBHanhChinh.DAO
             {
                 //FirebaseResponse response = await DataProvider.Instance.Get(urlSettingEmail + "/" + SessionInfo.user.Username + "/SettingEmail");
                 //return response.ResultAs<string>();
-                FirebaseResponse response = await DataProvider.Instance.Get(urlSetting + "/" + SessionInfo.user.Username);
+                FirebaseResponse response = await FirebaseConnection.Instance.Get(urlSetting + "/" + SessionInfo.user.Username);
                 dynamic obj = response.ResultAs<Setting>();
 
                 return obj;
@@ -43,7 +43,7 @@ namespace QL_ThucThiVBHanhChinh.DAO
 
         public async Task<bool> updateSetting(Setting setting)
         {
-            SetResponse response = await DataProvider.Instance.SetObject<Setting>(urlSetting + "/" + setting.Username, setting);
+            SetResponse response = await FirebaseConnection.Instance.SetObject<Setting>(urlSetting + "/" + setting.Username, setting);
             if (response == null) return false;
             else return true;
         }

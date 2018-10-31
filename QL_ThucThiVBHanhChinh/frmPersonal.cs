@@ -160,7 +160,7 @@ namespace QL_ThucThiVBHanhChinh
             bool updated = false;
             if (!updateUser.equal(SessionInfo.user)) // Kiểm tra thông tin mới có giống thông tin cũ hay ko
             {
-                updated = await UserDAO.Instance.updateUser(updateUser);
+                updated = await UserDAO.Instance.UpdateUser(updateUser);
             }
             if (updated == true)
             {

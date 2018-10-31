@@ -38,7 +38,7 @@ namespace QL_ThucThiVBHanhChinh
         {
             btnLogin.Enabled = false;
             List<User> listUser;
-            listUser = await UserDAO.Instance.getUsers();
+            listUser = await UserDAO.Instance.GetAllUsers();
             if(listUser != null)
             {
                 foreach(User data in listUser)

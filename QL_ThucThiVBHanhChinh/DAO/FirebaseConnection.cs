@@ -12,20 +12,20 @@ using System.Windows.Forms;
 
 namespace QL_ThucThiVBHanhChinh.DAO
 {
-    class DataProvider
+    class FirebaseConnection
     {
         private string url = @"https://qlvbhc-90731.firebaseio.com"; // Firebase URL
         private IFirebaseConfig config;
         private IFirebaseClient client;
 
-        private static DataProvider instance;
+        private static FirebaseConnection instance;
 
-        public static DataProvider Instance
+        public static FirebaseConnection Instance
         {
             get
             {
                 if (instance == null)
-                    instance = new DataProvider();
+                    instance = new FirebaseConnection();
                 return instance;
             }
 
@@ -35,7 +35,7 @@ namespace QL_ThucThiVBHanhChinh.DAO
             }
         }
 
-        private DataProvider()
+        private FirebaseConnection()
         {
             config = new FirebaseConfig
             {
@@ -69,7 +69,22 @@ namespace QL_ThucThiVBHanhChinh.DAO
             }
             catch(Exception message)
             {
-                Console.WriteLine("\t ====SetString() error:\n" + message.ToString());
+                Console.WriteLine("\t ====SetObject() error:\n" + message.ToString());
+                MessageBox.Show("Cannot connect to server!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
+        public async Task<FirebaseResponse> DeleteObject(string urlDelete)
+        {
+            try
+            {
+                FirebaseResponse response = await client.DeleteAsync(urlDelete);
+                return response;
+            }
+            catch(Exception message)
+            {
+                Console.WriteLine("\t ====DeleteObject() error:\n" + message.ToString());
                 MessageBox.Show("Cannot connect to server!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }

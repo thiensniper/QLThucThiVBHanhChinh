@@ -61,6 +61,7 @@
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.dgvUser = new System.Windows.Forms.DataGridView();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtPosition = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -399,6 +400,7 @@
             this.btnDelete.Size = new System.Drawing.Size(59, 70);
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Xóa";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -415,6 +417,8 @@
             // dgvUser
             // 
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Password});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 12F);
@@ -431,7 +435,15 @@
             this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUser.Size = new System.Drawing.Size(701, 383);
             this.dgvUser.TabIndex = 9;
-            this.dgvUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellClick);
+            this.dgvUser.SelectionChanged += new System.EventHandler(this.dgvUser_SelectionChanged);
+            // 
+            // Password
+            // 
+            this.Password.DataPropertyName = "Password";
+            this.Password.HeaderText = "Password";
+            this.Password.Name = "Password";
+            this.Password.ReadOnly = true;
+            this.Password.Visible = false;
             // 
             // txtPosition
             // 
@@ -462,6 +474,7 @@
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(188, 32);
             this.txtPassword.TabIndex = 5;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -912,5 +925,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cbbFaculty;
         private System.Windows.Forms.ComboBox cbbRole;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Password;
     }
 }

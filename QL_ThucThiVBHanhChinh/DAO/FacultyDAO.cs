@@ -32,7 +32,7 @@ namespace QL_ThucThiVBHanhChinh.DAO
         public async Task<List<Faculty>> getAllFaculty()
         {
             List<Faculty> list = new List<Faculty>();
-            FirebaseResponse response = await DataProvider.Instance.Get(urlFaculty);
+            FirebaseResponse response = await FirebaseConnection.Instance.Get(urlFaculty);
             dynamic obj = response.ResultAs<Dictionary<string, Faculty>>();
             foreach (Faculty data in obj.Values)
                 list.Add(data);
