@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUnit));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.employeesBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
@@ -42,9 +43,6 @@
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.employeesNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.employeesLabelControl = new DevExpress.XtraEditors.LabelControl();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -54,6 +52,10 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.employeesLabelControl = new DevExpress.XtraEditors.LabelControl();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
@@ -84,7 +86,7 @@
             this.ribbonPage});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.OfficeUniversal;
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl.Size = new System.Drawing.Size(790, 51);
+            this.ribbonControl.Size = new System.Drawing.Size(790, 52);
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // employeesBarButtonItem
@@ -142,13 +144,13 @@
             this.navigationFrame.Appearance.Options.UseBackColor = true;
             this.navigationFrame.Controls.Add(this.employeesNavigationPage);
             this.navigationFrame.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.navigationFrame.Location = new System.Drawing.Point(0, 51);
+            this.navigationFrame.Location = new System.Drawing.Point(0, 52);
             this.navigationFrame.Name = "navigationFrame";
             this.navigationFrame.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.employeesNavigationPage});
             this.navigationFrame.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always;
             this.navigationFrame.SelectedPage = this.employeesNavigationPage;
-            this.navigationFrame.Size = new System.Drawing.Size(790, 544);
+            this.navigationFrame.Size = new System.Drawing.Size(790, 543);
             this.navigationFrame.TabIndex = 0;
             this.navigationFrame.Text = "navigationFrame";
             // 
@@ -157,10 +159,11 @@
             this.employeesNavigationPage.Controls.Add(this.groupBox1);
             this.employeesNavigationPage.Controls.Add(this.employeesLabelControl);
             this.employeesNavigationPage.Name = "employeesNavigationPage";
-            this.employeesNavigationPage.Size = new System.Drawing.Size(790, 544);
+            this.employeesNavigationPage.Size = new System.Drawing.Size(790, 543);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.simpleButton6);
             this.groupBox1.Controls.Add(this.dataGridView2);
             this.groupBox1.Controls.Add(this.textBox10);
             this.groupBox1.Controls.Add(this.textBox11);
@@ -177,6 +180,102 @@
             this.groupBox1.Size = new System.Drawing.Size(783, 538);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 117);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(777, 423);
+            this.dataGridView2.TabIndex = 19;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.textBox10.Location = new System.Drawing.Point(518, 82);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(162, 27);
+            this.textBox10.TabIndex = 3;
+            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.textBox11.Location = new System.Drawing.Point(518, 49);
+            this.textBox11.Multiline = true;
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(162, 27);
+            this.textBox11.TabIndex = 2;
+            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.textBox15.Location = new System.Drawing.Point(167, 82);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(162, 27);
+            this.textBox15.TabIndex = 1;
+            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.textBox16.Location = new System.Drawing.Point(167, 49);
+            this.textBox16.Multiline = true;
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(162, 27);
+            this.textBox16.TabIndex = 0;
+            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.label15.Location = new System.Drawing.Point(56, 53);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(96, 23);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "Mã Đơn Vị";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.label17.Location = new System.Drawing.Point(56, 86);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(103, 23);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "Tên Đơn Vị";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.label19.Location = new System.Drawing.Point(353, 54);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(168, 23);
+            this.label19.TabIndex = 13;
+            this.label19.Text = "Mã Người Đại Diện";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.label20.Location = new System.Drawing.Point(354, 86);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(104, 23);
+            this.label20.TabIndex = 14;
+            this.label20.Text = "Loại Đơn Vị";
             // 
             // label1
             // 
@@ -202,100 +301,25 @@
             this.employeesLabelControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.employeesLabelControl.Location = new System.Drawing.Point(0, 0);
             this.employeesLabelControl.Name = "employeesLabelControl";
-            this.employeesLabelControl.Size = new System.Drawing.Size(790, 544);
+            this.employeesLabelControl.Size = new System.Drawing.Size(790, 543);
             this.employeesLabelControl.TabIndex = 0;
             // 
             // defaultLookAndFeel1
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013";
             // 
-            // dataGridView2
+            // simpleButton6
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 117);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(777, 423);
-            this.dataGridView2.TabIndex = 19;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox10.Location = new System.Drawing.Point(533, 82);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(162, 27);
-            this.textBox10.TabIndex = 3;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox11.Location = new System.Drawing.Point(533, 49);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(162, 27);
-            this.textBox11.TabIndex = 2;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox15.Location = new System.Drawing.Point(182, 82);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(162, 27);
-            this.textBox15.TabIndex = 1;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox16.Location = new System.Drawing.Point(182, 49);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(162, 27);
-            this.textBox16.TabIndex = 0;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.label15.Location = new System.Drawing.Point(71, 53);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(96, 23);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "Mã Đơn Vị";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.label17.Location = new System.Drawing.Point(71, 86);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(103, 23);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Tên Đơn Vị";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.label19.Location = new System.Drawing.Point(368, 54);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(168, 23);
-            this.label19.TabIndex = 13;
-            this.label19.Text = "Mã Người Đại Diện";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.label20.Location = new System.Drawing.Point(369, 86);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(104, 23);
-            this.label20.TabIndex = 14;
-            this.label20.Text = "Loại Đơn Vị";
+            this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.simpleButton6.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton6.Location = new System.Drawing.Point(686, 49);
+            this.simpleButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(51, 57);
+            this.simpleButton6.TabIndex = 20;
+            this.simpleButton6.Text = "Tìm";
             // 
             // frmUnit
             // 
@@ -351,5 +375,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
     }
 }

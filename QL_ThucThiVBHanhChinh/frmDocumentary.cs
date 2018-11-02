@@ -49,5 +49,15 @@ namespace QL_ThucThiVBHanhChinh
         {
             barButtonNavigation_ItemClick(sender,e);
         }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bạn có chắc muốn hủy việc tạo thực thi hay không ?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+        }
     }
 }
