@@ -101,6 +101,12 @@
     <Compile Include="DTO\Faculty.cs" />
     <Compile Include="DTO\Setting.cs" />
     <Compile Include="DTO\User.cs" />
+    <Compile Include="frmRemind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemind.Designer.cs">
+      <DependentUpon>frmRemind.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,11 +182,23 @@
       <DependentUpon>frmUser2.cs</DependentUpon>
     </Compile>
     <Compile Include="SessionInfo.cs" />
+    <Compile Include="frmNotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotification.Designer.cs">
+      <DependentUpon>frmNotification.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmNotification.resx">
+      <DependentUpon>frmNotification.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainUser.resx">
       <DependentUpon>frmMainUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemind.resx">
+      <DependentUpon>frmRemind.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUnit.resx">
       <DependentUpon>frmUnit.cs</DependentUpon>
@@ -273,7 +291,9 @@
   <ItemGroup>
     <None Include="Resources\Untitled-2.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-notification-100.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Untitled-22.png" />
   </ItemGroup>
@@ -420,6 +440,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CAM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checklist-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checklist-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KEY.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

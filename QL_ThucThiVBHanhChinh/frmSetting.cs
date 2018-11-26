@@ -50,5 +50,7 @@ namespace QL_ThucThiVBHanhChinh
             else
                 MessageBox.Show("Chưa cập nhật được thông tin!", "Thông báo");
         }
-    }
+
+        
+    }  
 }

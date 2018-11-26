@@ -303,6 +303,26 @@ namespace QL_ThucThiVBHanhChinh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_checklist_128 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-checklist-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_checklist_filled_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-checklist-filled-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_checkmark_512 {
             get {
                 object obj = ResourceManager.GetObject("icons8-checkmark-512", resourceCulture);
@@ -423,6 +443,16 @@ namespace QL_ThucThiVBHanhChinh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_notification_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-notification-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_settings_1000 {
             get {
                 object obj = ResourceManager.GetObject("icons8-settings-1000", resourceCulture);
@@ -456,6 +486,16 @@ namespace QL_ThucThiVBHanhChinh.Properties {
         internal static System.Drawing.Bitmap icons8_user_groups_240 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-groups-240", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap KEY {
+            get {
+                object obj = ResourceManager.GetObject("KEY", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
