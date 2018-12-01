@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUser));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.skinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
@@ -52,6 +52,8 @@
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.employeesNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.picOpeneye = new System.Windows.Forms.PictureBox();
+            this.picCloseeye = new System.Windows.Forms.PictureBox();
             this.cbbFaculty = new System.Windows.Forms.ComboBox();
             this.cbbRole = new System.Windows.Forms.ComboBox();
             this.cbbStatus = new System.Windows.Forms.ComboBox();
@@ -111,6 +113,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.txtPassword2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
@@ -118,6 +121,8 @@
             this.navigationFrame.SuspendLayout();
             this.employeesNavigationPage.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picOpeneye)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCloseeye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.customersNavigationPage.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -151,8 +156,9 @@
             this.ribbonPage});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.OfficeUniversal;
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl.Size = new System.Drawing.Size(790, 51);
+            this.ribbonControl.Size = new System.Drawing.Size(884, 51);
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            this.ribbonControl.Click += new System.EventHandler(this.ribbonControl_Click);
             // 
             // skinRibbonGalleryBarItem
             // 
@@ -285,7 +291,7 @@
             this.navigationPage1});
             this.navigationFrame.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always;
             this.navigationFrame.SelectedPage = this.employeesNavigationPage;
-            this.navigationFrame.Size = new System.Drawing.Size(625, 544);
+            this.navigationFrame.Size = new System.Drawing.Size(719, 544);
             this.navigationFrame.TabIndex = 0;
             this.navigationFrame.Text = "navigationFrame";
             // 
@@ -294,10 +300,13 @@
             this.employeesNavigationPage.Controls.Add(this.groupBox1);
             this.employeesNavigationPage.Controls.Add(this.employeesLabelControl);
             this.employeesNavigationPage.Name = "employeesNavigationPage";
-            this.employeesNavigationPage.Size = new System.Drawing.Size(625, 544);
+            this.employeesNavigationPage.Size = new System.Drawing.Size(719, 544);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtPassword2);
+            this.groupBox1.Controls.Add(this.picOpeneye);
+            this.groupBox1.Controls.Add(this.picCloseeye);
             this.groupBox1.Controls.Add(this.cbbFaculty);
             this.groupBox1.Controls.Add(this.cbbRole);
             this.groupBox1.Controls.Add(this.cbbStatus);
@@ -327,9 +336,31 @@
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 12F);
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(616, 534);
+            this.groupBox1.Size = new System.Drawing.Size(710, 534);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
+            // 
+            // picOpeneye
+            // 
+            this.picOpeneye.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_eye_961;
+            this.picOpeneye.Location = new System.Drawing.Point(367, 184);
+            this.picOpeneye.Name = "picOpeneye";
+            this.picOpeneye.Size = new System.Drawing.Size(32, 32);
+            this.picOpeneye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picOpeneye.TabIndex = 15;
+            this.picOpeneye.TabStop = false;
+            this.picOpeneye.Click += new System.EventHandler(this.picOpeneye_Click);
+            // 
+            // picCloseeye
+            // 
+            this.picCloseeye.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.icons8_hide_961;
+            this.picCloseeye.Location = new System.Drawing.Point(367, 184);
+            this.picCloseeye.Name = "picCloseeye";
+            this.picCloseeye.Size = new System.Drawing.Size(32, 32);
+            this.picCloseeye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCloseeye.TabIndex = 15;
+            this.picCloseeye.TabStop = false;
+            this.picCloseeye.Click += new System.EventHandler(this.picCloseeye_Click);
             // 
             // cbbFaculty
             // 
@@ -337,7 +368,7 @@
             this.cbbFaculty.Location = new System.Drawing.Point(96, 153);
             this.cbbFaculty.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbFaculty.Name = "cbbFaculty";
-            this.cbbFaculty.Size = new System.Drawing.Size(161, 27);
+            this.cbbFaculty.Size = new System.Drawing.Size(259, 27);
             this.cbbFaculty.TabIndex = 4;
             // 
             // cbbRole
@@ -346,10 +377,10 @@
             this.cbbRole.Items.AddRange(new object[] {
             "sysadmin",
             "user"});
-            this.cbbRole.Location = new System.Drawing.Point(445, 54);
+            this.cbbRole.Location = new System.Drawing.Point(480, 54);
             this.cbbRole.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbRole.Name = "cbbRole";
-            this.cbbRole.Size = new System.Drawing.Size(161, 27);
+            this.cbbRole.Size = new System.Drawing.Size(220, 27);
             this.cbbRole.TabIndex = 7;
             // 
             // cbbStatus
@@ -358,7 +389,7 @@
             this.cbbStatus.Items.AddRange(new object[] {
             "true",
             "false"});
-            this.cbbStatus.Location = new System.Drawing.Point(445, 85);
+            this.cbbStatus.Location = new System.Drawing.Point(539, 85);
             this.cbbStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbStatus.Name = "cbbStatus";
             this.cbbStatus.Size = new System.Drawing.Size(161, 27);
@@ -369,7 +400,7 @@
             // 
             this.btnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageOptions.Image")));
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnCancel.Location = new System.Drawing.Point(556, 151);
+            this.btnCancel.Location = new System.Drawing.Point(650, 151);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(51, 57);
@@ -381,7 +412,7 @@
             // 
             this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
             this.btnSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnSave.Location = new System.Drawing.Point(499, 151);
+            this.btnSave.Location = new System.Drawing.Point(593, 151);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(51, 57);
@@ -393,7 +424,7 @@
             // 
             this.btnEdit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImageOptions.Image")));
             this.btnEdit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnEdit.Location = new System.Drawing.Point(443, 151);
+            this.btnEdit.Location = new System.Drawing.Point(537, 151);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(51, 57);
@@ -405,7 +436,7 @@
             // 
             this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
             this.btnDelete.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnDelete.Location = new System.Drawing.Point(386, 151);
+            this.btnDelete.Location = new System.Drawing.Point(480, 151);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(51, 57);
@@ -417,7 +448,7 @@
             // 
             this.btnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageOptions.Image")));
             this.btnAdd.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnAdd.Location = new System.Drawing.Point(329, 151);
+            this.btnAdd.Location = new System.Drawing.Point(423, 151);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(51, 57);
@@ -430,20 +461,20 @@
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Password});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUser.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Tahoma", 12F);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUser.DefaultCellStyle = dataGridViewCellStyle13;
             this.dgvUser.Location = new System.Drawing.Point(6, 217);
             this.dgvUser.MultiSelect = false;
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.ReadOnly = true;
             this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUser.Size = new System.Drawing.Size(601, 311);
+            this.dgvUser.Size = new System.Drawing.Size(698, 311);
             this.dgvUser.TabIndex = 9;
             this.dgvUser.SelectionChanged += new System.EventHandler(this.dgvUser_SelectionChanged);
             // 
@@ -458,20 +489,20 @@
             // txtPosition
             // 
             this.txtPosition.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.txtPosition.Location = new System.Drawing.Point(445, 19);
+            this.txtPosition.Location = new System.Drawing.Point(480, 19);
             this.txtPosition.Multiline = true;
             this.txtPosition.Name = "txtPosition";
-            this.txtPosition.Size = new System.Drawing.Size(162, 27);
+            this.txtPosition.Size = new System.Drawing.Size(221, 27);
             this.txtPosition.TabIndex = 6;
             this.txtPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPhone
             // 
             this.txtPhone.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.txtPhone.Location = new System.Drawing.Point(445, 118);
+            this.txtPhone.Location = new System.Drawing.Point(478, 118);
             this.txtPhone.Multiline = true;
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(162, 27);
+            this.txtPhone.Size = new System.Drawing.Size(223, 27);
             this.txtPhone.TabIndex = 9;
             this.txtPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -482,7 +513,7 @@
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(162, 27);
+            this.txtPassword.Size = new System.Drawing.Size(260, 27);
             this.txtPassword.TabIndex = 5;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -492,7 +523,7 @@
             this.txtId.Location = new System.Drawing.Point(96, 119);
             this.txtId.Multiline = true;
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(162, 27);
+            this.txtId.Size = new System.Drawing.Size(260, 27);
             this.txtId.TabIndex = 3;
             this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -502,7 +533,7 @@
             this.txtFullname.Location = new System.Drawing.Point(96, 85);
             this.txtFullname.Multiline = true;
             this.txtFullname.Name = "txtFullname";
-            this.txtFullname.Size = new System.Drawing.Size(162, 27);
+            this.txtFullname.Size = new System.Drawing.Size(260, 27);
             this.txtFullname.TabIndex = 2;
             this.txtFullname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -513,7 +544,7 @@
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.ReadOnly = true;
-            this.txtUsername.Size = new System.Drawing.Size(162, 27);
+            this.txtUsername.Size = new System.Drawing.Size(260, 27);
             this.txtUsername.TabIndex = 0;
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -523,7 +554,7 @@
             this.txtEmail.Location = new System.Drawing.Point(96, 52);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(162, 27);
+            this.txtEmail.Size = new System.Drawing.Size(260, 27);
             this.txtEmail.TabIndex = 1;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -571,7 +602,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label8.Location = new System.Drawing.Point(269, 92);
+            this.label8.Location = new System.Drawing.Point(363, 92);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(159, 19);
             this.label8.TabIndex = 4;
@@ -591,7 +622,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label7.Location = new System.Drawing.Point(331, 60);
+            this.label7.Location = new System.Drawing.Point(363, 60);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 19);
             this.label7.TabIndex = 4;
@@ -611,7 +642,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label6.Location = new System.Drawing.Point(331, 27);
+            this.label6.Location = new System.Drawing.Point(363, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 19);
             this.label6.TabIndex = 4;
@@ -621,7 +652,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label5.Location = new System.Drawing.Point(324, 121);
+            this.label5.Location = new System.Drawing.Point(363, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 19);
             this.label5.TabIndex = 4;
@@ -640,7 +671,7 @@
             this.employeesLabelControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.employeesLabelControl.Location = new System.Drawing.Point(0, 0);
             this.employeesLabelControl.Name = "employeesLabelControl";
-            this.employeesLabelControl.Size = new System.Drawing.Size(625, 544);
+            this.employeesLabelControl.Size = new System.Drawing.Size(719, 544);
             this.employeesLabelControl.TabIndex = 0;
             this.employeesLabelControl.Click += new System.EventHandler(this.employeesLabelControl_Click);
             // 
@@ -649,7 +680,7 @@
             this.customersNavigationPage.Controls.Add(this.groupBox3);
             this.customersNavigationPage.Controls.Add(this.customersLabelControl);
             this.customersNavigationPage.Name = "customersNavigationPage";
-            this.customersNavigationPage.Size = new System.Drawing.Size(625, 544);
+            this.customersNavigationPage.Size = new System.Drawing.Size(719, 544);
             // 
             // groupBox3
             // 
@@ -669,7 +700,7 @@
             this.groupBox3.Controls.Add(this.simpleButton10);
             this.groupBox3.Location = new System.Drawing.Point(6, 6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(616, 534);
+            this.groupBox3.Size = new System.Drawing.Size(710, 534);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             // 
@@ -678,7 +709,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(6, 169);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(604, 359);
+            this.dataGridView1.Size = new System.Drawing.Size(698, 359);
             this.dataGridView1.TabIndex = 48;
             // 
             // comboBox1
@@ -686,7 +717,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(185, 128);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(226, 21);
+            this.comboBox1.Size = new System.Drawing.Size(338, 21);
             this.comboBox1.TabIndex = 2;
             // 
             // textBox11
@@ -696,7 +727,7 @@
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(226, 27);
+            this.textBox11.Size = new System.Drawing.Size(338, 27);
             this.textBox11.TabIndex = 42;
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -706,7 +737,7 @@
             this.textBox15.Location = new System.Drawing.Point(185, 60);
             this.textBox15.Multiline = true;
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(226, 27);
+            this.textBox15.Size = new System.Drawing.Size(338, 27);
             this.textBox15.TabIndex = 1;
             this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -716,7 +747,7 @@
             this.textBox1.Location = new System.Drawing.Point(185, 27);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 27);
+            this.textBox1.Size = new System.Drawing.Size(338, 27);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -764,7 +795,7 @@
             // 
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
             this.simpleButton6.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton6.Location = new System.Drawing.Point(518, 92);
+            this.simpleButton6.Location = new System.Drawing.Point(622, 91);
             this.simpleButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.Size = new System.Drawing.Size(51, 57);
@@ -775,7 +806,7 @@
             // 
             this.simpleButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
             this.simpleButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton7.Location = new System.Drawing.Point(461, 92);
+            this.simpleButton7.Location = new System.Drawing.Point(565, 91);
             this.simpleButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Size = new System.Drawing.Size(51, 57);
@@ -786,7 +817,7 @@
             // 
             this.simpleButton8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.ImageOptions.Image")));
             this.simpleButton8.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton8.Location = new System.Drawing.Point(547, 28);
+            this.simpleButton8.Location = new System.Drawing.Point(651, 27);
             this.simpleButton8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton8.Name = "simpleButton8";
             this.simpleButton8.Size = new System.Drawing.Size(51, 57);
@@ -797,7 +828,7 @@
             // 
             this.simpleButton9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton9.ImageOptions.Image")));
             this.simpleButton9.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton9.Location = new System.Drawing.Point(490, 28);
+            this.simpleButton9.Location = new System.Drawing.Point(594, 27);
             this.simpleButton9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton9.Name = "simpleButton9";
             this.simpleButton9.Size = new System.Drawing.Size(51, 57);
@@ -808,7 +839,7 @@
             // 
             this.simpleButton10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
             this.simpleButton10.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton10.Location = new System.Drawing.Point(433, 28);
+            this.simpleButton10.Location = new System.Drawing.Point(537, 27);
             this.simpleButton10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton10.Name = "simpleButton10";
             this.simpleButton10.Size = new System.Drawing.Size(51, 57);
@@ -828,14 +859,14 @@
             this.customersLabelControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customersLabelControl.Location = new System.Drawing.Point(0, 0);
             this.customersLabelControl.Name = "customersLabelControl";
-            this.customersLabelControl.Size = new System.Drawing.Size(625, 544);
+            this.customersLabelControl.Size = new System.Drawing.Size(719, 544);
             this.customersLabelControl.TabIndex = 1;
             // 
             // navigationPage1
             // 
             this.navigationPage1.Controls.Add(this.groupBox2);
             this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(625, 544);
+            this.navigationPage1.Size = new System.Drawing.Size(719, 544);
             // 
             // groupBox2
             // 
@@ -853,7 +884,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 12F);
             this.groupBox2.Location = new System.Drawing.Point(6, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(616, 537);
+            this.groupBox2.Size = new System.Drawing.Size(710, 537);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             // 
@@ -861,7 +892,7 @@
             // 
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(559, 386);
+            this.simpleButton1.Location = new System.Drawing.Point(655, 471);
             this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(51, 57);
@@ -882,7 +913,7 @@
             // 
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(502, 386);
+            this.simpleButton2.Location = new System.Drawing.Point(598, 471);
             this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(51, 57);
@@ -893,7 +924,7 @@
             // 
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
             this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton3.Location = new System.Drawing.Point(446, 386);
+            this.simpleButton3.Location = new System.Drawing.Point(542, 471);
             this.simpleButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(51, 57);
@@ -904,7 +935,7 @@
             // 
             this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
             this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton4.Location = new System.Drawing.Point(389, 386);
+            this.simpleButton4.Location = new System.Drawing.Point(485, 471);
             this.simpleButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Size = new System.Drawing.Size(51, 57);
@@ -915,7 +946,7 @@
             // 
             this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.simpleButton5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton5.Location = new System.Drawing.Point(332, 386);
+            this.simpleButton5.Location = new System.Drawing.Point(428, 471);
             this.simpleButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(51, 57);
@@ -925,17 +956,17 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 12F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Tahoma", 12F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridView2.Location = new System.Drawing.Point(9, 98);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(601, 283);
+            this.dataGridView2.Size = new System.Drawing.Size(695, 368);
             this.dataGridView2.TabIndex = 9;
             // 
             // textBox16
@@ -944,17 +975,17 @@
             this.textBox16.Location = new System.Drawing.Point(98, 58);
             this.textBox16.Multiline = true;
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(162, 27);
+            this.textBox16.Size = new System.Drawing.Size(203, 27);
             this.textBox16.TabIndex = 5;
             this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox17
             // 
             this.textBox17.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textBox17.Location = new System.Drawing.Point(320, 58);
+            this.textBox17.Location = new System.Drawing.Point(361, 58);
             this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(290, 27);
+            this.textBox17.Size = new System.Drawing.Size(343, 27);
             this.textBox17.TabIndex = 5;
             this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -972,7 +1003,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label13.Location = new System.Drawing.Point(266, 66);
+            this.label13.Location = new System.Drawing.Point(307, 66);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(48, 19);
             this.label13.TabIndex = 4;
@@ -982,11 +1013,22 @@
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Colorful";
             // 
+            // txtPassword2
+            // 
+            this.txtPassword2.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtPassword2.Location = new System.Drawing.Point(96, 184);
+            this.txtPassword2.Multiline = true;
+            this.txtPassword2.Name = "txtPassword2";
+            this.txtPassword2.ReadOnly = true;
+            this.txtPassword2.Size = new System.Drawing.Size(260, 27);
+            this.txtPassword2.TabIndex = 16;
+            this.txtPassword2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // frmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 595);
+            this.ClientSize = new System.Drawing.Size(884, 595);
             this.Controls.Add(this.navigationFrame);
             this.Controls.Add(this.navBarControl);
             this.Controls.Add(this.ribbonControl);
@@ -998,7 +1040,7 @@
             this.MaximizeBox = false;
             this.Name = "frmUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ADMIN";
+            this.Text = "QUẢN LÝ";
             this.Load += new System.EventHandler(this.frmUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
@@ -1008,6 +1050,8 @@
             this.employeesNavigationPage.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picOpeneye)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCloseeye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.customersNavigationPage.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -1102,5 +1146,8 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox picCloseeye;
+        private System.Windows.Forms.PictureBox picOpeneye;
+        private System.Windows.Forms.TextBox txtPassword2;
     }
 }

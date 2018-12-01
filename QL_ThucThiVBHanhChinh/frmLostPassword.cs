@@ -32,5 +32,10 @@ namespace QL_ThucThiVBHanhChinh
             this.Close();
             Login.ShowDialog();
         }
+
+        private void pic_open_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

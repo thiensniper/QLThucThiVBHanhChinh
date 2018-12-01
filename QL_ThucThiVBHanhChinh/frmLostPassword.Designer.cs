@@ -128,13 +128,15 @@
             // 
             // pic_open
             // 
-            this.pic_open.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.khoa12;
-            this.pic_open.Location = new System.Drawing.Point(37, 97);
+            this.pic_open.BackColor = System.Drawing.Color.Transparent;
+            this.pic_open.Image = global::QL_ThucThiVBHanhChinh.Properties.Resources.KEY;
+            this.pic_open.Location = new System.Drawing.Point(33, 94);
             this.pic_open.Name = "pic_open";
-            this.pic_open.Size = new System.Drawing.Size(93, 88);
+            this.pic_open.Size = new System.Drawing.Size(104, 98);
             this.pic_open.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_open.TabIndex = 9;
             this.pic_open.TabStop = false;
+            this.pic_open.Click += new System.EventHandler(this.pic_open_Click);
             // 
             // Id_tool
             // 

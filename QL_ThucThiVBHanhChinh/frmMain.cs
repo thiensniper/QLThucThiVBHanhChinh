@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace QL_ThucThiVBHanhChinh
 {
-    public partial class frmMain : Form
+    public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         //public static bool logedOn;
         public frmMain()
@@ -22,7 +22,25 @@ namespace QL_ThucThiVBHanhChinh
         private void frmMain_Load(object sender, EventArgs e)
         {
             if (SessionInfo.user != null && SessionInfo.logedOn)
+            {
+                btnInfor.Visible = false;
                 lblWelcome.Text = "Xin chào " + SessionInfo.user.Fullname + "!";
+                //kiem tra quyen cua nguoi dang nhap ==> quyet dinh quyen dung chuc nang cua form quan ly
+                if (SessionInfo.user.Role == "user")
+                {
+                    btnInfor.Visible = true;
+                    pic_Statistical.Enabled = false;
+                    label4.Enabled = false;
+                    pictureBox11.Enabled = false;
+                }
+                else
+                {
+                    btnInfor.Visible = false;
+                    pic_Statistical.Enabled = true;
+                    label4.Enabled = true;
+                    pictureBox11.Enabled = true;
+                }
+            }
             else
                 this.Close();
         }
@@ -39,7 +57,7 @@ namespace QL_ThucThiVBHanhChinh
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+
             DialogResult ExitCT = new DialogResult();
             ExitCT = MessageBox.Show("Bạn có chắc muốn đăng xuất và thoát khỏi chương trình hay không", "Thông Báo!", MessageBoxButtons.OKCancel, MessageBoxIcon.Stop);
             if (ExitCT == DialogResult.OK) { Application.Exit(); }
@@ -69,7 +87,7 @@ namespace QL_ThucThiVBHanhChinh
 
         //private void pictureBox1_Click_1(object sender, EventArgs e)
         //{
-            
+
         //}
 
         private void pic_Document_Click(object sender, EventArgs e)
@@ -96,19 +114,7 @@ namespace QL_ThucThiVBHanhChinh
             this.Show();
         }
 
-        private void frm1_Click(object sender, EventArgs e)
-        {
-            frmDocumentary frmTest = new frmDocumentary();
-            this.Hide();
-            frmTest.ShowDialog();
-            this.Show();
-        }
-
-        private void frm2_Click(object sender, EventArgs e)
-        {
-          
-        }
-
+ 
         private void lblWelcome_Click(object sender, EventArgs e)
         {
 
@@ -136,6 +142,66 @@ namespace QL_ThucThiVBHanhChinh
             this.Hide();
             frmMainUser.ShowDialog();
             this.Show();
+        }
+
+     
+
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmSetting setting = new frmSetting();
+            this.Hide();
+            setting.ShowDialog();
+            this.Show();
+            
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmPersonal Personal = new frmPersonal();
+            this.Hide();
+            Personal.ShowDialog();
+            this.Show();
+            frmMain_Load(sender, e);
+        }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DialogResult ExitCT2 = new DialogResult();
+            ExitCT2 = MessageBox.Show("BẠN CÓ CHẮC CHẮN MUỐN ĐĂNG XUẤT VÀ TRỞ VỀ MÀN HÌNH ĐĂNG NHẬP HAY KHÔNG?", "THÔNG BÁO!", MessageBoxButtons.OKCancel, MessageBoxIcon.Stop);
+            if (ExitCT2 == DialogResult.OK)
+            {
+                SessionInfo.logedOn = false;
+                SessionInfo.user = null;
+                frmLogin login = new frmLogin();
+                login.Show();
+                this.Close();
+            }
+            if (ExitCT2 == DialogResult.Cancel) { }
+
+
+
+        }
+        private void pic_Remind_Click(object sender, EventArgs e)
+        {
+            frmNotification Notification = new frmNotification();
+            this.Hide();
+            Notification.ShowDialog();
+            this.Show();
+        }
+
+        private void btnInfor_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bạn hiện không có quyền truy cập chức năng này, vui lòng liên hệ với người quản lý để có mức truy cập cao hơn.!", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DialogResult thoatct = new DialogResult();
+            thoatct = MessageBox.Show("BẠN CÓ CHẮC CHẮN MUỐN THOÁT CHƯƠNG TRÌNH NÀY HAY KHÔNG?","THÔNG BÁO!",MessageBoxButtons.OKCancel,MessageBoxIcon.Stop);
+            if (thoatct == DialogResult.OK) { Application.Exit(); }
+            if (thoatct == DialogResult.Cancel) {  }
+            
         }
     }
 }
