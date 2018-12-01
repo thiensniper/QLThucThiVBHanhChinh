@@ -26,5 +26,25 @@ namespace QL_ThucThiVBHanhChinh
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //int row = LIB.SelectedIndex;
+            //if (row != -1) LIB.Items.RemoveAt(row);
+            //TB.Focus();
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            //LIB.Items.Add(TB.Text);
+            //TB.Clear();
+            //TB.Focus();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+        //    LIB.Items.Clear();
+        //    TB.Focus();
+        }
     }
 }

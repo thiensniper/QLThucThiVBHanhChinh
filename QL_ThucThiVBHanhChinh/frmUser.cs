@@ -212,6 +212,13 @@ namespace QL_ThucThiVBHanhChinh
             modeNormal = true;
             btnDelete.Enabled = false;
             btnEdit.Enabled = false;
+
+
+            txtPassword2.Visible = false;
+            txtPassword.Visible = true;
+            picCloseeye.Visible = false;
+            picOpeneye.Visible = true;
+
             // Load dữ liệu lên form
             dgvUser.DataSource = await UserDAO.Instance.GetAllUsers();
             cbbFaculty.DataSource = await FacultyDAO.Instance.getAllFaculty();
@@ -219,8 +226,7 @@ namespace QL_ThucThiVBHanhChinh
             cbbFaculty.ValueMember = "Id";
 
         }
-
-        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+      private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             barButtonNavigation_ItemClick(sender,e);
         }
@@ -327,6 +333,35 @@ namespace QL_ThucThiVBHanhChinh
             // Load dữ liệu lên text box
             LoadDataTextboxFromDgv();
 
+        }
+
+        private void picOpeneye_Click(object sender, EventArgs e)
+        {
+            //xu li giao dien
+            txtPassword2.Visible = true;
+            txtPassword.Visible = false;
+            picCloseeye.Visible = true;
+            picOpeneye.Visible = false;
+            //xu li code
+            string temp;
+            temp = txtPassword.Text;
+            txtPassword2.Text = dgvUser.SelectedRows[0].Cells["Password"].Value.ToString();
+        }
+
+        private void ribbonControl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picCloseeye_Click(object sender, EventArgs e)
+        {
+            //xu li giao dien
+            txtPassword2.Visible = false;
+            txtPassword.Visible = true;
+            picCloseeye.Visible = false;
+            picOpeneye.Visible = true;
+            //xu li code
+            
         }
     }
 }

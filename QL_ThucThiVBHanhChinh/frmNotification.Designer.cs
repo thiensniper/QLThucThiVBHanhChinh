@@ -30,14 +30,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.TileItemElement tileItemElement9 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNotification));
             this.tileBar = new DevExpress.XtraBars.Navigation.TileBar();
             this.tileBarGroupTables = new DevExpress.XtraBars.Navigation.TileBarGroup();
             this.eployeesTileBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.employeesNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.listView2 = new System.Windows.Forms.ListView();
             this.listView1 = new System.Windows.Forms.ListView();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -52,15 +56,17 @@
             this.label11 = new System.Windows.Forms.Label();
             this.employeesLabelControl = new DevExpress.XtraEditors.LabelControl();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.label4 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
             this.employeesNavigationPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tileBar
@@ -91,7 +97,7 @@
             this.tileBar.SelectionBorderWidth = 2;
             this.tileBar.SelectionColorMode = DevExpress.XtraBars.Navigation.SelectionColorMode.UseItemBackColor;
             this.tileBar.ShowGroupText = false;
-            this.tileBar.Size = new System.Drawing.Size(857, 110);
+            this.tileBar.Size = new System.Drawing.Size(1037, 110);
             this.tileBar.TabIndex = 1;
             this.tileBar.Text = "tileBar";
             this.tileBar.WideTileWidth = 150;
@@ -108,10 +114,10 @@
             this.eployeesTileBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(115)))), ((int)(((byte)(196)))));
             this.eployeesTileBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
             this.eployeesTileBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement9.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement9.Image")));
-            tileItemElement9.ImageUri.Uri = "Cube;Size32x32;GrayScaled";
-            tileItemElement9.Text = "TRỞ VỀ MÀN HÌNH CHÍNH";
-            this.eployeesTileBarItem.Elements.Add(tileItemElement9);
+            tileItemElement3.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement3.Image")));
+            tileItemElement3.ImageUri.Uri = "Cube;Size32x32;GrayScaled";
+            tileItemElement3.Text = "TRỞ VỀ MÀN HÌNH CHÍNH";
+            this.eployeesTileBarItem.Elements.Add(tileItemElement3);
             this.eployeesTileBarItem.Name = "eployeesTileBarItem";
             this.eployeesTileBarItem.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.eployeesTileBarItem_ItemClick);
             // 
@@ -125,7 +131,7 @@
             this.navigationFrame.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.employeesNavigationPage});
             this.navigationFrame.SelectedPage = this.employeesNavigationPage;
-            this.navigationFrame.Size = new System.Drawing.Size(857, 544);
+            this.navigationFrame.Size = new System.Drawing.Size(1037, 544);
             this.navigationFrame.TabIndex = 0;
             this.navigationFrame.Text = "navigationFrame";
             // 
@@ -146,21 +152,67 @@
             this.employeesNavigationPage.Controls.Add(this.label11);
             this.employeesNavigationPage.Controls.Add(this.employeesLabelControl);
             this.employeesNavigationPage.Name = "employeesNavigationPage";
-            this.employeesNavigationPage.Size = new System.Drawing.Size(857, 544);
+            this.employeesNavigationPage.Size = new System.Drawing.Size(1037, 544);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.btn);
+            this.groupBox1.Controls.Add(this.listBox2);
+            this.groupBox1.Controls.Add(this.listBox1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.dataGridView2);
+            this.groupBox1.Controls.Add(this.listView2);
+            this.groupBox1.Controls.Add(this.listView1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 150);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(985, 382);
+            this.groupBox1.TabIndex = 42;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(272, 248);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(234, 13);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "DANH SÁCH ĐƠN VỊ HÀNH CHÍNH CHƯA CHỌN";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 248);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(234, 13);
+            this.label2.TabIndex = 42;
+            this.label2.Text = "DANH SÁCH ĐƠN VỊ HÀNH CHÍNH CHƯA CHỌN";
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(6, 20);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(297, 214);
+            this.dataGridView2.Size = new System.Drawing.Size(151, 214);
             this.dataGridView2.TabIndex = 41;
+            // 
+            // listView2
+            // 
+            this.listView2.Location = new System.Drawing.Point(331, 20);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(53, 214);
+            this.listView2.TabIndex = 40;
+            this.listView2.UseCompatibleStateImageBehavior = false;
             // 
             // listView1
             // 
-            this.listView1.Location = new System.Drawing.Point(309, 20);
+            this.listView1.Location = new System.Drawing.Point(183, 20);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(280, 214);
+            this.listView1.Size = new System.Drawing.Size(115, 214);
             this.listView1.TabIndex = 40;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -295,52 +347,74 @@
             this.employeesLabelControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.employeesLabelControl.Location = new System.Drawing.Point(0, 0);
             this.employeesLabelControl.Name = "employeesLabelControl";
-            this.employeesLabelControl.Size = new System.Drawing.Size(857, 544);
+            this.employeesLabelControl.Size = new System.Drawing.Size(1037, 544);
             this.employeesLabelControl.TabIndex = 2;
             // 
             // defaultLookAndFeel1
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Colorful";
             // 
-            // groupBox1
+            // listBox1
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dataGridView2);
-            this.groupBox1.Controls.Add(this.listView2);
-            this.groupBox1.Controls.Add(this.listView1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 150);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(833, 382);
-            this.groupBox1.TabIndex = 42;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
+            "DOG",
+            "MONKEY",
+            "CHICKEN BELL",
+            "THIENSNIPER",
+            "HUY MILO",
+            "LaNqdU"});
+            this.listBox1.Location = new System.Drawing.Point(512, 31);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(108, 277);
+            this.listBox1.TabIndex = 43;
             // 
-            // label2
+            // listBox2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 248);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(234, 13);
-            this.label2.TabIndex = 42;
-            this.label2.Text = "DANH SÁCH ĐƠN VỊ HÀNH CHÍNH CHƯA CHỌN";
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(766, 31);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(101, 277);
+            this.listBox2.TabIndex = 44;
             // 
-            // listView2
+            // button4
             // 
-            this.listView2.Location = new System.Drawing.Point(595, 20);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(232, 214);
-            this.listView2.TabIndex = 40;
-            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.button4.Location = new System.Drawing.Point(626, 250);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(113, 56);
+            this.button4.TabIndex = 45;
+            this.button4.Text = "<";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // button3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(306, 248);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(234, 13);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "DANH SÁCH ĐƠN VỊ HÀNH CHÍNH CHƯA CHỌN";
+            this.button3.Location = new System.Drawing.Point(626, 176);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(113, 56);
+            this.button3.TabIndex = 46;
+            this.button3.Text = "clear";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(626, 102);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(113, 56);
+            this.button2.TabIndex = 47;
+            this.button2.Text = "remote";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btn
+            // 
+            this.btn.Location = new System.Drawing.Point(626, 31);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(113, 56);
+            this.btn.TabIndex = 48;
+            this.btn.Text = "add";
+            this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // frmNotification
             // 
@@ -348,7 +422,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 654);
+            this.ClientSize = new System.Drawing.Size(1037, 654);
             this.Controls.Add(this.navigationFrame);
             this.Controls.Add(this.tileBar);
             this.Name = "frmNotification";
@@ -358,9 +432,9 @@
             this.navigationFrame.ResumeLayout(false);
             this.employeesNavigationPage.ResumeLayout(false);
             this.employeesNavigationPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -391,5 +465,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

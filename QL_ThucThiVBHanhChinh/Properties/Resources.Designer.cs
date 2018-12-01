@@ -353,6 +353,16 @@ namespace QL_ThucThiVBHanhChinh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_eye_961 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eye-961", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_file_480 {
             get {
                 object obj = ResourceManager.GetObject("icons8-file-480", resourceCulture);
@@ -376,6 +386,16 @@ namespace QL_ThucThiVBHanhChinh.Properties {
         internal static System.Drawing.Bitmap icons8_hide_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-hide-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_hide_961 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-hide-961", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
