@@ -101,6 +101,8 @@
     <Compile Include="DTO\Faculty.cs" />
     <Compile Include="DTO\Setting.cs" />
     <Compile Include="DTO\User.cs" />
+    <Compile Include="Email\EmailController.cs" />
+    <Compile Include="Email\TemplateEmail.cs" />
     <Compile Include="frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
