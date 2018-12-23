@@ -21,6 +21,7 @@ namespace QL_ThucThiVBHanhChinh
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            //if (Application.OpenForms[0].Text == "Đăng nhập") Application.OpenForms[0].Close();
             if (SessionInfo.user != null && SessionInfo.logedOn)
             {
                 btnInfor.Visible = false;
@@ -202,6 +203,11 @@ namespace QL_ThucThiVBHanhChinh
             if (thoatct == DialogResult.OK) { Application.Exit(); }
             if (thoatct == DialogResult.Cancel) {  }
             
+        }
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 1) Application.Exit();
         }
     }
 }

@@ -94,11 +94,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ExecutoryDocumentDAO.cs" />
     <Compile Include="DAO\FirebaseConnection.cs" />
     <Compile Include="DAO\FacultyDAO.cs" />
     <Compile Include="DAO\SettingDAO.cs" />
     <Compile Include="DAO\UserDAO.cs" />
     <Compile Include="DTO\Faculty.cs" />
+    <Compile Include="DTO\ExecutoryDocument.cs" />
     <Compile Include="DTO\Setting.cs" />
     <Compile Include="DTO\User.cs" />
     <Compile Include="frmRemind.cs">

@@ -38,7 +38,15 @@ namespace QL_ThucThiVBHanhChinh
         {
             btnLogin.Enabled = false;
             List<User> listUser;
-            listUser = await UserDAO.Instance.GetAllUsers();
+            try
+            {
+                listUser = await UserDAO.Instance.GetAllUsers();
+            }
+            catch(Exception ex)
+            {
+                listUser = null;
+                Console.WriteLine(ex.Message);
+            }
             if(listUser != null)
             {
                 foreach(User data in listUser)
@@ -77,9 +85,13 @@ namespace QL_ThucThiVBHanhChinh
 
         private void timerLogin_Tick(object sender, EventArgs e)
         {
+            //List<string> mail = new List<string>();
+            //mail.Add("nguyenminhthiensmart@gmail.com");
+            //EmailController.MailInstance.SendEmail("thienthanthanh.tn@gmail.com", "16031997", mail, new Email.TemplateEmail("Test QL Thuc thi VBHC", "Đây là Email Test"));
             timerLogin.Enabled = false;
             frmMain main = new frmMain();
             this.Hide();
+            if (Application.OpenForms.Count >= 2) Application.OpenForms[1].Close();
             main.Show();
         }
 

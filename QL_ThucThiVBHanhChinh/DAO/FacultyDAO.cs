@@ -38,5 +38,12 @@ namespace QL_ThucThiVBHanhChinh.DAO
                 list.Add(data);
             return list;
         }
+
+        public async Task<bool> createFaculty(Faculty faculty)
+        {
+            SetResponse response = await FirebaseConnection.Instance.SetObject<Faculty>(urlFaculty, faculty);
+            if (response == null) return false;
+            else return true;
+        }
     }
 }

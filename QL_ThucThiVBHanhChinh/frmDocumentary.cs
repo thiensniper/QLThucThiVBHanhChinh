@@ -59,5 +59,10 @@ namespace QL_ThucThiVBHanhChinh
         {
             MessageBox.Show("Bạn có chắc muốn hủy việc tạo thực thi hay không ?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
         }
+
+        private async void frmDocumentary_Load(object sender, EventArgs e)
+        {
+            dgvExecutory.DataSource = await DAO.ExecutoryDocumentDAO.Instance.getListExecutory();
+        }
     }
 }
