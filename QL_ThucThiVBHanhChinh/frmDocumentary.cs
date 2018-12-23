@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using QL_ThucThiVBHanhChinh.DTO;
 
 namespace QL_ThucThiVBHanhChinh
 {
@@ -62,7 +63,8 @@ namespace QL_ThucThiVBHanhChinh
 
         private async void frmDocumentary_Load(object sender, EventArgs e)
         {
-            dgvExecutory.DataSource = await DAO.ExecutoryDocumentDAO.Instance.getListExecutory();
+            if (await DAO.ExecutoryDocumentDAO.Instance.getListExecutory() != null)
+                dgvExecutory.DataSource = await DAO.ExecutoryDocumentDAO.Instance.getListExecutory();
         }
     }
 }

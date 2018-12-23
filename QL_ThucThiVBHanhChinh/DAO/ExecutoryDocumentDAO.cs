@@ -22,6 +22,7 @@ namespace QL_ThucThiVBHanhChinh.DAO
         {
             FirebaseResponse response = await FirebaseConnection.Instance.Get(urlDocument + "/" + SessionInfo.user.Username);
             dynamic obj = response.ResultAs<Dictionary<string, ExecutoryDocument>>();
+            if (obj == null) return obj;
             List<ExecutoryDocument> list = new List<ExecutoryDocument>();
             foreach (ExecutoryDocument data in obj.Values)
                 list.Add(data);
