@@ -460,6 +460,30 @@
   <ItemGroup>
     <None Include="Resources\icons8-eye-961.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-schedule-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-popup-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-alerts-480.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mail-open-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checklist-1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-groups-2401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-file-4801.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">

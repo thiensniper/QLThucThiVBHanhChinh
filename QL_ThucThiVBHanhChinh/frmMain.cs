@@ -25,7 +25,7 @@ namespace QL_ThucThiVBHanhChinh
             if (SessionInfo.user != null && SessionInfo.logedOn)
             {
                 btnInfor.Visible = false;
-                lblWelcome.Text = "Xin chào " + SessionInfo.user.Fullname + "!";
+                lblWelcome.Text = "Xin chào " + SessionInfo.user.Fullname + " !";
                 //kiem tra quyen cua nguoi dang nhap ==> quyet dinh quyen dung chuc nang cua form quan ly
                 if (SessionInfo.user.Role == "user")
                 {
