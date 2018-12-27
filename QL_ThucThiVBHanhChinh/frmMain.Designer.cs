@@ -94,6 +94,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.skinRibbonGalleryBarItem2 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -260,9 +261,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Gainsboro;
+            this.label4.BackColor = System.Drawing.Color.DodgerBlue;
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(630, 386);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(287, 31);
@@ -273,9 +275,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Gainsboro;
+            this.label3.BackColor = System.Drawing.Color.DodgerBlue;
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(141, 267);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(288, 31);
@@ -286,9 +289,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Gainsboro;
+            this.label2.BackColor = System.Drawing.Color.DodgerBlue;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(141, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(269, 31);
@@ -407,9 +411,10 @@
             this.barButtonItem2,
             this.barButtonItem3,
             this.barButtonItem4,
-            this.barButtonItem5});
+            this.barButtonItem5,
+            this.skinRibbonGalleryBarItem2});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 7;
+            this.ribbonControl1.MaxItemId = 8;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.ribbonPageCategory1});
@@ -540,7 +545,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Location = new System.Drawing.Point(126, 95);
             this.pictureBox2.Name = "pictureBox2";
@@ -551,7 +556,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox5.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Location = new System.Drawing.Point(126, 220);
             this.pictureBox5.Name = "pictureBox5";
@@ -562,7 +567,7 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox11.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox11.Location = new System.Drawing.Point(618, 345);
             this.pictureBox11.Name = "pictureBox11";
@@ -606,9 +611,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Gainsboro;
+            this.label5.BackColor = System.Drawing.Color.DodgerBlue;
             this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(141, 386);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(206, 31);
@@ -632,7 +638,7 @@
             // 
             // pictureBox13
             // 
-            this.pictureBox13.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox13.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox13.Location = new System.Drawing.Point(126, 345);
             this.pictureBox13.Name = "pictureBox13";
@@ -643,12 +649,12 @@
             // 
             // btnInfor
             // 
-            this.btnInfor.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnInfor.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnInfor.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnInfor.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnInfor.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnInfor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnInfor.ForeColor = System.Drawing.Color.Red;
+            this.btnInfor.ForeColor = System.Drawing.Color.White;
             this.btnInfor.Location = new System.Drawing.Point(629, 423);
             this.btnInfor.Margin = new System.Windows.Forms.Padding(2);
             this.btnInfor.Name = "btnInfor";
@@ -775,15 +781,22 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Gainsboro;
+            this.label8.BackColor = System.Drawing.Color.DodgerBlue;
             this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(141, 160);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(313, 31);
             this.label8.TabIndex = 39;
             this.label8.Text = "VĂN BẢN HÀNH CHÍNH";
             this.label8.Click += new System.EventHandler(this.pic_Document_Click);
+            // 
+            // skinRibbonGalleryBarItem2
+            // 
+            this.skinRibbonGalleryBarItem2.Caption = "dsadsa";
+            this.skinRibbonGalleryBarItem2.Id = 7;
+            this.skinRibbonGalleryBarItem2.Name = "skinRibbonGalleryBarItem2";
             // 
             // frmMain
             // 
@@ -926,5 +939,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem2;
     }
 }
