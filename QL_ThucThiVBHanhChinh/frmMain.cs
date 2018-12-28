@@ -209,5 +209,21 @@ namespace QL_ThucThiVBHanhChinh
         {
             if (Application.OpenForms.Count == 1) Application.Exit();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmNotification Notification = new frmNotification();
+            this.Hide();
+            Notification.ShowDialog();
+            this.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmNotification Notification = new frmNotification();
+            this.Hide();
+            Notification.ShowDialog();
+            this.Show();
+        }
     }
 }

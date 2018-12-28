@@ -13,6 +13,7 @@ namespace QL_ThucThiVBHanhChinh
 {
     public partial class frmNotification : DevExpress.XtraEditors.XtraForm
     {
+        int flag = 0;
         public frmNotification()
         {
             InitializeComponent();
@@ -45,6 +46,45 @@ namespace QL_ThucThiVBHanhChinh
         {
         //    LIB.Items.Clear();
         //    TB.Focus();
+        }
+
+        private void tileBarItem3_ItemClick(object sender, TileItemEventArgs e)
+        {
+            grTao.Visible = true;
+            grXem.Visible = false;
+        }
+
+        private void tileBarItem1_ItemClick(object sender, TileItemEventArgs e)
+        {
+            grTao.Visible = false;
+            grXem.Visible = true;
+        }
+
+        private void employeesLabelControl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmNotification_Load(object sender, EventArgs e)
+        {
+            grTao.Visible = true;
+            grXem.Visible = false;
+            grChon2.Visible = false;
+            btnChon2.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            grChon2.Visible = true;
+            btnChon1.Hide();
+            btnChon2.Show();
+        }
+
+        private void btnChon2_Click(object sender, EventArgs e)
+        {
+            grChon2.Visible = false;
+            btnChon1.Show();
+            btnChon2.Hide();
         }
     }
 }

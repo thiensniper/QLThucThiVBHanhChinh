@@ -66,5 +66,13 @@ namespace QL_ThucThiVBHanhChinh
             if (await DAO.ExecutoryDocumentDAO.Instance.getListExecutory() != null)
                 dgvExecutory.DataSource = await DAO.ExecutoryDocumentDAO.Instance.getListExecutory();
         }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            frmNotification Notification = new frmNotification();
+            this.Hide();
+            Notification.ShowDialog();
+            this.Show();
+        }
     }
 }
