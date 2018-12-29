@@ -15,9 +15,9 @@ using DevExpress.XtraLayout;
 
 namespace QL_ThucThiVBHanhChinh
 {
-    public partial class frmUser1 : DevExpress.XtraEditors.XtraForm
+    public partial class frmTest1 : DevExpress.XtraEditors.XtraForm
     {
-        public frmUser1()
+        public frmTest1()
         {
             InitializeComponent();
 

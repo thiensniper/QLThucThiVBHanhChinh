@@ -115,7 +115,7 @@ namespace QL_ThucThiVBHanhChinh
             this.Show();
         }
 
- 
+
         private void lblWelcome_Click(object sender, EventArgs e)
         {
 
@@ -123,7 +123,7 @@ namespace QL_ThucThiVBHanhChinh
 
         private void pic_demo1_Click(object sender, EventArgs e)
         {
-            frmUser1 frmUser1 = new frmUser1();
+            frmTest1 frmUser1 = new frmTest1();
             this.Hide();
             frmUser1.ShowDialog();
             this.Show();
@@ -131,7 +131,7 @@ namespace QL_ThucThiVBHanhChinh
 
         private void pic_demo2_Click(object sender, EventArgs e)
         {
-            frmUser2 frmUser2 = new frmUser2();
+            frmViewDocument frmUser2 = new frmViewDocument();
             this.Hide();
             frmUser2.ShowDialog();
             this.Show();
@@ -139,13 +139,10 @@ namespace QL_ThucThiVBHanhChinh
 
         private void pic_demo3_Click(object sender, EventArgs e)
         {
-            frmMainUser frmMainUser = new frmMainUser();
-            this.Hide();
-            frmMainUser.ShowDialog();
-            this.Show();
+
         }
 
-     
+
 
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -154,7 +151,7 @@ namespace QL_ThucThiVBHanhChinh
             this.Hide();
             setting.ShowDialog();
             this.Show();
-            
+
         }
 
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -199,10 +196,10 @@ namespace QL_ThucThiVBHanhChinh
         private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             DialogResult thoatct = new DialogResult();
-            thoatct = MessageBox.Show("BẠN CÓ CHẮC CHẮN MUỐN THOÁT CHƯƠNG TRÌNH NÀY HAY KHÔNG?","THÔNG BÁO!",MessageBoxButtons.OKCancel,MessageBoxIcon.Stop);
+            thoatct = MessageBox.Show("BẠN CÓ CHẮC CHẮN MUỐN THOÁT CHƯƠNG TRÌNH NÀY HAY KHÔNG?", "THÔNG BÁO!", MessageBoxButtons.OKCancel, MessageBoxIcon.Stop);
             if (thoatct == DialogResult.OK) { Application.Exit(); }
-            if (thoatct == DialogResult.Cancel) {  }
-            
+            if (thoatct == DialogResult.Cancel) { }
+
         }
 
         private void frmMain_FormClosed(object sender, FormClosedEventArgs e)

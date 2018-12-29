@@ -195,7 +195,7 @@ namespace QL_ThucThiVBHanhChinh
 
         private void btnDSNS_Click_1(object sender, EventArgs e)
         {
-            frmUser2 frmUser2 = new frmUser2();
+            frmViewDocument frmUser2 = new frmViewDocument();
             this.Hide();
             frmUser2.ShowDialog();
             this.Show();

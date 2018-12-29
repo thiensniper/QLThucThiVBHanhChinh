@@ -13,9 +13,9 @@ using DevExpress.XtraBars;
 
 namespace QL_ThucThiVBHanhChinh
 {
-    public partial class frmUser2 : XtraForm
+    public partial class frmViewDocument : XtraForm
     {
-        public frmUser2()
+        public frmViewDocument()
         {
             InitializeComponent();
 

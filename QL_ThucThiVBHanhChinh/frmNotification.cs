@@ -86,5 +86,21 @@ namespace QL_ThucThiVBHanhChinh
             btnChon1.Show();
             btnChon2.Hide();
         }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            frmViewDocument ViewDocument = new frmViewDocument();
+            this.Hide();
+            ViewDocument.ShowDialog();
+            this.Show();
+        }
+
+        private void simpleButton9_Click(object sender, EventArgs e)
+        {
+            frmViewDocument ViewDocument = new frmViewDocument();
+            this.Hide();
+            ViewDocument.ShowDialog();
+            this.Show();
+        }
     }
 }

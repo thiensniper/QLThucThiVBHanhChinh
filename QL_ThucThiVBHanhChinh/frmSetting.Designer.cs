@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSetting));
             this.label2 = new System.Windows.Forms.Label();
             this.txtSendingEmail = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -103,7 +104,7 @@
             this.btn_UpdateEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_UpdateEmail.ForeColor = System.Drawing.Color.Black;
             this.btn_UpdateEmail.Location = new System.Drawing.Point(279, 120);
-            this.btn_UpdateEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_UpdateEmail.Margin = new System.Windows.Forms.Padding(2);
             this.btn_UpdateEmail.Name = "btn_UpdateEmail";
             this.btn_UpdateEmail.Size = new System.Drawing.Size(179, 44);
             this.btn_UpdateEmail.TabIndex = 2;
@@ -157,6 +158,7 @@
             this.Controls.Add(this.picBack);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSetting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSetting";

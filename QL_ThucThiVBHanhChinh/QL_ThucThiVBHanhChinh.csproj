@@ -143,12 +143,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="frmMainUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMainUser.Designer.cs">
-      <DependentUpon>frmMainUser.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmUnit.Designer.cs">
       <DependentUpon>frmUnit.cs</DependentUpon>
     </Compile>
@@ -167,17 +161,17 @@
     <Compile Include="frmUser.Designer.cs">
       <DependentUpon>frmUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUser1.cs">
+    <Compile Include="frmTest1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUser1.Designer.cs">
-      <DependentUpon>frmUser1.cs</DependentUpon>
+    <Compile Include="frmTest1.Designer.cs">
+      <DependentUpon>frmTest1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUser2.cs">
+    <Compile Include="frmViewDocument.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUser2.Designer.cs">
-      <DependentUpon>frmUser2.cs</DependentUpon>
+    <Compile Include="frmViewDocument.Designer.cs">
+      <DependentUpon>frmViewDocument.cs</DependentUpon>
     </Compile>
     <Compile Include="SessionInfo.cs" />
     <Compile Include="frmNotification.cs">
@@ -192,20 +186,17 @@
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMainUser.resx">
-      <DependentUpon>frmMainUser.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmUnit.resx">
       <DependentUpon>frmUnit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUser.resx">
       <DependentUpon>frmUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUser1.resx">
-      <DependentUpon>frmUser1.cs</DependentUpon>
+    <EmbeddedResource Include="frmTest1.resx">
+      <DependentUpon>frmTest1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUser2.resx">
-      <DependentUpon>frmUser2.cs</DependentUpon>
+    <EmbeddedResource Include="frmViewDocument.resx">
+      <DependentUpon>frmViewDocument.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="frmLogin.resx">
